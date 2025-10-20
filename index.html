@@ -458,6 +458,9 @@
 
         // YouTube RSS feed URL
         const youtubeRssFeed = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCc8q4B1bj-668LMHyNXnTxQ';
+        
+        // CORS proxy to fetch YouTube feed (since YouTube doesn't allow direct browser requests)
+        const corsProxy = 'https://api.allorigins.win/raw?url=';
 
         // Initialize
         document.querySelectorAll('.feed-button').forEach(button => {
@@ -508,7 +511,7 @@
                     fetch(`${baseUrl}all.xml${timestamp}`, {
                         cache: forceUpdate ? 'reload' : 'default'
                     }),
-                    fetch(youtubeRssFeed, {
+                    fetch(corsProxy + encodeURIComponent(youtubeRssFeed), {
                         cache: forceUpdate ? 'reload' : 'default'
                     })
                 ]);
@@ -633,7 +636,7 @@
                 
                 // Handle YouTube feed specially
                 if (feedName === 'economymedia') {
-                    url = youtubeRssFeed;
+                    url = corsProxy + encodeURIComponent(youtubeRssFeed);
                     response = await fetch(url, {
                         cache: forceUpdate ? 'reload' : 'default'
                     });
