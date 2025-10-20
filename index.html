@@ -531,6 +531,7 @@
                 <button class="feed-button" data-feed="funfacts">Wikipedia</button>
                 <button class="feed-button" data-feed="wikivoyage">Wikivoyage</button>
                 <button class="feed-button" data-feed="hackernews">Hacker News</button>
+                <button class="feed-button" data-feed="medium_matteo">Medium</button>
                 <button class="feed-button" data-feed="economymedia">Economy Media</button>
             </div>
             <button class="update-button" id="updateButton" onclick="updateFeed()">↻ Update</button>
@@ -558,6 +559,7 @@
             'funfacts': 'Wikipedia — did you know?',
             'wikivoyage': 'Wikivoyage recommendations',
             'hackernews': 'Hacker News - Front Page',
+            'medium_matteo': 'Medium - Matteo\'s Articles',
             'economymedia': 'Economy Media YouTube'
         };
 
@@ -1010,7 +1012,7 @@
                     <div class="stat-label">Page${totalPages !== 1 ? 's' : ''}</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-number">${feedNames[currentFeed] && currentFeed !== 'all' ? '1' : '5'}</div>
+                    <div class="stat-number">${feedNames[currentFeed] && currentFeed !== 'all' ? '1' : '6'}</div>
                     <div class="stat-label">Source${currentFeed === 'all' ? 's' : ''}</div>
                 </div>
                 <div class="stat-box">
