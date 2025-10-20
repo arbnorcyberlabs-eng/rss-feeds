@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://news.ycombinator.com/</id>
     <title>Hacker News - Front Page</title>
-    <updated>2025-10-20T11:15:51.587Z</updated>
+    <updated>2025-10-20T11:20:42.662Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://news.ycombinator.com/y18.svg</icon>
     <entry>
@@ -76,13 +76,6 @@
         <content type="html"><![CDATA[Introduction to reverse-engineering vintage synth firmware]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Give Your Metrics an Expiry Date]]></title>
-        <id>https://adrianhoward.com/posts/give-your-metrics-an-expiry-date/</id>
-        <link href="https://adrianhoward.com/posts/give-your-metrics-an-expiry-date/"/>
-        <updated>2025-10-20T11:15:50.817Z</updated>
-        <content type="html"><![CDATA[Give Your Metrics an Expiry Date]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Doing well in your courses: Andrej's advice for success (2013)]]></title>
         <id>https://cs.stanford.edu/people/karpathy/advice.html</id>
         <link href="https://cs.stanford.edu/people/karpathy/advice.html"/>
@@ -90,18 +83,25 @@
         <content type="html"><![CDATA[Doing well in your courses: Andrej's advice for success (2013)]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Major AWS outage takes down Fortnite, Alexa, Snapchat, and more]]></title>
-        <id>https://www.theverge.com/news/802486/aws-outage-alexa-fortnite-snapchat-offline</id>
-        <link href="https://www.theverge.com/news/802486/aws-outage-alexa-fortnite-snapchat-offline"/>
-        <updated>2025-10-20T11:15:50.819Z</updated>
-        <content type="html"><![CDATA[Major AWS outage takes down Fortnite, Alexa, Snapchat, and more]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Adding Breadcrumbs to a Rails Application]]></title>
         <id>https://avohq.io/blog/breadcrumbs-rails</id>
         <link href="https://avohq.io/blog/breadcrumbs-rails"/>
         <updated>2025-10-20T11:15:50.827Z</updated>
         <content type="html"><![CDATA[Adding Breadcrumbs to a Rails Application]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Give Your Metrics an Expiry Date]]></title>
+        <id>https://adrianhoward.com/posts/give-your-metrics-an-expiry-date/</id>
+        <link href="https://adrianhoward.com/posts/give-your-metrics-an-expiry-date/"/>
+        <updated>2025-10-20T11:15:50.817Z</updated>
+        <content type="html"><![CDATA[Give Your Metrics an Expiry Date]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Major AWS outage takes down Fortnite, Alexa, Snapchat, and more]]></title>
+        <id>https://www.theverge.com/news/802486/aws-outage-alexa-fortnite-snapchat-offline</id>
+        <link href="https://www.theverge.com/news/802486/aws-outage-alexa-fortnite-snapchat-offline"/>
+        <updated>2025-10-20T11:15:50.819Z</updated>
+        <content type="html"><![CDATA[Major AWS outage takes down Fortnite, Alexa, Snapchat, and more]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Duke Nukem: Zero Hour N64 ROM Reverse-Engineering Project Hits 100%]]></title>
@@ -132,6 +132,13 @@
         <content type="html"><![CDATA[Oma: An attempt at reworking APT's interface]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Fractal Imaginary Cubes]]></title>
+        <id>https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html</id>
+        <link href="https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html"/>
+        <updated>2025-10-20T11:20:41.930Z</updated>
+        <content type="html"><![CDATA[Fractal Imaginary Cubes]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Gleam OTP – Fault Tolerant Multicore Programs with Actors]]></title>
         <id>https://github.com/gleam-lang/otp</id>
         <link href="https://github.com/gleam-lang/otp"/>
@@ -146,18 +153,18 @@
         <content type="html"><![CDATA[Airliner hit by possible space debris]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Subway station study reveals fungal communities]]></title>
-        <id>https://phys.org/news/2025-09-subway-station-reveals-fungal-communities.html</id>
-        <link href="https://phys.org/news/2025-09-subway-station-reveals-fungal-communities.html"/>
-        <updated>2025-10-20T11:15:50.834Z</updated>
-        <content type="html"><![CDATA[Subway station study reveals fungal communities]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Dosbian: Boot to DOSBox on Raspberry Pi]]></title>
         <id>https://cmaiolino.wordpress.com/dosbian/</id>
         <link href="https://cmaiolino.wordpress.com/dosbian/"/>
         <updated>2025-10-20T11:15:50.836Z</updated>
         <content type="html"><![CDATA[Dosbian: Boot to DOSBox on Raspberry Pi]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Subway station study reveals fungal communities]]></title>
+        <id>https://phys.org/news/2025-09-subway-station-reveals-fungal-communities.html</id>
+        <link href="https://phys.org/news/2025-09-subway-station-reveals-fungal-communities.html"/>
+        <updated>2025-10-20T11:15:50.834Z</updated>
+        <content type="html"><![CDATA[Subway station study reveals fungal communities]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Oskar Speck's 1932 Kayak Journey from Germany to Australia]]></title>
@@ -207,12 +214,5 @@
         <link href="https://southernwoodenboatsailing.com/news/the-spilhaus-projection-a-world-map-according-to-fish"/>
         <updated>2025-10-20T11:15:50.848Z</updated>
         <content type="html"><![CDATA[The Spilhaus Projection: A world map according to fish]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[From Hollywood to horticulture: Cate Blanchett on a mission to save seeds]]></title>
-        <id>https://www.bbc.com/news/articles/cwy7ekl4yl8o</id>
-        <link href="https://www.bbc.com/news/articles/cwy7ekl4yl8o"/>
-        <updated>2025-10-20T11:15:50.849Z</updated>
-        <content type="html"><![CDATA[From Hollywood to horticulture: Cate Blanchett on a mission to save seeds]]></content>
     </entry>
 </feed>
