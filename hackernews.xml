@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://news.ycombinator.com/</id>
     <title>Hacker News - Front Page</title>
-    <updated>2025-10-20T11:42:54.962Z</updated>
+    <updated>2025-10-20T12:02:54.540Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://news.ycombinator.com/y18.svg</icon>
     <entry>
@@ -48,13 +48,6 @@
         <content type="html"><![CDATA[AWS Multiple Services Down in us-east-1]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Major AWS Outage Happening]]></title>
-        <id>https://old.reddit.com/r/aws/comments/1obd3lx/dynamodb_down_useast1/</id>
-        <link href="https://old.reddit.com/r/aws/comments/1obd3lx/dynamodb_down_useast1/"/>
-        <updated>2025-10-20T11:15:50.810Z</updated>
-        <content type="html"><![CDATA[Major AWS Outage Happening]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Forth: The programming language that writes itself]]></title>
         <id>https://ratfactor.com/forth/the_programming_language_that_writes_itself.html</id>
         <link href="https://ratfactor.com/forth/the_programming_language_that_writes_itself.html"/>
@@ -62,11 +55,32 @@
         <content type="html"><![CDATA[Forth: The programming language that writes itself]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Give Your Metrics an Expiry Date]]></title>
+        <id>https://adrianhoward.com/posts/give-your-metrics-an-expiry-date/</id>
+        <link href="https://adrianhoward.com/posts/give-your-metrics-an-expiry-date/"/>
+        <updated>2025-10-20T11:15:50.817Z</updated>
+        <content type="html"><![CDATA[Give Your Metrics an Expiry Date]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Novo Nordisk's Canadian Mistake]]></title>
         <id>https://www.science.org/content/blog-post/novo-nordisk-s-canadian-mistake</id>
         <link href="https://www.science.org/content/blog-post/novo-nordisk-s-canadian-mistake"/>
         <updated>2025-10-20T11:15:50.811Z</updated>
         <content type="html"><![CDATA[Novo Nordisk's Canadian Mistake]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Major AWS Outage Happening]]></title>
+        <id>https://old.reddit.com/r/aws/comments/1obd3lx/dynamodb_down_useast1/</id>
+        <link href="https://old.reddit.com/r/aws/comments/1obd3lx/dynamodb_down_useast1/"/>
+        <updated>2025-10-20T11:15:50.810Z</updated>
+        <content type="html"><![CDATA[Major AWS Outage Happening]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fractal Imaginary Cubes]]></title>
+        <id>https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html</id>
+        <link href="https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html"/>
+        <updated>2025-10-20T11:20:41.930Z</updated>
+        <content type="html"><![CDATA[Fractal Imaginary Cubes]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Doing well in your courses: Andrej's advice for success (2013)]]></title>
@@ -83,18 +97,18 @@
         <content type="html"><![CDATA[Introduction to reverse-engineering vintage synth firmware]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Give Your Metrics an Expiry Date]]></title>
-        <id>https://adrianhoward.com/posts/give-your-metrics-an-expiry-date/</id>
-        <link href="https://adrianhoward.com/posts/give-your-metrics-an-expiry-date/"/>
-        <updated>2025-10-20T11:15:50.817Z</updated>
-        <content type="html"><![CDATA[Give Your Metrics an Expiry Date]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Major AWS outage takes down Fortnite, Alexa, Snapchat, and more]]></title>
         <id>https://www.theverge.com/news/802486/aws-outage-alexa-fortnite-snapchat-offline</id>
         <link href="https://www.theverge.com/news/802486/aws-outage-alexa-fortnite-snapchat-offline"/>
         <updated>2025-10-20T11:15:50.819Z</updated>
         <content type="html"><![CDATA[Major AWS outage takes down Fortnite, Alexa, Snapchat, and more]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[State-based vs Signal-based rendering]]></title>
+        <id>https://jovidecroock.com/blog/state-vs-signals/</id>
+        <link href="https://jovidecroock.com/blog/state-vs-signals/"/>
+        <updated>2025-10-20T12:02:53.905Z</updated>
+        <content type="html"><![CDATA[State-based vs Signal-based rendering]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Duke Nukem: Zero Hour N64 ROM Reverse-Engineering Project Hits 100%]]></title>
@@ -104,11 +118,11 @@
         <content type="html"><![CDATA[Duke Nukem: Zero Hour N64 ROM Reverse-Engineering Project Hits 100%]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Fractal Imaginary Cubes]]></title>
-        <id>https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html</id>
-        <link href="https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html"/>
-        <updated>2025-10-20T11:20:41.930Z</updated>
-        <content type="html"><![CDATA[Fractal Imaginary Cubes]]></content>
+        <title type="html"><![CDATA[Beaver-engineered dam in the Czech Republic]]></title>
+        <id>https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic</id>
+        <link href="https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic"/>
+        <updated>2025-10-20T11:39:20.153Z</updated>
+        <content type="html"><![CDATA[Beaver-engineered dam in the Czech Republic]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Don't Force Your LLM to Write Terse [Q/Kdb] Code: An Information Theory Argument]]></title>
@@ -118,13 +132,6 @@
         <content type="html"><![CDATA[Don't Force Your LLM to Write Terse [Q/Kdb] Code: An Information Theory Argument]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Bat v0.26.0 Released]]></title>
-        <id>https://github.com/sharkdp/bat/releases/tag/v0.26.0</id>
-        <link href="https://github.com/sharkdp/bat/releases/tag/v0.26.0"/>
-        <updated>2025-10-20T11:15:50.828Z</updated>
-        <content type="html"><![CDATA[Bat v0.26.0 Released]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Gleam OTP – Fault Tolerant Multicore Programs with Actors]]></title>
         <id>https://github.com/gleam-lang/otp</id>
         <link href="https://github.com/gleam-lang/otp"/>
@@ -132,18 +139,11 @@
         <content type="html"><![CDATA[Gleam OTP – Fault Tolerant Multicore Programs with Actors]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Oma: An attempt at reworking APT's interface]]></title>
-        <id>https://github.com/AOSC-Dev/oma</id>
-        <link href="https://github.com/AOSC-Dev/oma"/>
-        <updated>2025-10-20T11:15:50.829Z</updated>
-        <content type="html"><![CDATA[Oma: An attempt at reworking APT's interface]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Beaver-engineered dam in the Czech Republic saves government $1.2M USD]]></title>
-        <id>https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic</id>
-        <link href="https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic"/>
-        <updated>2025-10-20T11:39:20.153Z</updated>
-        <content type="html"><![CDATA[Beaver-engineered dam in the Czech Republic saves government $1.2M USD]]></content>
+        <title type="html"><![CDATA[Bat v0.26.0]]></title>
+        <id>https://github.com/sharkdp/bat/releases/tag/v0.26.0</id>
+        <link href="https://github.com/sharkdp/bat/releases/tag/v0.26.0"/>
+        <updated>2025-10-20T11:15:50.828Z</updated>
+        <content type="html"><![CDATA[Bat v0.26.0]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Airliner hit by possible space debris]]></title>
@@ -153,11 +153,18 @@
         <content type="html"><![CDATA[Airliner hit by possible space debris]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Subway station study reveals fungal communities]]></title>
-        <id>https://phys.org/news/2025-09-subway-station-reveals-fungal-communities.html</id>
-        <link href="https://phys.org/news/2025-09-subway-station-reveals-fungal-communities.html"/>
-        <updated>2025-10-20T11:15:50.834Z</updated>
-        <content type="html"><![CDATA[Subway station study reveals fungal communities]]></content>
+        <title type="html"><![CDATA[The MacBook Air 2025 Is Now Cheaper Than a Random Mid-Range Windows Laptop]]></title>
+        <id>https://kotaku.com/apple-is-going-nuts-the-macbook-air-2025-is-now-cheaper-than-a-random-mid-range-windows-laptop-2000634464</id>
+        <link href="https://kotaku.com/apple-is-going-nuts-the-macbook-air-2025-is-now-cheaper-than-a-random-mid-range-windows-laptop-2000634464"/>
+        <updated>2025-10-20T12:02:53.917Z</updated>
+        <content type="html"><![CDATA[The MacBook Air 2025 Is Now Cheaper Than a Random Mid-Range Windows Laptop]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Oma: An attempt at reworking APT's interface]]></title>
+        <id>https://github.com/AOSC-Dev/oma</id>
+        <link href="https://github.com/AOSC-Dev/oma"/>
+        <updated>2025-10-20T11:15:50.829Z</updated>
+        <content type="html"><![CDATA[Oma: An attempt at reworking APT's interface]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Dosbian: Boot to DOSBox on Raspberry Pi]]></title>
@@ -174,18 +181,18 @@
         <content type="html"><![CDATA[Oskar Speck's 1932 Kayak Journey from Germany to Australia]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Subway station study reveals fungal communities]]></title>
+        <id>https://phys.org/news/2025-09-subway-station-reveals-fungal-communities.html</id>
+        <link href="https://phys.org/news/2025-09-subway-station-reveals-fungal-communities.html"/>
+        <updated>2025-10-20T11:15:50.834Z</updated>
+        <content type="html"><![CDATA[Subway station study reveals fungal communities]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Compare Single Board Computers]]></title>
         <id>https://sbc.compare/</id>
         <link href="https://sbc.compare/"/>
         <updated>2025-10-20T11:15:50.839Z</updated>
         <content type="html"><![CDATA[Compare Single Board Computers]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ask HN: What are some impressive vibe coding projects?]]></title>
-        <id>https://news.ycombinator.com/item?id=45642527</id>
-        <link href="https://news.ycombinator.com/item?id=45642527"/>
-        <updated>2025-10-20T11:42:54.360Z</updated>
-        <content type="html"><![CDATA[Ask HN: What are some impressive vibe coding projects?]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[What's Behind the Mysterious Ancient Wall in the Gobi Desert?]]></title>
@@ -207,12 +214,5 @@
         <link href="https://blog.jupyter.org/gnu-octave-meets-jupyterlite-compute-anywhere-anytime-8b033afbbcdc"/>
         <updated>2025-10-20T11:15:50.843Z</updated>
         <content type="html"><![CDATA[GNU Octave Meets JupyterLite: Compute Anywhere, Anytime]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Comparing the power consumption of a 30 year old refrigerator to a new one]]></title>
-        <id>https://ounapuu.ee/posts/2025/10/14/fridge-power-consumption/</id>
-        <link href="https://ounapuu.ee/posts/2025/10/14/fridge-power-consumption/"/>
-        <updated>2025-10-20T11:15:50.845Z</updated>
-        <content type="html"><![CDATA[Comparing the power consumption of a 30 year old refrigerator to a new one]]></content>
     </entry>
 </feed>
