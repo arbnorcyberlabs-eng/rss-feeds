@@ -134,68 +134,6 @@
             color: #ffffff;
         }
 
-        .feed-info {
-            background: #000000;
-            color: #ffffff;
-            padding: 30px;
-            margin-bottom: 60px;
-            border: 3px solid #000000;
-        }
-
-        .feed-info h3 {
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 15px;
-            font-size: 0.9em;
-        }
-
-        .feed-url {
-            display: flex;
-            gap: 0;
-            align-items: stretch;
-            margin-top: 15px;
-            border: 2px solid #ffffff;
-        }
-
-        .feed-url input {
-            flex: 1;
-            padding: 12px 15px;
-            border: none;
-            background: #ffffff;
-            color: #000000;
-            font-family: monospace;
-            font-size: 0.85em;
-        }
-
-        .copy-button {
-            padding: 12px 25px;
-            background: #ffffff;
-            color: #000000;
-            border: none;
-            cursor: pointer;
-            font-weight: 700;
-            transition: all 0.2s ease;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            font-family: 'HandWide', sans-serif;
-            font-size: 0.85em;
-        }
-
-        .copy-button:hover {
-            background: #f0f0f0;
-        }
-
-        .copy-button.copied {
-            background: #000000;
-            color: #ffffff;
-        }
-
-        .feed-info p {
-            margin-top: 15px;
-            opacity: 0.8;
-            font-size: 0.9em;
-        }
-
         .loading {
             text-align: center;
             padding: 60px;
@@ -543,18 +481,6 @@
             <button class="update-button" id="updateButton" onclick="updateFeed()">↻ Update</button>
         </div>
 
-        <div class="feed-info">
-            <h3>Feed URL</h3>
-            <div class="feed-url">
-                <input type="text" id="feedUrl" readonly value="https://arbnorcyberlabs-eng.github.io/rss-feeds/all.xml">
-                <button class="copy-button" onclick="copyFeedUrl()">Copy</button>
-            </div>
-            <p>
-                Copy this URL to add it to your favorite RSS reader
-            </p>
-        </div>
-
-
         <div class="stats" id="stats"></div>
 
         <div id="feedContent">
@@ -600,29 +526,9 @@
                 document.querySelectorAll('.feed-button').forEach(b => b.classList.remove('active'));
                 button.classList.add('active');
                 currentFeed = button.dataset.feed;
-                updateFeedUrl();
                 loadFeed(currentFeed);
             });
         });
-
-        function updateFeedUrl() {
-            const url = `${baseUrl}${currentFeed}.xml`;
-            document.getElementById('feedUrl').value = url;
-        }
-
-        function copyFeedUrl() {
-            const input = document.getElementById('feedUrl');
-            input.select();
-            document.execCommand('copy');
-            
-            const button = event.target;
-            button.textContent = 'Copied!';
-            button.classList.add('copied');
-            setTimeout(() => {
-                button.textContent = 'Copy';
-                button.classList.remove('copied');
-            }, 2000);
-        }
 
         let isUpdating = false;
 
