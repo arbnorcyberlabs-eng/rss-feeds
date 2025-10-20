@@ -14,6 +14,9 @@ on:
       - main
       - master
 
+permissions:
+  contents: write
+
 jobs:
   generate-feeds:
     runs-on: ubuntu-latest
