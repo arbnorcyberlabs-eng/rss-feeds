@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://news.ycombinator.com/</id>
     <title>Hacker News - Front Page</title>
-    <updated>2025-10-20T11:23:15.144Z</updated>
+    <updated>2025-10-20T11:28:00.198Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://news.ycombinator.com/y18.svg</icon>
     <entry>
@@ -90,6 +90,13 @@
         <content type="html"><![CDATA[Give Your Metrics an Expiry Date]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Fractal Imaginary Cubes]]></title>
+        <id>https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html</id>
+        <link href="https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html"/>
+        <updated>2025-10-20T11:20:41.930Z</updated>
+        <content type="html"><![CDATA[Fractal Imaginary Cubes]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Major AWS outage takes down Fortnite, Alexa, Snapchat, and more]]></title>
         <id>https://www.theverge.com/news/802486/aws-outage-alexa-fortnite-snapchat-offline</id>
         <link href="https://www.theverge.com/news/802486/aws-outage-alexa-fortnite-snapchat-offline"/>
@@ -130,13 +137,6 @@
         <link href="https://github.com/AOSC-Dev/oma"/>
         <updated>2025-10-20T11:15:50.829Z</updated>
         <content type="html"><![CDATA[Oma: An attempt at reworking APT's interface]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fractal Imaginary Cubes]]></title>
-        <id>https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html</id>
-        <link href="https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html"/>
-        <updated>2025-10-20T11:20:41.930Z</updated>
-        <content type="html"><![CDATA[Fractal Imaginary Cubes]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Airliner hit by possible space debris]]></title>
