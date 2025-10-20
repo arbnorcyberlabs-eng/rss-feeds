@@ -332,7 +332,13 @@
                 const parser = new DOMParser();
                 const xml = parser.parseFromString(text, 'text/xml');
                 
-                const items = xml.querySelectorAll('item');
+                // Support both RSS (item) and Atom (entry) formats
+                let items = xml.querySelectorAll('item');
+                let isAtom = false;
+                if (items.length === 0) {
+                    items = xml.querySelectorAll('entry');
+                    isAtom = true;
+                }
                 
                 if (items.length === 0) {
                     feedContent.innerHTML = '<div class="error">No feed items found.</div>';
@@ -345,10 +351,22 @@
                 // Display items
                 let html = '<div class="feed-items">';
                 items.forEach(item => {
-                    const title = item.querySelector('title')?.textContent || 'No title';
-                    const link = item.querySelector('link')?.textContent || '#';
-                    const content = item.querySelector('description')?.textContent || '';
-                    const pubDate = item.querySelector('pubDate')?.textContent || '';
+                    let title, link, content, pubDate;
+                    
+                    if (isAtom) {
+                        // Atom format
+                        title = item.querySelector('title')?.textContent || 'No title';
+                        const linkEl = item.querySelector('link');
+                        link = linkEl?.getAttribute('href') || linkEl?.textContent || '#';
+                        content = item.querySelector('content')?.textContent || item.querySelector('summary')?.textContent || '';
+                        pubDate = item.querySelector('updated')?.textContent || item.querySelector('published')?.textContent || '';
+                    } else {
+                        // RSS format
+                        title = item.querySelector('title')?.textContent || 'No title';
+                        link = item.querySelector('link')?.textContent || '#';
+                        content = item.querySelector('description')?.textContent || '';
+                        pubDate = item.querySelector('pubDate')?.textContent || '';
+                    }
                     
                     // Try to extract feed source from title or content
                     let source = feedNames[feedName] || 'RSS Feed';
