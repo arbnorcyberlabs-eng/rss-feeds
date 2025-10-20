@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://news.ycombinator.com/</id>
     <title>Hacker News - Front Page</title>
-    <updated>2025-10-20T11:28:00.198Z</updated>
+    <updated>2025-10-20T11:39:20.764Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://news.ycombinator.com/y18.svg</icon>
     <entry>
@@ -41,18 +41,18 @@
         <content type="html"><![CDATA[Pointer Pointer (2012)]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Major AWS Outage Happening]]></title>
-        <id>https://old.reddit.com/r/aws/comments/1obd3lx/dynamodb_down_useast1/</id>
-        <link href="https://old.reddit.com/r/aws/comments/1obd3lx/dynamodb_down_useast1/"/>
-        <updated>2025-10-20T11:15:50.810Z</updated>
-        <content type="html"><![CDATA[Major AWS Outage Happening]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[AWS Multiple Services Down in us-east-1]]></title>
         <id>https://health.aws.amazon.com/health/status?ts=20251020</id>
         <link href="https://health.aws.amazon.com/health/status?ts=20251020"/>
         <updated>2025-10-20T11:15:50.810Z</updated>
         <content type="html"><![CDATA[AWS Multiple Services Down in us-east-1]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Major AWS Outage Happening]]></title>
+        <id>https://old.reddit.com/r/aws/comments/1obd3lx/dynamodb_down_useast1/</id>
+        <link href="https://old.reddit.com/r/aws/comments/1obd3lx/dynamodb_down_useast1/"/>
+        <updated>2025-10-20T11:15:50.810Z</updated>
+        <content type="html"><![CDATA[Major AWS Outage Happening]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Forth: The programming language that writes itself]]></title>
@@ -69,13 +69,6 @@
         <content type="html"><![CDATA[Novo Nordisk's Canadian Mistake]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Introduction to reverse-engineering vintage synth firmware]]></title>
-        <id>https://ajxs.me/blog/Introduction_to_Reverse-Engineering_Vintage_Synth_Firmware.html</id>
-        <link href="https://ajxs.me/blog/Introduction_to_Reverse-Engineering_Vintage_Synth_Firmware.html"/>
-        <updated>2025-10-20T11:15:50.812Z</updated>
-        <content type="html"><![CDATA[Introduction to reverse-engineering vintage synth firmware]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Doing well in your courses: Andrej's advice for success (2013)]]></title>
         <id>https://cs.stanford.edu/people/karpathy/advice.html</id>
         <link href="https://cs.stanford.edu/people/karpathy/advice.html"/>
@@ -90,11 +83,11 @@
         <content type="html"><![CDATA[Give Your Metrics an Expiry Date]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Fractal Imaginary Cubes]]></title>
-        <id>https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html</id>
-        <link href="https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html"/>
-        <updated>2025-10-20T11:20:41.930Z</updated>
-        <content type="html"><![CDATA[Fractal Imaginary Cubes]]></content>
+        <title type="html"><![CDATA[Introduction to reverse-engineering vintage synth firmware]]></title>
+        <id>https://ajxs.me/blog/Introduction_to_Reverse-Engineering_Vintage_Synth_Firmware.html</id>
+        <link href="https://ajxs.me/blog/Introduction_to_Reverse-Engineering_Vintage_Synth_Firmware.html"/>
+        <updated>2025-10-20T11:15:50.812Z</updated>
+        <content type="html"><![CDATA[Introduction to reverse-engineering vintage synth firmware]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Major AWS outage takes down Fortnite, Alexa, Snapchat, and more]]></title>
@@ -102,6 +95,13 @@
         <link href="https://www.theverge.com/news/802486/aws-outage-alexa-fortnite-snapchat-offline"/>
         <updated>2025-10-20T11:15:50.819Z</updated>
         <content type="html"><![CDATA[Major AWS outage takes down Fortnite, Alexa, Snapchat, and more]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fractal Imaginary Cubes]]></title>
+        <id>https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html</id>
+        <link href="https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html"/>
+        <updated>2025-10-20T11:20:41.930Z</updated>
+        <content type="html"><![CDATA[Fractal Imaginary Cubes]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Duke Nukem: Zero Hour N64 ROM Reverse-Engineering Project Hits 100%]]></title>
@@ -146,6 +146,13 @@
         <content type="html"><![CDATA[Airliner hit by possible space debris]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Subway station study reveals fungal communities]]></title>
+        <id>https://phys.org/news/2025-09-subway-station-reveals-fungal-communities.html</id>
+        <link href="https://phys.org/news/2025-09-subway-station-reveals-fungal-communities.html"/>
+        <updated>2025-10-20T11:15:50.834Z</updated>
+        <content type="html"><![CDATA[Subway station study reveals fungal communities]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Dosbian: Boot to DOSBox on Raspberry Pi]]></title>
         <id>https://cmaiolino.wordpress.com/dosbian/</id>
         <link href="https://cmaiolino.wordpress.com/dosbian/"/>
@@ -153,11 +160,11 @@
         <content type="html"><![CDATA[Dosbian: Boot to DOSBox on Raspberry Pi]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Subway station study reveals fungal communities]]></title>
-        <id>https://phys.org/news/2025-09-subway-station-reveals-fungal-communities.html</id>
-        <link href="https://phys.org/news/2025-09-subway-station-reveals-fungal-communities.html"/>
-        <updated>2025-10-20T11:15:50.834Z</updated>
-        <content type="html"><![CDATA[Subway station study reveals fungal communities]]></content>
+        <title type="html"><![CDATA[Beaver-engineered dam in the Czech Republic saves government $1.2M USD]]></title>
+        <id>https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic</id>
+        <link href="https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic"/>
+        <updated>2025-10-20T11:39:20.153Z</updated>
+        <content type="html"><![CDATA[Beaver-engineered dam in the Czech Republic saves government $1.2M USD]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Oskar Speck's 1932 Kayak Journey from Germany to Australia]]></title>
@@ -174,18 +181,18 @@
         <content type="html"><![CDATA[Compare Single Board Computers]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[A Tiny Typo May Explain Centuries-Old Mystery Bout Chaucer's 'Canterbury Tales']]></title>
-        <id>https://www.smithsonianmag.com/smart-news/a-tiny-typo-may-explain-a-centuries-old-mystery-about-chaucers-canterbury-tales-and-troilus-and-criseyde-180986991/</id>
-        <link href="https://www.smithsonianmag.com/smart-news/a-tiny-typo-may-explain-a-centuries-old-mystery-about-chaucers-canterbury-tales-and-troilus-and-criseyde-180986991/"/>
-        <updated>2025-10-20T11:15:50.841Z</updated>
-        <content type="html"><![CDATA[A Tiny Typo May Explain Centuries-Old Mystery Bout Chaucer's 'Canterbury Tales']]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[What's Behind the Mysterious Ancient Wall in the Gobi Desert?]]></title>
         <id>https://news.artnet.com/art-world/the-hunt-gobi-wall-mongolia-2674588</id>
         <link href="https://news.artnet.com/art-world/the-hunt-gobi-wall-mongolia-2674588"/>
         <updated>2025-10-20T11:15:50.840Z</updated>
         <content type="html"><![CDATA[What's Behind the Mysterious Ancient Wall in the Gobi Desert?]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Tiny Typo May Explain Centuries-Old Mystery Bout Chaucer's 'Canterbury Tales']]></title>
+        <id>https://www.smithsonianmag.com/smart-news/a-tiny-typo-may-explain-a-centuries-old-mystery-about-chaucers-canterbury-tales-and-troilus-and-criseyde-180986991/</id>
+        <link href="https://www.smithsonianmag.com/smart-news/a-tiny-typo-may-explain-a-centuries-old-mystery-about-chaucers-canterbury-tales-and-troilus-and-criseyde-180986991/"/>
+        <updated>2025-10-20T11:15:50.841Z</updated>
+        <content type="html"><![CDATA[A Tiny Typo May Explain Centuries-Old Mystery Bout Chaucer's 'Canterbury Tales']]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[GNU Octave Meets JupyterLite: Compute Anywhere, Anytime]]></title>
@@ -207,12 +214,5 @@
         <link href="https://southernwoodenboatsailing.com/news/the-spilhaus-projection-a-world-map-according-to-fish"/>
         <updated>2025-10-20T11:15:50.848Z</updated>
         <content type="html"><![CDATA[The Spilhaus Projection: A world map according to fish]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[From Hollywood to horticulture: Cate Blanchett on a mission to save seeds]]></title>
-        <id>https://www.bbc.com/news/articles/cwy7ekl4yl8o</id>
-        <link href="https://www.bbc.com/news/articles/cwy7ekl4yl8o"/>
-        <updated>2025-10-20T11:23:14.480Z</updated>
-        <content type="html"><![CDATA[From Hollywood to horticulture: Cate Blanchett on a mission to save seeds]]></content>
     </entry>
 </feed>
