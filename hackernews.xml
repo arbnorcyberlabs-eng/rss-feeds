@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://news.ycombinator.com/</id>
     <title>Hacker News - Front Page</title>
-    <updated>2025-10-20T12:16:56.179Z</updated>
+    <updated>2025-10-20T12:27:52.181Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://news.ycombinator.com/y18.svg</icon>
     <entry>
@@ -41,6 +41,13 @@
         <content type="html"><![CDATA[Pointer Pointer (2012)]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[The MacBook Air 2025 Is Now Cheaper Than a Random Mid-Range Windows Laptop]]></title>
+        <id>https://kotaku.com/apple-is-going-nuts-the-macbook-air-2025-is-now-cheaper-than-a-random-mid-range-windows-laptop-2000634464</id>
+        <link href="https://kotaku.com/apple-is-going-nuts-the-macbook-air-2025-is-now-cheaper-than-a-random-mid-range-windows-laptop-2000634464"/>
+        <updated>2025-10-20T12:02:53.917Z</updated>
+        <content type="html"><![CDATA[The MacBook Air 2025 Is Now Cheaper Than a Random Mid-Range Windows Laptop]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[AWS Multiple Services Down in us-east-1]]></title>
         <id>https://health.aws.amazon.com/health/status?ts=20251020</id>
         <link href="https://health.aws.amazon.com/health/status?ts=20251020"/>
@@ -69,39 +76,11 @@
         <content type="html"><![CDATA[Forth: The programming language that writes itself]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[The MacBook Air 2025 Is Now Cheaper Than a Random Mid-Range Windows Laptop]]></title>
-        <id>https://kotaku.com/apple-is-going-nuts-the-macbook-air-2025-is-now-cheaper-than-a-random-mid-range-windows-laptop-2000634464</id>
-        <link href="https://kotaku.com/apple-is-going-nuts-the-macbook-air-2025-is-now-cheaper-than-a-random-mid-range-windows-laptop-2000634464"/>
-        <updated>2025-10-20T12:02:53.917Z</updated>
-        <content type="html"><![CDATA[The MacBook Air 2025 Is Now Cheaper Than a Random Mid-Range Windows Laptop]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Novo Nordisk's Canadian Mistake]]></title>
         <id>https://www.science.org/content/blog-post/novo-nordisk-s-canadian-mistake</id>
         <link href="https://www.science.org/content/blog-post/novo-nordisk-s-canadian-mistake"/>
         <updated>2025-10-20T11:15:50.811Z</updated>
         <content type="html"><![CDATA[Novo Nordisk's Canadian Mistake]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Major AWS Outage Happening]]></title>
-        <id>https://old.reddit.com/r/aws/comments/1obd3lx/dynamodb_down_useast1/</id>
-        <link href="https://old.reddit.com/r/aws/comments/1obd3lx/dynamodb_down_useast1/"/>
-        <updated>2025-10-20T11:15:50.810Z</updated>
-        <content type="html"><![CDATA[Major AWS Outage Happening]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Doing well in your courses: Andrej's advice for success (2013)]]></title>
-        <id>https://cs.stanford.edu/people/karpathy/advice.html</id>
-        <link href="https://cs.stanford.edu/people/karpathy/advice.html"/>
-        <updated>2025-10-20T11:15:50.819Z</updated>
-        <content type="html"><![CDATA[Doing well in your courses: Andrej's advice for success (2013)]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Introduction to reverse-engineering vintage synth firmware]]></title>
-        <id>https://ajxs.me/blog/Introduction_to_Reverse-Engineering_Vintage_Synth_Firmware.html</id>
-        <link href="https://ajxs.me/blog/Introduction_to_Reverse-Engineering_Vintage_Synth_Firmware.html"/>
-        <updated>2025-10-20T11:15:50.812Z</updated>
-        <content type="html"><![CDATA[Introduction to reverse-engineering vintage synth firmware]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[State-based vs Signal-based rendering]]></title>
@@ -111,11 +90,25 @@
         <content type="html"><![CDATA[State-based vs Signal-based rendering]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Beaver-engineered dam in the Czech Republic]]></title>
-        <id>https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic</id>
-        <link href="https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic"/>
-        <updated>2025-10-20T11:39:20.153Z</updated>
-        <content type="html"><![CDATA[Beaver-engineered dam in the Czech Republic]]></content>
+        <title type="html"><![CDATA[Doing well in your courses: Andrej's advice for success (2013)]]></title>
+        <id>https://cs.stanford.edu/people/karpathy/advice.html</id>
+        <link href="https://cs.stanford.edu/people/karpathy/advice.html"/>
+        <updated>2025-10-20T11:15:50.819Z</updated>
+        <content type="html"><![CDATA[Doing well in your courses: Andrej's advice for success (2013)]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Major AWS Outage Happening]]></title>
+        <id>https://old.reddit.com/r/aws/comments/1obd3lx/dynamodb_down_useast1/</id>
+        <link href="https://old.reddit.com/r/aws/comments/1obd3lx/dynamodb_down_useast1/"/>
+        <updated>2025-10-20T11:15:50.810Z</updated>
+        <content type="html"><![CDATA[Major AWS Outage Happening]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Introduction to reverse-engineering vintage synth firmware]]></title>
+        <id>https://ajxs.me/blog/Introduction_to_Reverse-Engineering_Vintage_Synth_Firmware.html</id>
+        <link href="https://ajxs.me/blog/Introduction_to_Reverse-Engineering_Vintage_Synth_Firmware.html"/>
+        <updated>2025-10-20T11:15:50.812Z</updated>
+        <content type="html"><![CDATA[Introduction to reverse-engineering vintage synth firmware]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Major AWS outage takes down Fortnite, Alexa, Snapchat, and more]]></title>
@@ -130,6 +123,20 @@
         <link href="https://github.com/Gillou68310/DukeNukemZeroHour"/>
         <updated>2025-10-20T11:15:50.827Z</updated>
         <content type="html"><![CDATA[Duke Nukem: Zero Hour N64 ROM Reverse-Engineering Project Hits 100%]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Beaver-engineered dam in the Czech Republic]]></title>
+        <id>https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic</id>
+        <link href="https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic"/>
+        <updated>2025-10-20T11:39:20.153Z</updated>
+        <content type="html"><![CDATA[Beaver-engineered dam in the Czech Republic]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Optimizing writes to OLAP using buffers (ClickHouse, Redpanda, MooseStack)]]></title>
+        <id>https://www.fiveonefour.com/blog/optimizing-writes-to-olap-using-buffers</id>
+        <link href="https://www.fiveonefour.com/blog/optimizing-writes-to-olap-using-buffers"/>
+        <updated>2025-10-20T12:27:51.475Z</updated>
+        <content type="html"><![CDATA[Optimizing writes to OLAP using buffers (ClickHouse, Redpanda, MooseStack)]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Don't Force Your LLM to Write Terse [Q/Kdb] Code: An Information Theory Argument]]></title>
@@ -160,6 +167,13 @@
         <content type="html"><![CDATA[Airliner hit by possible space debris]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Dosbian: Boot to DOSBox on Raspberry Pi]]></title>
+        <id>https://cmaiolino.wordpress.com/dosbian/</id>
+        <link href="https://cmaiolino.wordpress.com/dosbian/"/>
+        <updated>2025-10-20T11:15:50.836Z</updated>
+        <content type="html"><![CDATA[Dosbian: Boot to DOSBox on Raspberry Pi]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Oma: An attempt at reworking APT's interface]]></title>
         <id>https://github.com/AOSC-Dev/oma</id>
         <link href="https://github.com/AOSC-Dev/oma"/>
@@ -174,13 +188,6 @@
         <content type="html"><![CDATA[Subway station study reveals fungal communities]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Dosbian: Boot to DOSBox on Raspberry Pi]]></title>
-        <id>https://cmaiolino.wordpress.com/dosbian/</id>
-        <link href="https://cmaiolino.wordpress.com/dosbian/"/>
-        <updated>2025-10-20T11:15:50.836Z</updated>
-        <content type="html"><![CDATA[Dosbian: Boot to DOSBox on Raspberry Pi]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Oskar Speck's 1932 Kayak Journey from Germany to Australia]]></title>
         <id>https://nswskc.wordpress.com/2002/10/24/incredible-journey-50/</id>
         <link href="https://nswskc.wordpress.com/2002/10/24/incredible-journey-50/"/>
@@ -193,13 +200,6 @@
         <link href="https://sbc.compare/"/>
         <updated>2025-10-20T11:15:50.839Z</updated>
         <content type="html"><![CDATA[Compare Single Board Computers]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[How Kids' TV Got Way Too Normal]]></title>
-        <id>https://slate.com/life/2025/10/kids-tv-movies-best-ratings-parents-disney.html</id>
-        <link href="https://slate.com/life/2025/10/kids-tv-movies-best-ratings-parents-disney.html"/>
-        <updated>2025-10-20T12:12:16.845Z</updated>
-        <content type="html"><![CDATA[How Kids' TV Got Way Too Normal]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[What's Behind the Mysterious Ancient Wall in the Gobi Desert?]]></title>

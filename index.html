@@ -276,16 +276,18 @@
             letter-spacing: 1px;
         }
 
-        .feed-content {
-            color: #333333;
-            line-height: 1.8;
-            margin-top: 15px;
-            font-size: 1em;
-        }
+         .feed-content {
+             color: #333333;
+             line-height: 1.8;
+             margin-top: 15px;
+             font-size: 1em;
+             max-width: 100%;
+             word-wrap: break-word;
+         }
 
-        .feed-content img {
-            display: none;
-        }
+         .feed-content img {
+             display: none;
+         }
 
         .video-indicator {
             display: inline-block;
@@ -301,10 +303,65 @@
 
         .feed-item.video {
             background: #fafafa;
+            display: flex;
+            gap: 25px;
+            align-items: flex-start;
         }
 
         .feed-item.video:hover {
             background: #f0f0f0;
+        }
+
+        .video-thumbnail {
+            flex-shrink: 0;
+            width: 280px;
+            height: auto;
+            border: 2px solid #000000;
+            transition: all 0.2s ease;
+        }
+
+        .video-thumbnail:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .video-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .video-stats {
+            display: flex;
+            gap: 20px;
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .video-stat {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.85em;
+            color: #666666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+        .video-stat-value {
+            color: #000000;
+            font-weight: 700;
+        }
+
+        @media (max-width: 768px) {
+            .feed-item.video {
+                flex-direction: column;
+            }
+
+            .video-thumbnail {
+                width: 100%;
+            }
         }
 
         .stats {
@@ -459,8 +516,16 @@
         // YouTube RSS feed URL
         const youtubeRssFeed = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCc8q4B1bj-668LMHyNXnTxQ';
         
-        // CORS proxy to fetch YouTube feed (since YouTube doesn't allow direct browser requests)
-        const corsProxy = 'https://api.allorigins.win/raw?url=';
+        // Multiple CORS proxies with fallback
+        const corsProxies = [
+            'https://corsproxy.io/?',
+            'https://api.allorigins.win/raw?url=',
+            'https://cors-anywhere.herokuapp.com/'
+        ];
+        
+        // Cache settings
+        const YOUTUBE_CACHE_KEY = 'youtube_feed_cache';
+        const YOUTUBE_CACHE_DURATION = 5 * 60 * 1000; // 5 minutes
 
         // Initialize
         document.querySelectorAll('.feed-button').forEach(button => {
@@ -499,51 +564,132 @@
             loadFeed(currentFeed, true);
         }
 
+        // Helper: Truncate text to specified length
+        function truncateText(text, maxLength = 200) {
+            if (!text) return '';
+            // Strip HTML tags first
+            const stripped = text.replace(/<[^>]*>/g, '');
+            if (stripped.length <= maxLength) return stripped;
+            return stripped.substring(0, maxLength).trim() + '...';
+        }
+
+        // Helper: Get cached YouTube feed
+        function getCachedYouTubeFeed() {
+            try {
+                const cached = localStorage.getItem(YOUTUBE_CACHE_KEY);
+                if (!cached) return null;
+                
+                const { data, timestamp } = JSON.parse(cached);
+                const age = Date.now() - timestamp;
+                
+                if (age < YOUTUBE_CACHE_DURATION) {
+                    console.log('Using cached YouTube feed');
+                    return data;
+                }
+                
+                localStorage.removeItem(YOUTUBE_CACHE_KEY);
+                return null;
+            } catch (e) {
+                return null;
+            }
+        }
+
+        // Helper: Cache YouTube feed
+        function cacheYouTubeFeed(data) {
+            try {
+                localStorage.setItem(YOUTUBE_CACHE_KEY, JSON.stringify({
+                    data,
+                    timestamp: Date.now()
+                }));
+            } catch (e) {
+                console.warn('Failed to cache YouTube feed:', e);
+            }
+        }
+
+        // Helper: Fetch YouTube with fallback proxies
+        async function fetchYouTubeFeed(forceUpdate = false) {
+            // Check cache first
+            if (!forceUpdate) {
+                const cached = getCachedYouTubeFeed();
+                if (cached) return cached;
+            }
+
+            // Try each proxy in order
+            for (let i = 0; i < corsProxies.length; i++) {
+                try {
+                    console.log(`Trying proxy ${i + 1}/${corsProxies.length}`);
+                    const proxyUrl = corsProxies[i] + encodeURIComponent(youtubeRssFeed);
+                    const response = await fetch(proxyUrl, {
+                        cache: forceUpdate ? 'reload' : 'default',
+                        signal: AbortSignal.timeout(10000) // 10 second timeout
+                    });
+                    
+                    if (response.ok) {
+                        const text = await response.text();
+                        cacheYouTubeFeed(text);
+                        return text;
+                    }
+                } catch (error) {
+                    console.warn(`Proxy ${i + 1} failed:`, error.message);
+                    if (i === corsProxies.length - 1) throw error;
+                }
+            }
+            
+            throw new Error('All proxies failed');
+        }
+
         async function loadAllFeeds(forceUpdate = false) {
             const feedContent = document.getElementById('feedContent');
-            feedContent.innerHTML = '<div class="loading">Loading all feeds...</div>';
+            feedContent.innerHTML = '<div class="loading">Loading main feeds...</div>';
 
             try {
                 const timestamp = forceUpdate ? `?t=${Date.now()}` : '';
+                const parser = new DOMParser();
                 
-                // Fetch both the combined feed and YouTube feed
-                const [combinedResponse, youtubeResponse] = await Promise.all([
-                    fetch(`${baseUrl}all.xml${timestamp}`, {
-                        cache: forceUpdate ? 'reload' : 'default'
-                    }),
-                    fetch(corsProxy + encodeURIComponent(youtubeRssFeed), {
-                        cache: forceUpdate ? 'reload' : 'default'
-                    })
-                ]);
+                // Step 1: Load main combined feed first (fast)
+                const combinedResponse = await fetch(`${baseUrl}all.xml${timestamp}`, {
+                    cache: forceUpdate ? 'reload' : 'default'
+                });
 
                 if (!combinedResponse.ok) throw new Error('Failed to load combined feed');
                 
-                const parser = new DOMParser();
                 const combinedText = await combinedResponse.text();
                 const combinedXml = parser.parseFromString(combinedText, 'text/xml');
-                
-                // Get items from combined feed
                 let allItems = Array.from(combinedXml.getElementsByTagName('entry'));
                 
-                // If YouTube feed loaded successfully, add those items too
-                if (youtubeResponse.ok) {
-                    const youtubeText = await youtubeResponse.text();
-                    const youtubeXml = parser.parseFromString(youtubeText, 'text/xml');
-                    const youtubeItems = Array.from(youtubeXml.getElementsByTagName('entry'));
-                    allItems = allItems.concat(youtubeItems);
-                }
-                
-                // Sort by date (newest first)
-                allItems.sort((a, b) => {
-                    const dateA = a.getElementsByTagName('updated')[0]?.textContent || 
-                                  a.getElementsByTagName('published')[0]?.textContent || '';
-                    const dateB = b.getElementsByTagName('updated')[0]?.textContent || 
-                                  b.getElementsByTagName('published')[0]?.textContent || '';
-                    return new Date(dateB) - new Date(dateA);
-                });
-
+                // Display main feeds immediately
                 displayFeedItems(allItems, true);
                 updateStats(allItems.length);
+                
+                // Step 2: Load YouTube feed asynchronously (slower, optional)
+                feedContent.innerHTML = '<div class="loading">Loading YouTube videos...</div>';
+                
+                try {
+                    const youtubeText = await fetchYouTubeFeed(forceUpdate);
+                    const youtubeXml = parser.parseFromString(youtubeText, 'text/xml');
+                    const youtubeItems = Array.from(youtubeXml.getElementsByTagName('entry'));
+                    
+                    if (youtubeItems.length > 0) {
+                        allItems = allItems.concat(youtubeItems);
+                        
+                        // Sort by date (newest first)
+                        allItems.sort((a, b) => {
+                            const dateA = a.getElementsByTagName('updated')[0]?.textContent || 
+                                          a.getElementsByTagName('published')[0]?.textContent || '';
+                            const dateB = b.getElementsByTagName('updated')[0]?.textContent || 
+                                          b.getElementsByTagName('published')[0]?.textContent || '';
+                            return new Date(dateB) - new Date(dateA);
+                        });
+                        
+                        // Re-display with YouTube included
+                        displayFeedItems(allItems, true);
+                        updateStats(allItems.length);
+                    }
+                } catch (ytError) {
+                    console.warn('YouTube feed failed, showing without it:', ytError.message);
+                    // Keep showing main feeds even if YouTube fails
+                }
+                
             } catch (error) {
                 console.error('Error loading feeds:', error);
                 feedContent.innerHTML = `
@@ -560,6 +706,15 @@
                     updateButton.textContent = '↻ Update';
                 }
             }
+        }
+
+        // Helper: Format large numbers (e.g., 1234567 -> 1.2M)
+        function formatNumber(num) {
+            if (!num) return '0';
+            const n = parseInt(num);
+            if (n >= 1000000) return (n / 1000000).toFixed(1) + 'M';
+            if (n >= 1000) return (n / 1000).toFixed(1) + 'K';
+            return n.toString();
         }
 
         function displayFeedItems(itemsArray, isAtom) {
@@ -582,6 +737,14 @@
                 const publishedEl = item.getElementsByTagName('published')[0];
                 pubDate = updatedEl?.textContent || publishedEl?.textContent || '';
                 
+                // Extract YouTube-specific metadata
+                const mediaThumbnail = item.getElementsByTagName('media:thumbnail')[0];
+                const thumbnailUrl = mediaThumbnail?.getAttribute('url') || '';
+                const mediaGroup = item.getElementsByTagName('media:group')[0];
+                const mediaCommunity = mediaGroup?.getElementsByTagName('media:community')[0];
+                const mediaStats = mediaCommunity?.getElementsByTagName('media:statistics')[0];
+                const views = mediaStats?.getAttribute('views') || '';
+                
                 // Try to extract feed source from title or content
                 let source = 'RSS Feed';
                 const titleMatch = title.match(/\(([^)]+)\)$/);
@@ -601,18 +764,49 @@
                 
                 // Check if it's a YouTube video
                 const isVideo = link.includes('youtube.com') || link.includes('youtu.be');
+                
+                // Truncate content to 200 characters
+                const truncatedContent = truncateText(content, 200);
 
-                html += `
-                    <div class="feed-item${isVideo ? ' video' : ''}">
-                        <span class="feed-source">${escapeHtml(source)}</span>
-                        <h3>
-                            <a href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a>
-                            ${isVideo ? '<span class="video-indicator">▶ Video</span>' : ''}
-                        </h3>
-                        ${date ? `<div class="feed-date">${escapeHtml(date)}</div>` : ''}
-                        ${content ? `<div class="feed-content">${content}</div>` : ''}
-                    </div>
-                `;
+                if (isVideo && thumbnailUrl) {
+                    // Enhanced YouTube video display with thumbnail and stats
+                    html += `
+                        <div class="feed-item video">
+                            <a href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer">
+                                <img src="${escapeHtml(thumbnailUrl)}" alt="${escapeHtml(title)}" class="video-thumbnail">
+                            </a>
+                            <div class="video-content">
+                                <span class="feed-source">${escapeHtml(source)}</span>
+                                <h3>
+                                    <a href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a>
+                                    <span class="video-indicator">▶ Video</span>
+                                </h3>
+                                ${date ? `<div class="feed-date">${escapeHtml(date)}</div>` : ''}
+                                ${truncatedContent ? `<div class="feed-content">${escapeHtml(truncatedContent)}</div>` : ''}
+                                ${views ? `
+                                    <div class="video-stats">
+                                        <div class="video-stat">
+                                            <span>👁 Views:</span>
+                                            <span class="video-stat-value">${formatNumber(views)}</span>
+                                        </div>
+                                    </div>
+                                ` : ''}
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    // Regular feed item display
+                    html += `
+                        <div class="feed-item">
+                            <span class="feed-source">${escapeHtml(source)}</span>
+                            <h3>
+                                <a href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a>
+                            </h3>
+                            ${date ? `<div class="feed-date">${escapeHtml(date)}</div>` : ''}
+                            ${truncatedContent ? `<div class="feed-content">${escapeHtml(truncatedContent)}</div>` : ''}
+                        </div>
+                    `;
+                }
             });
             html += '</div>';
             
@@ -636,10 +830,20 @@
                 
                 // Handle YouTube feed specially
                 if (feedName === 'economymedia') {
-                    url = corsProxy + encodeURIComponent(youtubeRssFeed);
-                    response = await fetch(url, {
-                        cache: forceUpdate ? 'reload' : 'default'
-                    });
+                    const youtubeText = await fetchYouTubeFeed(forceUpdate);
+                    const parser = new DOMParser();
+                    const xml = parser.parseFromString(youtubeText, 'text/xml');
+                    const items = xml.getElementsByTagName('entry');
+                    
+                    if (items.length === 0) {
+                        feedContent.innerHTML = '<div class="error">No YouTube videos found.</div>';
+                        return;
+                    }
+                    
+                    const itemsArray = Array.from(items);
+                    updateStats(itemsArray.length);
+                    displayFeedItems(itemsArray, true);
+                    return;
                 } else if (feedName === 'all') {
                     // For 'all', we'll fetch both our feeds and YouTube
                     await loadAllFeeds(forceUpdate);
