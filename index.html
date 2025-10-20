@@ -13,60 +13,59 @@
 
         body {
             font-family: 'HandWide', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: #ffffff;
+            background: #fafafa;
             min-height: 100vh;
             padding: 0;
+            padding-top: 110px;
             color: #000000;
             line-height: 1.5;
-            font-size: 15px;
+            font-size: 14px;
         }
 
         .container {
-            max-width: 1100px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
         header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #ffffff;
+            z-index: 1000;
             text-align: center;
             color: #000000;
-            margin-bottom: 35px;
-            padding: 50px 20px 35px;
+            padding: 15px 20px 10px;
             border-bottom: 2px solid #000000;
-            position: relative;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
         header::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 2px;
-            background: #000000;
+            display: none;
         }
 
         h1 {
-            font-size: 2.8em;
-            margin-bottom: 10px;
+            font-size: 1.8em;
+            margin-bottom: 5px;
             font-weight: 900;
-            letter-spacing: -1.5px;
+            letter-spacing: -1px;
             text-transform: uppercase;
         }
 
         .subtitle {
-            font-size: 0.9em;
+            font-size: 0.7em;
             opacity: 0.6;
             font-weight: 400;
-            letter-spacing: 1.5px;
+            letter-spacing: 1px;
             text-transform: uppercase;
         }
 
         .controls {
             display: flex;
-            gap: 15px;
-            margin-bottom: 35px;
+            gap: 10px;
+            margin-bottom: 20px;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
@@ -137,50 +136,50 @@
 
         .loading {
             text-align: center;
-            padding: 40px;
-            background: #f5f5f5;
-            border: 2px solid #000000;
-            color: #000000;
-            font-size: 0.9em;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
+            padding: 60px 20px;
+            background: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            color: #666666;
+            font-size: 0.85em;
+            letter-spacing: 0.5px;
         }
 
         .error {
-            background: #000000;
-            color: #ffffff;
-            padding: 20px;
-            border: 2px solid #000000;
+            background: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border: 1px solid #ffc107;
+            border-radius: 4px;
             margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
             font-size: 0.85em;
         }
 
         .feed-items {
             display: grid;
-            gap: 0;
+            grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
         }
 
         .feed-item {
             background: #ffffff;
-            padding: 25px 0;
-            border-bottom: 1px solid #e0e0e0;
+            padding: 15px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
             transition: all 0.2s ease;
-        }
-
-        .feed-item:last-child {
-            border-bottom: 2px solid #000000;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
         }
 
         .feed-item:hover {
-            background: #fafafa;
-            padding-left: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-color: #000000;
+            transform: translateY(-2px);
         }
 
         .feed-item h3 {
-            font-size: 1.35em;
-            margin-bottom: 10px;
+            font-size: 1.1em;
+            margin-bottom: 8px;
             color: #000000;
             font-weight: 700;
             line-height: 1.3;
@@ -189,40 +188,46 @@
         .feed-item h3 a {
             color: #000000;
             text-decoration: none;
-            transition: opacity 0.2s ease;
+            transition: color 0.2s ease;
         }
 
         .feed-item h3 a:hover {
-            opacity: 0.6;
+            color: #666666;
         }
 
         .feed-source {
             display: inline-block;
             background: #000000;
             color: #ffffff;
-            padding: 4px 10px;
-            font-size: 0.65em;
-            margin-bottom: 10px;
+            padding: 2px 8px;
+            font-size: 0.6em;
+            margin-bottom: 8px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.8px;
+            letter-spacing: 0.5px;
+            border-radius: 2px;
         }
 
         .feed-date {
-            color: #666666;
-            font-size: 0.75em;
-            margin-bottom: 10px;
+            color: #999999;
+            font-size: 0.7em;
+            margin-bottom: 8px;
             text-transform: uppercase;
-            letter-spacing: 0.8px;
+            letter-spacing: 0.5px;
         }
 
          .feed-content {
-             color: #333333;
-             line-height: 1.6;
-             margin-top: 10px;
-             font-size: 0.9em;
+             color: #666666;
+             line-height: 1.5;
+             margin-top: 8px;
+             font-size: 0.85em;
              max-width: 100%;
              word-wrap: break-word;
+             display: -webkit-box;
+             -webkit-line-clamp: 2;
+             line-clamp: 2;
+             -webkit-box-orient: vertical;
+             overflow: hidden;
          }
 
          .feed-content img {
@@ -231,38 +236,35 @@
 
         .video-indicator {
             display: inline-block;
-            background: #000000;
+            background: #ff0000;
             color: #ffffff;
-            padding: 3px 8px;
-            font-size: 0.6em;
-            margin-left: 8px;
+            padding: 2px 6px;
+            font-size: 0.55em;
+            margin-left: 6px;
             font-weight: 700;
             text-transform: uppercase;
-            letter-spacing: 0.8px;
+            letter-spacing: 0.5px;
+            border-radius: 2px;
         }
 
         .feed-item.video {
-            background: #fafafa;
+            grid-column: span 2;
             display: flex;
-            gap: 20px;
+            gap: 15px;
             align-items: flex-start;
-        }
-
-        .feed-item.video:hover {
-            background: #f0f0f0;
         }
 
         .video-thumbnail {
             flex-shrink: 0;
-            width: 220px;
+            width: 180px;
             height: auto;
-            border: 2px solid #000000;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
             transition: all 0.2s ease;
         }
 
         .video-thumbnail:hover {
-            transform: scale(1.02);
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+            border-color: #000000;
         }
 
         .video-content {
@@ -272,20 +274,20 @@
 
         .video-stats {
             display: flex;
-            gap: 15px;
-            margin-top: 10px;
-            padding-top: 10px;
+            gap: 12px;
+            margin-top: 8px;
+            padding-top: 8px;
             border-top: 1px solid #e0e0e0;
         }
 
         .video-stat {
             display: flex;
             align-items: center;
-            gap: 5px;
-            font-size: 0.75em;
-            color: #666666;
+            gap: 4px;
+            font-size: 0.7em;
+            color: #999999;
             text-transform: uppercase;
-            letter-spacing: 0.8px;
+            letter-spacing: 0.5px;
             font-weight: 600;
         }
 
@@ -294,8 +296,13 @@
             font-weight: 700;
         }
 
-        @media (max-width: 768px) {
+        @media (max-width: 1200px) {
+            .feed-items {
+                grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            }
+
             .feed-item.video {
+                grid-column: span 1;
                 flex-direction: column;
             }
 
@@ -308,21 +315,19 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 8px;
-            margin-top: 40px;
-            margin-bottom: 40px;
+            gap: 6px;
+            margin: 25px 0;
         }
 
         .pagination-button {
-            padding: 8px 16px;
+            padding: 6px 12px;
             background: #ffffff;
             color: #000000;
-            border: 2px solid #000000;
+            border: 1px solid #ddd;
+            border-radius: 4px;
             cursor: pointer;
-            font-size: 0.8em;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
+            font-size: 0.75em;
+            font-weight: 600;
             font-family: 'HandWide', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             transition: all 0.2s ease;
         }
@@ -330,6 +335,7 @@
         .pagination-button:hover:not(:disabled) {
             background: #000000;
             color: #ffffff;
+            border-color: #000000;
         }
 
         .pagination-button:disabled {
@@ -340,32 +346,32 @@
         .pagination-button.active {
             background: #000000;
             color: #ffffff;
+            border-color: #000000;
         }
 
         .pagination-info {
-            padding: 8px 16px;
+            padding: 6px 12px;
             font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.8px;
-            font-size: 0.8em;
+            font-size: 0.75em;
+            color: #666666;
         }
 
         .stats {
-            display: flex;
-            gap: 0;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 40px;
-            border: 2px solid #000000;
+            display: inline-flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            background: #ffffff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            border: 1px solid #e0e0e0;
         }
 
         .stat-box {
-            background: #ffffff;
-            padding: 18px 30px;
-            text-align: center;
-            border-right: 2px solid #000000;
-            flex: 1;
-            min-width: 120px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 0 10px;
+            border-right: 1px solid #e0e0e0;
         }
 
         .stat-box:last-child {
@@ -373,52 +379,56 @@
         }
 
         .stat-number {
-            font-size: 2em;
-            font-weight: 900;
+            font-size: 1em;
+            font-weight: 700;
             color: #000000;
         }
 
         .stat-label {
-            color: #666666;
-            margin-top: 6px;
+            color: #999999;
+            font-size: 0.7em;
             text-transform: uppercase;
-            font-size: 0.68em;
-            letter-spacing: 0.8px;
-            font-weight: 700;
+            letter-spacing: 0.5px;
+            font-weight: 600;
         }
 
         footer {
             text-align: center;
-            padding: 40px 20px;
-            border-top: 2px solid #000000;
-            margin-top: 50px;
+            padding: 30px 20px;
+            border-top: 1px solid #e0e0e0;
+            margin-top: 40px;
+            background: #ffffff;
         }
 
         footer p {
             opacity: 0.6;
             text-transform: uppercase;
-            letter-spacing: 1.5px;
-            font-size: 0.75em;
+            letter-spacing: 1px;
+            font-size: 0.7em;
         }
 
         @media (max-width: 768px) {
+            body {
+                padding-top: 130px;
+                font-size: 13px;
+            }
+
             h1 {
-                font-size: 2.2em;
+                font-size: 1.5em;
             }
 
             .subtitle {
-                font-size: 0.8em;
+                font-size: 0.65em;
             }
 
             header {
-                padding: 40px 20px 30px;
-                margin-bottom: 25px;
+                padding: 12px 15px 10px;
             }
 
             .controls {
                 flex-direction: column;
-                gap: 12px;
-                margin-bottom: 25px;
+                gap: 8px;
+                margin-bottom: 15px;
             }
 
             .feed-selector {
@@ -430,8 +440,8 @@
                 width: 100%;
                 border-right: none;
                 border-bottom: 2px solid #000000;
-                padding: 10px 18px;
-                font-size: 0.75em;
+                padding: 8px 15px;
+                font-size: 0.7em;
             }
 
             .feed-button:last-child {
@@ -440,48 +450,46 @@
 
             .update-button {
                 width: 100%;
-                padding: 10px 18px;
-                font-size: 0.75em;
-            }
-
-            .feed-item {
-                padding: 20px 0;
-            }
-
-            .feed-item h3 {
-                font-size: 1.2em;
-            }
-
-            .feed-source {
-                font-size: 0.6em;
-                padding: 3px 8px;
-            }
-
-            .feed-date {
+                padding: 8px 15px;
                 font-size: 0.7em;
             }
 
+            .feed-items {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .feed-item {
+                padding: 12px;
+            }
+
+            .feed-item h3 {
+                font-size: 1em;
+            }
+
+            .feed-source {
+                font-size: 0.55em;
+            }
+
+            .feed-date {
+                font-size: 0.65em;
+            }
+
             .feed-content {
-                font-size: 0.85em;
+                font-size: 0.8em;
             }
 
             .stats {
-                flex-direction: column;
-                margin-bottom: 30px;
+                flex-wrap: wrap;
+                padding: 6px 10px;
             }
 
             .stat-box {
-                border-right: none;
-                border-bottom: 2px solid #000000;
-                padding: 15px 25px;
-            }
-
-            .stat-box:last-child {
-                border-bottom: none;
+                padding: 0 8px;
             }
 
             .stat-number {
-                font-size: 1.8em;
+                font-size: 0.9em;
             }
 
             .stat-label {
@@ -490,30 +498,29 @@
 
             .pagination {
                 flex-wrap: wrap;
-                gap: 6px;
-                margin-top: 30px;
-                margin-bottom: 30px;
+                gap: 4px;
+                margin: 20px 0;
             }
 
             .pagination-button {
-                padding: 8px 14px;
-                font-size: 0.75em;
+                padding: 6px 10px;
+                font-size: 0.7em;
             }
 
             .pagination-info {
                 width: 100%;
                 text-align: center;
-                padding: 8px;
-                font-size: 0.75em;
+                padding: 6px;
+                font-size: 0.7em;
             }
 
             footer {
-                padding: 30px 20px;
-                margin-top: 40px;
+                padding: 20px 15px;
+                margin-top: 30px;
             }
 
             footer p {
-                font-size: 0.7em;
+                font-size: 0.65em;
             }
         }
     </style>
@@ -551,7 +558,7 @@
         
         // Pagination state
         let currentPage = 1;
-        let itemsPerPage = 10;
+        let itemsPerPage = 20;
         let allCurrentItems = [];
 
         const feedNames = {
@@ -1002,22 +1009,23 @@
         function updateStats(itemCount) {
             const stats = document.getElementById('stats');
             const totalPages = Math.ceil(itemCount / itemsPerPage);
+            const sources = feedNames[currentFeed] && currentFeed !== 'all' ? '1' : '6';
             stats.innerHTML = `
                 <div class="stat-box">
-                    <div class="stat-number">${itemCount}</div>
-                    <div class="stat-label">Total Items</div>
+                    <span class="stat-number">${itemCount}</span>
+                    <span class="stat-label">Items</span>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-number">${totalPages}</div>
-                    <div class="stat-label">Page${totalPages !== 1 ? 's' : ''}</div>
+                    <span class="stat-number">${totalPages}</span>
+                    <span class="stat-label">Page${totalPages !== 1 ? 's' : ''}</span>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-number">${feedNames[currentFeed] && currentFeed !== 'all' ? '1' : '6'}</div>
-                    <div class="stat-label">Source${currentFeed === 'all' ? 's' : ''}</div>
+                    <span class="stat-number">${sources}</span>
+                    <span class="stat-label">Source${currentFeed === 'all' ? 's' : ''}</span>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-number">2x</div>
-                    <div class="stat-label">Daily Updates</div>
+                    <span class="stat-number">2x</span>
+                    <span class="stat-label">Daily</span>
                 </div>
             `;
         }
