@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://news.ycombinator.com/</id>
     <title>Hacker News - Front Page</title>
-    <updated>2025-10-20T12:12:17.475Z</updated>
+    <updated>2025-10-20T12:16:56.179Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://news.ycombinator.com/y18.svg</icon>
     <entry>
@@ -48,13 +48,6 @@
         <content type="html"><![CDATA[AWS Multiple Services Down in us-east-1]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Fractal Imaginary Cubes]]></title>
-        <id>https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html</id>
-        <link href="https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html"/>
-        <updated>2025-10-20T11:20:41.930Z</updated>
-        <content type="html"><![CDATA[Fractal Imaginary Cubes]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Give Your Metrics an Expiry Date]]></title>
         <id>https://adrianhoward.com/posts/give-your-metrics-an-expiry-date/</id>
         <link href="https://adrianhoward.com/posts/give-your-metrics-an-expiry-date/"/>
@@ -62,11 +55,25 @@
         <content type="html"><![CDATA[Give Your Metrics an Expiry Date]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Fractal Imaginary Cubes]]></title>
+        <id>https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html</id>
+        <link href="https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html"/>
+        <updated>2025-10-20T11:20:41.930Z</updated>
+        <content type="html"><![CDATA[Fractal Imaginary Cubes]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Forth: The programming language that writes itself]]></title>
         <id>https://ratfactor.com/forth/the_programming_language_that_writes_itself.html</id>
         <link href="https://ratfactor.com/forth/the_programming_language_that_writes_itself.html"/>
         <updated>2025-10-20T11:15:50.810Z</updated>
         <content type="html"><![CDATA[Forth: The programming language that writes itself]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The MacBook Air 2025 Is Now Cheaper Than a Random Mid-Range Windows Laptop]]></title>
+        <id>https://kotaku.com/apple-is-going-nuts-the-macbook-air-2025-is-now-cheaper-than-a-random-mid-range-windows-laptop-2000634464</id>
+        <link href="https://kotaku.com/apple-is-going-nuts-the-macbook-air-2025-is-now-cheaper-than-a-random-mid-range-windows-laptop-2000634464"/>
+        <updated>2025-10-20T12:02:53.917Z</updated>
+        <content type="html"><![CDATA[The MacBook Air 2025 Is Now Cheaper Than a Random Mid-Range Windows Laptop]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Novo Nordisk's Canadian Mistake]]></title>
@@ -97,6 +104,13 @@
         <content type="html"><![CDATA[Introduction to reverse-engineering vintage synth firmware]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[State-based vs Signal-based rendering]]></title>
+        <id>https://jovidecroock.com/blog/state-vs-signals/</id>
+        <link href="https://jovidecroock.com/blog/state-vs-signals/"/>
+        <updated>2025-10-20T12:02:53.905Z</updated>
+        <content type="html"><![CDATA[State-based vs Signal-based rendering]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Beaver-engineered dam in the Czech Republic]]></title>
         <id>https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic</id>
         <link href="https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic"/>
@@ -118,25 +132,11 @@
         <content type="html"><![CDATA[Duke Nukem: Zero Hour N64 ROM Reverse-Engineering Project Hits 100%]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[State-based vs Signal-based rendering]]></title>
-        <id>https://jovidecroock.com/blog/state-vs-signals/</id>
-        <link href="https://jovidecroock.com/blog/state-vs-signals/"/>
-        <updated>2025-10-20T12:02:53.905Z</updated>
-        <content type="html"><![CDATA[State-based vs Signal-based rendering]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Don't Force Your LLM to Write Terse [Q/Kdb] Code: An Information Theory Argument]]></title>
         <id>https://medium.com/@gabiteodoru/dont-force-your-llm-to-write-terse-code-an-argument-from-information-theory-for-q-kdb-developers-04077c5b7038</id>
         <link href="https://medium.com/@gabiteodoru/dont-force-your-llm-to-write-terse-code-an-argument-from-information-theory-for-q-kdb-developers-04077c5b7038"/>
         <updated>2025-10-20T11:15:50.827Z</updated>
         <content type="html"><![CDATA[Don't Force Your LLM to Write Terse [Q/Kdb] Code: An Information Theory Argument]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The MacBook Air 2025 Is Now Cheaper Than a Random Mid-Range Windows Laptop]]></title>
-        <id>https://kotaku.com/apple-is-going-nuts-the-macbook-air-2025-is-now-cheaper-than-a-random-mid-range-windows-laptop-2000634464</id>
-        <link href="https://kotaku.com/apple-is-going-nuts-the-macbook-air-2025-is-now-cheaper-than-a-random-mid-range-windows-laptop-2000634464"/>
-        <updated>2025-10-20T12:02:53.917Z</updated>
-        <content type="html"><![CDATA[The MacBook Air 2025 Is Now Cheaper Than a Random Mid-Range Windows Laptop]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Gleam OTP – Fault Tolerant Multicore Programs with Actors]]></title>
