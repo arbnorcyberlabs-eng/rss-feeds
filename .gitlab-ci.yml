@@ -1,0 +1,20 @@
+image: node:20
+
+pages:
+  stage: deploy
+  script:
+    - npx feed-me-up-scotty
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
+    - master
+    - schedules
+
+# To use this:
+# 1. Go to Build → Pipeline schedules in GitLab
+# 2. Create a new schedule with interval: 30 5,17 * * *
+# 3. This will run at 5:30 AM and 5:30 PM UTC
+# Your feeds will be published at: https://<username>.gitlab.io/<project-name>/<feedname>.xml
+

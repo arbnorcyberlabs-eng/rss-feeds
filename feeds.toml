@@ -1,0 +1,41 @@
+# Feed me up, Scotty! Configuration
+# This file configures RSS feed generation from web pages using CSS selectors
+
+[default]
+timeout = 30
+
+# Wikipedia "Did you know?" feed
+[funfacts]
+title = "Wikipedia — did you know?"
+url = "https://en.wikipedia.org/wiki/Main_Page"
+entrySelector = "#mp-dyk > ul li"
+titleSelector = "b"
+linkSelector = "b a"
+
+# Wikivoyage recommendations
+[wikivoyage]
+title = "Wikivoyage recommendations"
+url = "https://en.wikivoyage.org/wiki/Main_Page"
+entrySelector = ".jcarousel-wrapper .jcarousel-item"
+titleSelector = "h2"
+linkSelector = "h2 a"
+
+# Example: Hacker News front page
+[hackernews]
+title = "Hacker News - Front Page"
+url = "https://news.ycombinator.com/"
+entrySelector = ".athing"
+titleSelector = ".titleline > a"
+linkSelector = ".titleline > a"
+contentSelector = ".titleline > a"
+
+# You can add more feeds here following the same pattern:
+# [feed-name]
+# title = "Feed Title"
+# url = "https://example.com"
+# entrySelector = "CSS selector for each entry"
+# titleSelector = "CSS selector for the title within an entry"
+# linkSelector = "CSS selector for the link within an entry"
+# contentSelector = "CSS selector for the content (optional)"
+# dateSelector = "CSS selector for the date (optional)"
+

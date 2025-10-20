@@ -1,0 +1,44 @@
+name: Generate RSS Feeds
+
+on:
+  # Run automatically twice a day
+  schedule:
+    - cron: '30 5,17 * * *'  # At 5:30 AM and 5:30 PM UTC
+  
+  # Allow manual trigger
+  workflow_dispatch:
+  
+  # Run on push to main branch
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  generate-feeds:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Generate RSS feeds
+        env:
+          CI_PAGES_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/
+        run: npx feed-me-up-scotty
+      
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+          commit_message: 'Update RSS feeds'
+
