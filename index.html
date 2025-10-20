@@ -12,234 +12,379 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'HandWide', sans-serif;
+            background: #ffffff;
             min-height: 100vh;
-            padding: 20px;
-            color: #333;
+            padding: 0;
+            color: #000000;
+            line-height: 1.6;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 0 auto;
+            padding: 0 20px;
         }
 
         header {
             text-align: center;
-            color: white;
-            margin-bottom: 40px;
-            padding: 40px 20px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            color: #000000;
+            margin-bottom: 60px;
+            padding: 80px 20px 60px;
+            border-bottom: 3px solid #000000;
+            position: relative;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: #000000;
         }
 
         h1 {
-            font-size: 3em;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            font-size: 4em;
+            margin-bottom: 15px;
+            font-weight: 900;
+            letter-spacing: -2px;
+            text-transform: uppercase;
         }
 
         .subtitle {
-            font-size: 1.2em;
-            opacity: 0.9;
+            font-size: 1.1em;
+            opacity: 0.6;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .controls {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 60px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
         }
 
         .feed-selector {
             display: flex;
-            gap: 15px;
-            margin-bottom: 30px;
+            gap: 0;
             flex-wrap: wrap;
-            justify-content: center;
+            border: 2px solid #000000;
+            width: fit-content;
+        }
+
+        .update-button {
+            padding: 15px 30px;
+            background: #000000;
+            color: #ffffff;
+            border: 2px solid #000000;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 700;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'HandWide', sans-serif;
+        }
+
+        .update-button:hover {
+            background: #ffffff;
+            color: #000000;
+        }
+
+        .update-button:active {
+            transform: scale(0.95);
+        }
+
+        .update-button.updating {
+            opacity: 0.5;
+            cursor: not-allowed;
         }
 
         .feed-button {
-            padding: 12px 24px;
-            background: white;
+            padding: 15px 30px;
+            background: #ffffff;
             border: none;
-            border-radius: 25px;
+            border-right: 2px solid #000000;
             cursor: pointer;
-            font-size: 1em;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            font-size: 0.9em;
+            font-weight: 700;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'HandWide', sans-serif;
+        }
+
+        .feed-button:last-child {
+            border-right: none;
         }
 
         .feed-button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            background: #f5f5f5;
         }
 
         .feed-button.active {
-            background: #667eea;
-            color: white;
+            background: #000000;
+            color: #ffffff;
         }
 
         .feed-info {
-            background: white;
-            padding: 20px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            background: #000000;
+            color: #ffffff;
+            padding: 30px;
+            margin-bottom: 60px;
+            border: 3px solid #000000;
+        }
+
+        .feed-info h3 {
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            font-size: 0.9em;
         }
 
         .feed-url {
             display: flex;
-            gap: 10px;
-            align-items: center;
-            margin-top: 10px;
+            gap: 0;
+            align-items: stretch;
+            margin-top: 15px;
+            border: 2px solid #ffffff;
         }
 
         .feed-url input {
             flex: 1;
-            padding: 10px;
-            border: 2px solid #e0e0e0;
-            border-radius: 8px;
+            padding: 12px 15px;
+            border: none;
+            background: #ffffff;
+            color: #000000;
             font-family: monospace;
-            font-size: 0.9em;
+            font-size: 0.85em;
         }
 
         .copy-button {
-            padding: 10px 20px;
-            background: #667eea;
-            color: white;
+            padding: 12px 25px;
+            background: #ffffff;
+            color: #000000;
             border: none;
-            border-radius: 8px;
             cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s ease;
+            font-weight: 700;
+            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'HandWide', sans-serif;
+            font-size: 0.85em;
         }
 
         .copy-button:hover {
-            background: #5568d3;
+            background: #f0f0f0;
         }
 
         .copy-button.copied {
-            background: #10b981;
+            background: #000000;
+            color: #ffffff;
+        }
+
+        .feed-info p {
+            margin-top: 15px;
+            opacity: 0.8;
+            font-size: 0.9em;
         }
 
         .loading {
             text-align: center;
-            padding: 40px;
-            background: white;
-            border-radius: 15px;
-            color: #667eea;
-            font-size: 1.2em;
+            padding: 60px;
+            background: #f5f5f5;
+            border: 2px solid #000000;
+            color: #000000;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
         }
 
         .error {
-            background: #fee;
-            color: #c33;
-            padding: 20px;
-            border-radius: 15px;
-            margin-bottom: 20px;
+            background: #000000;
+            color: #ffffff;
+            padding: 30px;
+            border: 3px solid #000000;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .feed-items {
             display: grid;
-            gap: 20px;
+            gap: 0;
         }
 
         .feed-item {
-            background: white;
-            padding: 25px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            border-left: 4px solid #667eea;
+            background: #ffffff;
+            padding: 40px 0;
+            border-bottom: 1px solid #e0e0e0;
+            transition: all 0.2s ease;
+        }
+
+        .feed-item:last-child {
+            border-bottom: 3px solid #000000;
         }
 
         .feed-item:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            background: #fafafa;
+            padding-left: 20px;
         }
 
         .feed-item h3 {
-            font-size: 1.4em;
-            margin-bottom: 10px;
-            color: #1a202c;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+            color: #000000;
+            font-weight: 700;
+            line-height: 1.2;
         }
 
         .feed-item h3 a {
-            color: #667eea;
+            color: #000000;
             text-decoration: none;
-            transition: color 0.3s ease;
+            transition: opacity 0.2s ease;
         }
 
         .feed-item h3 a:hover {
-            color: #764ba2;
-            text-decoration: underline;
+            opacity: 0.6;
         }
 
         .feed-source {
             display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 4px 12px;
-            border-radius: 12px;
-            font-size: 0.8em;
-            margin-bottom: 10px;
-            font-weight: 600;
+            background: #000000;
+            color: #ffffff;
+            padding: 6px 12px;
+            font-size: 0.7em;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .feed-date {
-            color: #718096;
-            font-size: 0.9em;
-            margin-bottom: 12px;
+            color: #666666;
+            font-size: 0.85em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .feed-content {
-            color: #4a5568;
-            line-height: 1.6;
-            margin-top: 10px;
+            color: #333333;
+            line-height: 1.8;
+            margin-top: 15px;
+            font-size: 1em;
         }
 
         .feed-content img {
             max-width: 100%;
             height: auto;
-            border-radius: 8px;
-            margin: 10px 0;
+            margin: 20px 0;
+            border: 2px solid #000000;
         }
 
         .stats {
             display: flex;
-            gap: 20px;
+            gap: 0;
             justify-content: center;
             flex-wrap: wrap;
-            margin-bottom: 30px;
+            margin-bottom: 60px;
+            border: 2px solid #000000;
         }
 
         .stat-box {
-            background: white;
-            padding: 20px 30px;
-            border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+            padding: 25px 40px;
             text-align: center;
+            border-right: 2px solid #000000;
+            flex: 1;
+            min-width: 150px;
+        }
+
+        .stat-box:last-child {
+            border-right: none;
         }
 
         .stat-number {
-            font-size: 2em;
-            font-weight: bold;
-            color: #667eea;
+            font-size: 2.5em;
+            font-weight: 900;
+            color: #000000;
         }
 
         .stat-label {
-            color: #718096;
-            margin-top: 5px;
+            color: #666666;
+            margin-top: 8px;
+            text-transform: uppercase;
+            font-size: 0.75em;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            border-top: 3px solid #000000;
+            margin-top: 80px;
+        }
+
+        footer p {
+            opacity: 0.6;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.85em;
         }
 
         @media (max-width: 768px) {
             h1 {
-                font-size: 2em;
+                font-size: 2.5em;
+            }
+
+            .controls {
+                flex-direction: column;
+                gap: 15px;
             }
 
             .feed-selector {
                 flex-direction: column;
+                width: 100%;
             }
 
             .feed-button {
                 width: 100%;
+                border-right: none;
+                border-bottom: 2px solid #000000;
+            }
+
+            .feed-button:last-child {
+                border-bottom: none;
+            }
+
+            .update-button {
+                width: 100%;
+            }
+
+            .feed-item h3 {
+                font-size: 1.4em;
+            }
+
+            .stats {
+                flex-direction: column;
+            }
+
+            .stat-box {
+                border-right: none;
+                border-bottom: 2px solid #000000;
+            }
+
+            .stat-box:last-child {
+                border-bottom: none;
             }
         }
     </style>
@@ -247,25 +392,28 @@
 <body>
     <div class="container">
         <header>
-            <h1>📡 RSS Feed Reader</h1>
-            <p class="subtitle">Your personalized news aggregator</p>
+            <h1>RSS</h1>
+            <p class="subtitle">Real Simple Syndication</p>
         </header>
 
-        <div class="feed-selector">
-            <button class="feed-button active" data-feed="all">All Feeds</button>
-            <button class="feed-button" data-feed="funfacts">Wikipedia Facts</button>
-            <button class="feed-button" data-feed="wikivoyage">Wikivoyage</button>
-            <button class="feed-button" data-feed="hackernews">Hacker News</button>
+        <div class="controls">
+            <div class="feed-selector">
+                <button class="feed-button active" data-feed="all">All Feeds</button>
+                <button class="feed-button" data-feed="funfacts">Wikipedia Facts</button>
+                <button class="feed-button" data-feed="wikivoyage">Wikivoyage</button>
+                <button class="feed-button" data-feed="hackernews">Hacker News</button>
+            </div>
+            <button class="update-button" id="updateButton" onclick="updateFeed()">↻ Update</button>
         </div>
 
         <div class="feed-info">
-            <h3>📋 Feed URL</h3>
+            <h3>Feed URL</h3>
             <div class="feed-url">
                 <input type="text" id="feedUrl" readonly value="https://arbnorcyberlabs-eng.github.io/rss-feeds/all.xml">
                 <button class="copy-button" onclick="copyFeedUrl()">Copy</button>
             </div>
-            <p style="margin-top: 10px; color: #718096; font-size: 0.9em;">
-                Copy this URL to add it to your favorite RSS reader (Feedly, Inoreader, etc.)
+            <p>
+                Copy this URL to add it to your favorite RSS reader
             </p>
         </div>
 
@@ -318,13 +466,32 @@
             }, 2000);
         }
 
-        async function loadFeed(feedName) {
+        let isUpdating = false;
+
+        function updateFeed() {
+            if (isUpdating) return;
+            loadFeed(currentFeed, true);
+        }
+
+        async function loadFeed(feedName, forceUpdate = false) {
             const feedContent = document.getElementById('feedContent');
+            const updateButton = document.getElementById('updateButton');
+            
+            if (forceUpdate) {
+                isUpdating = true;
+                updateButton.classList.add('updating');
+                updateButton.textContent = '⟳ Updating...';
+            }
+            
             feedContent.innerHTML = '<div class="loading">Loading feeds...</div>';
 
             try {
-                const url = `${baseUrl}${feedName}.xml`;
-                const response = await fetch(url);
+                // Add timestamp to force cache refresh
+                const timestamp = forceUpdate ? `?t=${Date.now()}` : '';
+                const url = `${baseUrl}${feedName}.xml${timestamp}`;
+                const response = await fetch(url, {
+                    cache: forceUpdate ? 'reload' : 'default'
+                });
                 
                 if (!response.ok) throw new Error('Failed to load feed');
                 
@@ -333,10 +500,11 @@
                 const xml = parser.parseFromString(text, 'text/xml');
                 
                 // Support both RSS (item) and Atom (entry) formats
-                let items = xml.querySelectorAll('item');
+                // Use getElementsByTagName which works better with namespaces
+                let items = xml.getElementsByTagName('item');
                 let isAtom = false;
                 if (items.length === 0) {
-                    items = xml.querySelectorAll('entry');
+                    items = xml.getElementsByTagName('entry');
                     isAtom = true;
                 }
                 
@@ -354,18 +522,27 @@
                     let title, link, content, pubDate;
                     
                     if (isAtom) {
-                        // Atom format
-                        title = item.querySelector('title')?.textContent || 'No title';
-                        const linkEl = item.querySelector('link');
+                        // Atom format - use getElementsByTagName for namespace compatibility
+                        const titleEl = item.getElementsByTagName('title')[0];
+                        title = titleEl?.textContent || 'No title';
+                        const linkEl = item.getElementsByTagName('link')[0];
                         link = linkEl?.getAttribute('href') || linkEl?.textContent || '#';
-                        content = item.querySelector('content')?.textContent || item.querySelector('summary')?.textContent || '';
-                        pubDate = item.querySelector('updated')?.textContent || item.querySelector('published')?.textContent || '';
+                        const contentEl = item.getElementsByTagName('content')[0];
+                        const summaryEl = item.getElementsByTagName('summary')[0];
+                        content = contentEl?.textContent || summaryEl?.textContent || '';
+                        const updatedEl = item.getElementsByTagName('updated')[0];
+                        const publishedEl = item.getElementsByTagName('published')[0];
+                        pubDate = updatedEl?.textContent || publishedEl?.textContent || '';
                     } else {
                         // RSS format
-                        title = item.querySelector('title')?.textContent || 'No title';
-                        link = item.querySelector('link')?.textContent || '#';
-                        content = item.querySelector('description')?.textContent || '';
-                        pubDate = item.querySelector('pubDate')?.textContent || '';
+                        const titleEl = item.getElementsByTagName('title')[0];
+                        title = titleEl?.textContent || 'No title';
+                        const linkEl = item.getElementsByTagName('link')[0];
+                        link = linkEl?.textContent || '#';
+                        const descEl = item.getElementsByTagName('description')[0];
+                        content = descEl?.textContent || '';
+                        const dateEl = item.getElementsByTagName('pubDate')[0];
+                        pubDate = dateEl?.textContent || '';
                     }
                     
                     // Try to extract feed source from title or content
@@ -381,7 +558,7 @@
                         <div class="feed-item">
                             <span class="feed-source">${escapeHtml(source)}</span>
                             <h3><a href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a></h3>
-                            ${date ? `<div class="feed-date">📅 ${escapeHtml(date)}</div>` : ''}
+                            ${date ? `<div class="feed-date">${escapeHtml(date)}</div>` : ''}
                             ${content ? `<div class="feed-content">${content}</div>` : ''}
                         </div>
                     `;
@@ -399,6 +576,14 @@
                         <small>Make sure the feed is accessible and CORS is enabled.</small>
                     </div>
                 `;
+            } finally {
+                // Reset update button state
+                if (forceUpdate) {
+                    isUpdating = false;
+                    const updateButton = document.getElementById('updateButton');
+                    updateButton.classList.remove('updating');
+                    updateButton.textContent = '↻ Update';
+                }
             }
         }
 
@@ -407,15 +592,15 @@
             stats.innerHTML = `
                 <div class="stat-box">
                     <div class="stat-number">${itemCount}</div>
-                    <div class="stat-label">Feed Items</div>
+                    <div class="stat-label">Items</div>
                 </div>
                 <div class="stat-box">
                     <div class="stat-number">${feedNames[currentFeed] ? '1' : '4'}</div>
-                    <div class="stat-label">Active Feed${currentFeed === 'all' ? 's' : ''}</div>
+                    <div class="stat-label">Source${currentFeed === 'all' ? 's' : ''}</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-number">🔄</div>
-                    <div class="stat-label">Auto-updates 2x daily</div>
+                    <div class="stat-number">2x</div>
+                    <div class="stat-label">Daily Updates</div>
                 </div>
             `;
         }
@@ -434,6 +619,11 @@
         // Load initial feed
         loadFeed(currentFeed);
     </script>
+
+    <footer>
+        <p>Automated RSS Feed Aggregator · Updates twice daily</p>
+    </footer>
+    </div>
 </body>
 </html>
 
