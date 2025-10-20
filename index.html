@@ -419,6 +419,7 @@
                 <button class="feed-button" data-feed="funfacts">Wikipedia</button>
                 <button class="feed-button" data-feed="wikivoyage">Wikivoyage</button>
                 <button class="feed-button" data-feed="hackernews">Hacker News</button>
+                <button class="feed-button" data-feed="economymedia">Economy Media</button>
             </div>
             <button class="update-button" id="updateButton" onclick="updateFeed()">↻ Update</button>
         </div>
@@ -434,19 +435,6 @@
             </p>
         </div>
 
-        <div class="feed-info" style="margin-top: 20px;">
-            <h3>▶ External Feeds (Add Separately)</h3>
-            <div style="margin-top: 15px;">
-                <strong>Economy Media YouTube</strong><br>
-                <div class="feed-url" style="margin-top: 10px;">
-                    <input type="text" readonly value="https://www.youtube.com/feeds/videos.xml?channel_id=UCc8q4B1bj-668LMHyNXnTxQ">
-                    <button class="copy-button" onclick="copyExternalFeed(this)">Copy</button>
-                </div>
-            </div>
-            <p>
-                YouTube feeds cannot be auto-aggregated. Add this URL directly to your RSS reader.
-            </p>
-        </div>
 
         <div class="stats" id="stats"></div>
 
@@ -464,8 +452,12 @@
             'all': 'Combined Feed',
             'funfacts': 'Wikipedia — did you know?',
             'wikivoyage': 'Wikivoyage recommendations',
-            'hackernews': 'Hacker News - Front Page'
+            'hackernews': 'Hacker News - Front Page',
+            'economymedia': 'Economy Media YouTube'
         };
+
+        // YouTube RSS feed URL
+        const youtubeRssFeed = 'https://www.youtube.com/feeds/videos.xml?channel_id=UCc8q4B1bj-668LMHyNXnTxQ';
 
         // Initialize
         document.querySelectorAll('.feed-button').forEach(button => {
@@ -497,24 +489,131 @@
             }, 2000);
         }
 
-        function copyExternalFeed(button) {
-            const input = button.previousElementSibling;
-            input.select();
-            document.execCommand('copy');
-            
-            button.textContent = 'Copied!';
-            button.classList.add('copied');
-            setTimeout(() => {
-                button.textContent = 'Copy';
-                button.classList.remove('copied');
-            }, 2000);
-        }
-
         let isUpdating = false;
 
         function updateFeed() {
             if (isUpdating) return;
             loadFeed(currentFeed, true);
+        }
+
+        async function loadAllFeeds(forceUpdate = false) {
+            const feedContent = document.getElementById('feedContent');
+            feedContent.innerHTML = '<div class="loading">Loading all feeds...</div>';
+
+            try {
+                const timestamp = forceUpdate ? `?t=${Date.now()}` : '';
+                
+                // Fetch both the combined feed and YouTube feed
+                const [combinedResponse, youtubeResponse] = await Promise.all([
+                    fetch(`${baseUrl}all.xml${timestamp}`, {
+                        cache: forceUpdate ? 'reload' : 'default'
+                    }),
+                    fetch(youtubeRssFeed, {
+                        cache: forceUpdate ? 'reload' : 'default'
+                    })
+                ]);
+
+                if (!combinedResponse.ok) throw new Error('Failed to load combined feed');
+                
+                const parser = new DOMParser();
+                const combinedText = await combinedResponse.text();
+                const combinedXml = parser.parseFromString(combinedText, 'text/xml');
+                
+                // Get items from combined feed
+                let allItems = Array.from(combinedXml.getElementsByTagName('entry'));
+                
+                // If YouTube feed loaded successfully, add those items too
+                if (youtubeResponse.ok) {
+                    const youtubeText = await youtubeResponse.text();
+                    const youtubeXml = parser.parseFromString(youtubeText, 'text/xml');
+                    const youtubeItems = Array.from(youtubeXml.getElementsByTagName('entry'));
+                    allItems = allItems.concat(youtubeItems);
+                }
+                
+                // Sort by date (newest first)
+                allItems.sort((a, b) => {
+                    const dateA = a.getElementsByTagName('updated')[0]?.textContent || 
+                                  a.getElementsByTagName('published')[0]?.textContent || '';
+                    const dateB = b.getElementsByTagName('updated')[0]?.textContent || 
+                                  b.getElementsByTagName('published')[0]?.textContent || '';
+                    return new Date(dateB) - new Date(dateA);
+                });
+
+                displayFeedItems(allItems, true);
+                updateStats(allItems.length);
+            } catch (error) {
+                console.error('Error loading feeds:', error);
+                feedContent.innerHTML = `
+                    <div class="error">
+                        <strong>Error loading feeds</strong><br>
+                        ${error.message}
+                    </div>
+                `;
+            } finally {
+                if (forceUpdate) {
+                    isUpdating = false;
+                    const updateButton = document.getElementById('updateButton');
+                    updateButton.classList.remove('updating');
+                    updateButton.textContent = '↻ Update';
+                }
+            }
+        }
+
+        function displayFeedItems(itemsArray, isAtom) {
+            const feedContent = document.getElementById('feedContent');
+            let html = '<div class="feed-items">';
+            
+            itemsArray.forEach(item => {
+                let title, link, content, pubDate;
+                
+                // Atom format
+                const titleEl = item.getElementsByTagName('title')[0];
+                title = titleEl?.textContent || 'No title';
+                const linkEl = item.getElementsByTagName('link')[0];
+                link = linkEl?.getAttribute('href') || linkEl?.textContent || '#';
+                const contentEl = item.getElementsByTagName('content')[0];
+                const summaryEl = item.getElementsByTagName('summary')[0];
+                const mediaDesc = item.getElementsByTagName('media:description')[0];
+                content = contentEl?.textContent || summaryEl?.textContent || mediaDesc?.textContent || '';
+                const updatedEl = item.getElementsByTagName('updated')[0];
+                const publishedEl = item.getElementsByTagName('published')[0];
+                pubDate = updatedEl?.textContent || publishedEl?.textContent || '';
+                
+                // Try to extract feed source from title or content
+                let source = 'RSS Feed';
+                const titleMatch = title.match(/\(([^)]+)\)$/);
+                if (titleMatch) {
+                    source = titleMatch[1];
+                } else if (link.includes('youtube.com') || link.includes('youtu.be')) {
+                    source = 'Economy Media YouTube';
+                } else if (link.includes('wikipedia.org')) {
+                    source = 'Wikipedia';
+                } else if (link.includes('wikivoyage.org')) {
+                    source = 'Wikivoyage';
+                } else if (link.includes('news.ycombinator.com')) {
+                    source = 'Hacker News';
+                }
+
+                const date = pubDate ? new Date(pubDate).toLocaleString() : '';
+                
+                // Check if it's a YouTube video
+                const isVideo = link.includes('youtube.com') || link.includes('youtu.be');
+
+                html += `
+                    <div class="feed-item${isVideo ? ' video' : ''}">
+                        <span class="feed-source">${escapeHtml(source)}</span>
+                        <h3>
+                            <a href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a>
+                            ${isVideo ? '<span class="video-indicator">▶ Video</span>' : ''}
+                        </h3>
+                        ${date ? `<div class="feed-date">${escapeHtml(date)}</div>` : ''}
+                        ${content ? `<div class="feed-content">${content}</div>` : ''}
+                    </div>
+                `;
+            });
+            html += '</div>';
+            
+            feedContent.innerHTML = html;
         }
 
         async function loadFeed(feedName, forceUpdate = false) {
@@ -530,12 +629,26 @@
             feedContent.innerHTML = '<div class="loading">Loading feeds...</div>';
 
             try {
-                // Add timestamp to force cache refresh
-                const timestamp = forceUpdate ? `?t=${Date.now()}` : '';
-                const url = `${baseUrl}${feedName}.xml${timestamp}`;
-                const response = await fetch(url, {
-                    cache: forceUpdate ? 'reload' : 'default'
-                });
+                let url, response;
+                
+                // Handle YouTube feed specially
+                if (feedName === 'economymedia') {
+                    url = youtubeRssFeed;
+                    response = await fetch(url, {
+                        cache: forceUpdate ? 'reload' : 'default'
+                    });
+                } else if (feedName === 'all') {
+                    // For 'all', we'll fetch both our feeds and YouTube
+                    await loadAllFeeds(forceUpdate);
+                    return;
+                } else {
+                    // Regular feeds from our GitHub Pages
+                    const timestamp = forceUpdate ? `?t=${Date.now()}` : '';
+                    url = `${baseUrl}${feedName}.xml${timestamp}`;
+                    response = await fetch(url, {
+                        cache: forceUpdate ? 'reload' : 'default'
+                    });
+                }
                 
                 if (!response.ok) throw new Error('Failed to load feed');
                 
@@ -564,61 +677,7 @@
                 updateStats(itemsArray.length);
 
                 // Display items
-                let html = '<div class="feed-items">';
-                itemsArray.forEach(item => {
-                    let title, link, content, pubDate;
-                    
-                    if (isAtom) {
-                        // Atom format - use getElementsByTagName for namespace compatibility
-                        const titleEl = item.getElementsByTagName('title')[0];
-                        title = titleEl?.textContent || 'No title';
-                        const linkEl = item.getElementsByTagName('link')[0];
-                        link = linkEl?.getAttribute('href') || linkEl?.textContent || '#';
-                        const contentEl = item.getElementsByTagName('content')[0];
-                        const summaryEl = item.getElementsByTagName('summary')[0];
-                        content = contentEl?.textContent || summaryEl?.textContent || '';
-                        const updatedEl = item.getElementsByTagName('updated')[0];
-                        const publishedEl = item.getElementsByTagName('published')[0];
-                        pubDate = updatedEl?.textContent || publishedEl?.textContent || '';
-                    } else {
-                        // RSS format
-                        const titleEl = item.getElementsByTagName('title')[0];
-                        title = titleEl?.textContent || 'No title';
-                        const linkEl = item.getElementsByTagName('link')[0];
-                        link = linkEl?.textContent || '#';
-                        const descEl = item.getElementsByTagName('description')[0];
-                        content = descEl?.textContent || '';
-                        const dateEl = item.getElementsByTagName('pubDate')[0];
-                        pubDate = dateEl?.textContent || '';
-                    }
-                    
-                    // Try to extract feed source from title or content
-                    let source = feedNames[feedName] || 'RSS Feed';
-                    const titleMatch = title.match(/\(([^)]+)\)$/);
-                    if (titleMatch) {
-                        source = titleMatch[1];
-                    }
-
-                    const date = pubDate ? new Date(pubDate).toLocaleString() : '';
-                    
-                    // Check if it's a YouTube video
-                    const isVideo = link.includes('youtube.com') || link.includes('youtu.be') || source.includes('YouTube');
-
-                    html += `
-                        <div class="feed-item${isVideo ? ' video' : ''}">
-                            <span class="feed-source">${escapeHtml(source)}</span>
-                            <h3>
-                                <a href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a>
-                                ${isVideo ? '<span class="video-indicator">▶ Video</span>' : ''}
-                            </h3>
-                            ${date ? `<div class="feed-date">${escapeHtml(date)}</div>` : ''}
-                            ${content ? `<div class="feed-content">${content}</div>` : ''}
-                        </div>
-                    `;
-                });
-                html += '</div>';
-                
-                feedContent.innerHTML = html;
+                displayFeedItems(itemsArray, isAtom);
                 
             } catch (error) {
                 console.error('Error loading feed:', error);
@@ -648,7 +707,7 @@
                     <div class="stat-label">Items</div>
                 </div>
                 <div class="stat-box">
-                    <div class="stat-number">${feedNames[currentFeed] ? '1' : '4'}</div>
+                    <div class="stat-number">${feedNames[currentFeed] && currentFeed !== 'all' ? '1' : '5'}</div>
                     <div class="stat-label">Source${currentFeed === 'all' ? 's' : ''}</div>
                 </div>
                 <div class="stat-box">
