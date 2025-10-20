@@ -12,34 +12,27 @@
         }
 
         body {
-            font-family: 'HandWide', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            background: #fafafa;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+            background: #ffffff;
             min-height: 100vh;
             padding: 0;
-            padding-top: 110px;
             color: #000000;
-            line-height: 1.5;
+            line-height: 1.4;
             font-size: 14px;
         }
 
         .container {
-            max-width: 1400px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
         header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: #ffffff;
-            z-index: 1000;
             text-align: center;
             color: #000000;
-            padding: 15px 20px 10px;
+            margin-bottom: 20px;
+            padding: 30px 20px 20px;
             border-bottom: 2px solid #000000;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
         }
 
         header::after {
@@ -47,16 +40,16 @@
         }
 
         h1 {
-            font-size: 1.8em;
-            margin-bottom: 5px;
-            font-weight: 900;
+            font-size: 2em;
+            margin-bottom: 6px;
+            font-weight: 800;
             letter-spacing: -1px;
             text-transform: uppercase;
         }
 
         .subtitle {
-            font-size: 0.7em;
-            opacity: 0.6;
+            font-size: 0.75em;
+            opacity: 0.5;
             font-weight: 400;
             letter-spacing: 1px;
             text-transform: uppercase;
@@ -64,7 +57,7 @@
 
         .controls {
             display: flex;
-            gap: 10px;
+            gap: 12px;
             margin-bottom: 20px;
             flex-wrap: wrap;
             justify-content: center;
@@ -80,17 +73,17 @@
         }
 
         .update-button {
-            padding: 10px 20px;
+            padding: 8px 16px;
             background: #000000;
             color: #ffffff;
             border: 2px solid #000000;
             cursor: pointer;
-            font-size: 0.8em;
-            font-weight: 700;
-            transition: all 0.2s ease;
+            font-size: 0.75em;
+            font-weight: 600;
+            transition: all 0.15s ease;
             text-transform: uppercase;
-            letter-spacing: 0.8px;
-            font-family: 'HandWide', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            letter-spacing: 0.5px;
+            font-family: inherit;
         }
 
         .update-button:hover {
@@ -99,7 +92,7 @@
         }
 
         .update-button:active {
-            transform: scale(0.95);
+            transform: scale(0.96);
         }
 
         .update-button.updating {
@@ -108,17 +101,17 @@
         }
 
         .feed-button {
-            padding: 10px 20px;
+            padding: 8px 16px;
             background: #ffffff;
             border: none;
             border-right: 2px solid #000000;
             cursor: pointer;
-            font-size: 0.8em;
-            font-weight: 700;
-            transition: all 0.2s ease;
+            font-size: 0.75em;
+            font-weight: 600;
+            transition: all 0.15s ease;
             text-transform: uppercase;
-            letter-spacing: 0.8px;
-            font-family: 'HandWide', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            letter-spacing: 0.5px;
+            font-family: inherit;
         }
 
         .feed-button:last-child {
@@ -136,90 +129,89 @@
 
         .loading {
             text-align: center;
-            padding: 60px 20px;
-            background: #ffffff;
-            border: 1px solid #e0e0e0;
-            border-radius: 4px;
-            color: #666666;
+            padding: 30px;
+            background: #f8f8f8;
+            border: 1px solid #ddd;
+            color: #666;
             font-size: 0.85em;
-            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
         .error {
-            background: #fff3cd;
-            color: #856404;
+            background: #000000;
+            color: #ffffff;
             padding: 15px;
-            border: 1px solid #ffc107;
-            border-radius: 4px;
-            margin-bottom: 20px;
-            font-size: 0.85em;
+            border: 2px solid #000000;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.8em;
         }
 
         .feed-items {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
-            gap: 15px;
-            margin-bottom: 20px;
+            gap: 0;
         }
 
         .feed-item {
             background: #ffffff;
-            padding: 15px;
-            border: 1px solid #e0e0e0;
-            border-radius: 4px;
-            transition: all 0.2s ease;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            padding: 18px 0;
+            border-bottom: 1px solid #e8e8e8;
+            transition: all 0.15s ease;
+        }
+
+        .feed-item:last-child {
+            border-bottom: 2px solid #000000;
         }
 
         .feed-item:hover {
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            border-color: #000000;
-            transform: translateY(-2px);
+            background: #fafafa;
+            padding-left: 12px;
         }
 
         .feed-item h3 {
-            font-size: 1.1em;
-            margin-bottom: 8px;
+            font-size: 1.15em;
+            margin-bottom: 6px;
             color: #000000;
-            font-weight: 700;
-            line-height: 1.3;
+            font-weight: 600;
+            line-height: 1.35;
         }
 
         .feed-item h3 a {
             color: #000000;
             text-decoration: none;
-            transition: color 0.2s ease;
+            transition: opacity 0.15s ease;
         }
 
         .feed-item h3 a:hover {
-            color: #666666;
+            opacity: 0.6;
         }
 
         .feed-source {
             display: inline-block;
             background: #000000;
             color: #ffffff;
-            padding: 2px 8px;
+            padding: 3px 8px;
             font-size: 0.6em;
-            margin-bottom: 8px;
-            font-weight: 700;
+            margin-bottom: 6px;
+            font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            border-radius: 2px;
         }
 
         .feed-date {
-            color: #999999;
+            color: #888888;
             font-size: 0.7em;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
 
          .feed-content {
-             color: #666666;
+             color: #555555;
              line-height: 1.5;
-             margin-top: 8px;
+             margin-top: 6px;
              font-size: 0.85em;
              max-width: 100%;
              word-wrap: break-word;
@@ -236,7 +228,7 @@
 
         .video-indicator {
             display: inline-block;
-            background: #ff0000;
+            background: #e53935;
             color: #ffffff;
             padding: 2px 6px;
             font-size: 0.55em;
@@ -244,23 +236,25 @@
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            border-radius: 2px;
         }
 
         .feed-item.video {
-            grid-column: span 2;
+            background: #fafafa;
             display: flex;
             gap: 15px;
             align-items: flex-start;
+        }
+
+        .feed-item.video:hover {
+            background: #f0f0f0;
         }
 
         .video-thumbnail {
             flex-shrink: 0;
             width: 180px;
             height: auto;
-            border: 1px solid #e0e0e0;
-            border-radius: 4px;
-            transition: all 0.2s ease;
+            border: 1px solid #ddd;
+            transition: all 0.15s ease;
         }
 
         .video-thumbnail:hover {
@@ -275,8 +269,8 @@
         .video-stats {
             display: flex;
             gap: 12px;
-            margin-top: 8px;
-            padding-top: 8px;
+            margin-top: 6px;
+            padding-top: 6px;
             border-top: 1px solid #e0e0e0;
         }
 
@@ -285,24 +279,19 @@
             align-items: center;
             gap: 4px;
             font-size: 0.7em;
-            color: #999999;
+            color: #888888;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            font-weight: 600;
+            font-weight: 500;
         }
 
         .video-stat-value {
             color: #000000;
-            font-weight: 700;
+            font-weight: 600;
         }
 
-        @media (max-width: 1200px) {
-            .feed-items {
-                grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-            }
-
+        @media (max-width: 768px) {
             .feed-item.video {
-                grid-column: span 1;
                 flex-direction: column;
             }
 
@@ -324,12 +313,13 @@
             background: #ffffff;
             color: #000000;
             border: 1px solid #ddd;
-            border-radius: 4px;
             cursor: pointer;
             font-size: 0.75em;
             font-weight: 600;
-            font-family: 'HandWide', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            transition: all 0.2s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-family: inherit;
+            transition: all 0.15s ease;
         }
 
         .pagination-button:hover:not(:disabled) {
@@ -351,7 +341,7 @@
 
         .pagination-info {
             padding: 6px 12px;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 0.75em;
             color: #666666;
         }
@@ -360,9 +350,8 @@
             display: inline-flex;
             gap: 10px;
             margin-bottom: 20px;
-            background: #ffffff;
+            background: #fafafa;
             padding: 8px 12px;
-            border-radius: 4px;
             border: 1px solid #e0e0e0;
         }
 
@@ -371,7 +360,7 @@
             align-items: center;
             gap: 6px;
             padding: 0 10px;
-            border-right: 1px solid #e0e0e0;
+            border-right: 1px solid #ddd;
         }
 
         .stat-box:last-child {
@@ -385,49 +374,49 @@
         }
 
         .stat-label {
-            color: #999999;
-            font-size: 0.7em;
+            color: #888888;
             text-transform: uppercase;
+            font-size: 0.7em;
             letter-spacing: 0.5px;
             font-weight: 600;
         }
 
         footer {
             text-align: center;
-            padding: 30px 20px;
+            padding: 25px 20px;
             border-top: 1px solid #e0e0e0;
-            margin-top: 40px;
-            background: #ffffff;
+            margin-top: 30px;
         }
 
         footer p {
-            opacity: 0.6;
+            opacity: 0.5;
             text-transform: uppercase;
             letter-spacing: 1px;
             font-size: 0.7em;
+            color: #666666;
         }
 
         @media (max-width: 768px) {
             body {
-                padding-top: 130px;
                 font-size: 13px;
             }
 
             h1 {
-                font-size: 1.5em;
+                font-size: 1.6em;
             }
 
             .subtitle {
-                font-size: 0.65em;
+                font-size: 0.7em;
             }
 
             header {
-                padding: 12px 15px 10px;
+                padding: 25px 15px 15px;
+                margin-bottom: 15px;
             }
 
             .controls {
                 flex-direction: column;
-                gap: 8px;
+                gap: 10px;
                 margin-bottom: 15px;
             }
 
@@ -454,25 +443,21 @@
                 font-size: 0.7em;
             }
 
-            .feed-items {
-                grid-template-columns: 1fr;
-                gap: 12px;
-            }
-
             .feed-item {
-                padding: 12px;
+                padding: 15px 0;
             }
 
             .feed-item h3 {
-                font-size: 1em;
+                font-size: 1.05em;
             }
 
             .feed-source {
-                font-size: 0.55em;
+                font-size: 0.58em;
+                padding: 2px 6px;
             }
 
             .feed-date {
-                font-size: 0.65em;
+                font-size: 0.68em;
             }
 
             .feed-content {
@@ -493,7 +478,7 @@
             }
 
             .stat-label {
-                font-size: 0.65em;
+                font-size: 0.68em;
             }
 
             .pagination {
@@ -516,7 +501,7 @@
 
             footer {
                 padding: 20px 15px;
-                margin-top: 30px;
+                margin-top: 25px;
             }
 
             footer p {
@@ -558,7 +543,7 @@
         
         // Pagination state
         let currentPage = 1;
-        let itemsPerPage = 20;
+        let itemsPerPage = 15;
         let allCurrentItems = [];
 
         const feedNames = {
