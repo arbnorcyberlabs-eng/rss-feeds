@@ -284,10 +284,27 @@
         }
 
         .feed-content img {
-            max-width: 100%;
-            height: auto;
-            margin: 20px 0;
-            border: 2px solid #000000;
+            display: none;
+        }
+
+        .video-indicator {
+            display: inline-block;
+            background: #000000;
+            color: #ffffff;
+            padding: 4px 10px;
+            font-size: 0.7em;
+            margin-left: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .feed-item.video {
+            background: #fafafa;
+        }
+
+        .feed-item.video:hover {
+            background: #f0f0f0;
         }
 
         .stats {
@@ -399,7 +416,7 @@
         <div class="controls">
             <div class="feed-selector">
                 <button class="feed-button active" data-feed="all">All Feeds</button>
-                <button class="feed-button" data-feed="funfacts">Wikipedia Facts</button>
+                <button class="feed-button" data-feed="funfacts">Wikipedia</button>
                 <button class="feed-button" data-feed="wikivoyage">Wikivoyage</button>
                 <button class="feed-button" data-feed="hackernews">Hacker News</button>
             </div>
@@ -414,6 +431,20 @@
             </div>
             <p>
                 Copy this URL to add it to your favorite RSS reader
+            </p>
+        </div>
+
+        <div class="feed-info" style="margin-top: 20px;">
+            <h3>▶ External Feeds (Add Separately)</h3>
+            <div style="margin-top: 15px;">
+                <strong>Economy Media YouTube</strong><br>
+                <div class="feed-url" style="margin-top: 10px;">
+                    <input type="text" readonly value="https://www.youtube.com/feeds/videos.xml?channel_id=UCc8q4B1bj-668LMHyNXnTxQ">
+                    <button class="copy-button" onclick="copyExternalFeed(this)">Copy</button>
+                </div>
+            </div>
+            <p>
+                YouTube feeds cannot be auto-aggregated. Add this URL directly to your RSS reader.
             </p>
         </div>
 
@@ -458,6 +489,19 @@
             document.execCommand('copy');
             
             const button = event.target;
+            button.textContent = 'Copied!';
+            button.classList.add('copied');
+            setTimeout(() => {
+                button.textContent = 'Copy';
+                button.classList.remove('copied');
+            }, 2000);
+        }
+
+        function copyExternalFeed(button) {
+            const input = button.previousElementSibling;
+            input.select();
+            document.execCommand('copy');
+            
             button.textContent = 'Copied!';
             button.classList.add('copied');
             setTimeout(() => {
@@ -556,11 +600,17 @@
                     }
 
                     const date = pubDate ? new Date(pubDate).toLocaleString() : '';
+                    
+                    // Check if it's a YouTube video
+                    const isVideo = link.includes('youtube.com') || link.includes('youtu.be') || source.includes('YouTube');
 
                     html += `
-                        <div class="feed-item">
+                        <div class="feed-item${isVideo ? ' video' : ''}">
                             <span class="feed-source">${escapeHtml(source)}</span>
-                            <h3><a href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a></h3>
+                            <h3>
+                                <a href="${escapeHtml(link)}" target="_blank" rel="noopener noreferrer">${escapeHtml(title)}</a>
+                                ${isVideo ? '<span class="video-indicator">▶ Video</span>' : ''}
+                            </h3>
                             ${date ? `<div class="feed-date">${escapeHtml(date)}</div>` : ''}
                             ${content ? `<div class="feed-content">${content}</div>` : ''}
                         </div>

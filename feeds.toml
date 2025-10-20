@@ -30,11 +30,12 @@ linkSelector = ".titleline > a"
 contentSelector = ".titleline > a"
 
 # Economy Media YouTube Channel
-# YouTube channels have native RSS feeds - no scraping needed!
-# Replace CHANNEL_ID_HERE with the actual channel ID
-# See YOUTUBE-SETUP.md for instructions on how to get the channel ID
-[economymedia]
-title = "Economy Media YouTube"
-url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCc8q4B1bj-668LMHyNXnTxQ"
-# Note: Native RSS feeds don't need selectors - remove this line after adding real channel ID
+# NOTE: Feed me up, Scotty cannot aggregate existing RSS feeds
+# YouTube already provides native RSS feeds, so we can't include it here
+# The feed URL is: https://www.youtube.com/feeds/videos.xml?channel_id=UCc8q4B1bj-668LMHyNXnTxQ
+# Users can add this URL directly to their RSS readers
+
+# If you want to include YouTube, you would need to:
+# 1. Use a different RSS aggregation tool that supports combining feeds
+# 2. Manually add the YouTube RSS URL to your reader alongside the generated feeds
 
