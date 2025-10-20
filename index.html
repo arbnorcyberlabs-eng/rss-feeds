@@ -364,6 +364,52 @@
             }
         }
 
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        .pagination-button {
+            padding: 12px 20px;
+            background: #ffffff;
+            color: #000000;
+            border: 2px solid #000000;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: 'HandWide', sans-serif;
+            transition: all 0.2s ease;
+        }
+
+        .pagination-button:hover:not(:disabled) {
+            background: #000000;
+            color: #ffffff;
+        }
+
+        .pagination-button:disabled {
+            opacity: 0.3;
+            cursor: not-allowed;
+        }
+
+        .pagination-button.active {
+            background: #000000;
+            color: #ffffff;
+        }
+
+        .pagination-info {
+            padding: 12px 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9em;
+        }
+
         .stats {
             display: flex;
             gap: 0;
@@ -460,6 +506,22 @@
             .stat-box:last-child {
                 border-bottom: none;
             }
+
+            .pagination {
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+
+            .pagination-button {
+                padding: 10px 15px;
+                font-size: 0.8em;
+            }
+
+            .pagination-info {
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+            }
         }
     </style>
 </head>
@@ -504,6 +566,11 @@
         const baseUrl = 'https://arbnorcyberlabs-eng.github.io/rss-feeds/';
         let currentFeed = 'all';
         let allFeeds = {};
+        
+        // Pagination state
+        let currentPage = 1;
+        let itemsPerPage = 10;
+        let allCurrentItems = [];
 
         const feedNames = {
             'all': 'Combined Feed',
@@ -717,11 +784,61 @@
             return n.toString();
         }
 
-        function displayFeedItems(itemsArray, isAtom) {
+        // Render pagination controls
+        function renderPagination() {
+            const totalPages = Math.ceil(allCurrentItems.length / itemsPerPage);
+            if (totalPages <= 1) return ''; // No pagination needed
+            
+            let html = '<div class="pagination">';
+            
+            // Previous button
+            html += `<button class="pagination-button" onclick="changePage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>← Prev</button>`;
+            
+            // Page numbers (show max 5 pages)
+            const maxPagesToShow = 5;
+            let startPage = Math.max(1, currentPage - Math.floor(maxPagesToShow / 2));
+            let endPage = Math.min(totalPages, startPage + maxPagesToShow - 1);
+            
+            if (endPage - startPage < maxPagesToShow - 1) {
+                startPage = Math.max(1, endPage - maxPagesToShow + 1);
+            }
+            
+            for (let i = startPage; i <= endPage; i++) {
+                html += `<button class="pagination-button ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">${i}</button>`;
+            }
+            
+            // Next button
+            html += `<button class="pagination-button" onclick="changePage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>Next →</button>`;
+            
+            // Page info
+            html += `<span class="pagination-info">Page ${currentPage} of ${totalPages}</span>`;
+            
+            html += '</div>';
+            return html;
+        }
+
+        // Change page
+        function changePage(page) {
+            const totalPages = Math.ceil(allCurrentItems.length / itemsPerPage);
+            if (page < 1 || page > totalPages) return;
+            
+            currentPage = page;
+            displayCurrentPage();
+            
+            // Scroll to top smoothly
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Display current page of items
+        function displayCurrentPage() {
             const feedContent = document.getElementById('feedContent');
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const pageItems = allCurrentItems.slice(startIndex, endIndex);
+            
             let html = '<div class="feed-items">';
             
-            itemsArray.forEach(item => {
+            pageItems.forEach(item => {
                 let title, link, content, pubDate;
                 
                 // Atom format
@@ -810,7 +927,20 @@
             });
             html += '</div>';
             
+            // Add pagination controls
+            html += renderPagination();
+            
             feedContent.innerHTML = html;
+        }
+
+        // Main function to display feed items with pagination
+        function displayFeedItems(itemsArray, isAtom) {
+            // Store all items for pagination
+            allCurrentItems = itemsArray;
+            currentPage = 1; // Reset to first page
+            
+            // Display first page
+            displayCurrentPage();
         }
 
         async function loadFeed(feedName, forceUpdate = false) {
@@ -908,10 +1038,15 @@
 
         function updateStats(itemCount) {
             const stats = document.getElementById('stats');
+            const totalPages = Math.ceil(itemCount / itemsPerPage);
             stats.innerHTML = `
                 <div class="stat-box">
                     <div class="stat-number">${itemCount}</div>
-                    <div class="stat-label">Items</div>
+                    <div class="stat-label">Total Items</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">${totalPages}</div>
+                    <div class="stat-label">Page${totalPages !== 1 ? 's' : ''}</div>
                 </div>
                 <div class="stat-box">
                     <div class="stat-number">${feedNames[currentFeed] && currentFeed !== 'all' ? '1' : '5'}</div>

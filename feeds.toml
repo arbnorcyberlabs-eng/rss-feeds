@@ -20,10 +20,10 @@ entrySelector = ".jcarousel-wrapper .jcarousel-item"
 titleSelector = "h2"
 linkSelector = "h2 a"
 
-# Example: Hacker News front page
+# Hacker News - Multiple pages (90 items)
 [hackernews]
 title = "Hacker News - Front Page"
-url = "https://news.ycombinator.com/"
+url = ["https://news.ycombinator.com/", "https://news.ycombinator.com/?p=2", "https://news.ycombinator.com/?p=3"]
 entrySelector = ".athing"
 titleSelector = ".titleline > a"
 linkSelector = ".titleline > a"
