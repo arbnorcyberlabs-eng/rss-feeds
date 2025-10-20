@@ -29,13 +29,12 @@ titleSelector = ".titleline > a"
 linkSelector = ".titleline > a"
 contentSelector = ".titleline > a"
 
-# You can add more feeds here following the same pattern:
-# [feed-name]
-# title = "Feed Title"
-# url = "https://example.com"
-# entrySelector = "CSS selector for each entry"
-# titleSelector = "CSS selector for the title within an entry"
-# linkSelector = "CSS selector for the link within an entry"
-# contentSelector = "CSS selector for the content (optional)"
-# dateSelector = "CSS selector for the date (optional)"
+# Economy Media YouTube Channel
+# YouTube channels have native RSS feeds - no scraping needed!
+# Replace CHANNEL_ID_HERE with the actual channel ID
+# See YOUTUBE-SETUP.md for instructions on how to get the channel ID
+[economymedia]
+title = "Economy Media YouTube"
+url = "https://www.youtube.com/feeds/videos.xml?channel_id=UCc8q4B1bj-668LMHyNXnTxQ"
+# Note: Native RSS feeds don't need selectors - remove this line after adding real channel ID
 
