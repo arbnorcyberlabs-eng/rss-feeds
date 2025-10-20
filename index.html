@@ -127,6 +127,76 @@
             color: #ffffff;
         }
 
+        .search-container {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            border: 2px solid #000000;
+            background: #ffffff;
+            padding: 0;
+            max-width: 400px;
+            flex: 1;
+        }
+
+        .search-input {
+            border: none;
+            padding: 8px 12px;
+            font-size: 0.85em;
+            font-family: inherit;
+            flex: 1;
+            outline: none;
+            min-width: 200px;
+        }
+
+        .search-input::placeholder {
+            color: #999;
+        }
+
+        .clear-search {
+            padding: 8px 12px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            font-size: 0.9em;
+            color: #666;
+            transition: all 0.15s ease;
+            display: none;
+        }
+
+        .clear-search.visible {
+            display: block;
+        }
+
+        .clear-search:hover {
+            color: #000000;
+        }
+
+        .stats-inline {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 12px;
+            background: #fafafa;
+            border: 1px solid #e0e0e0;
+            font-size: 0.75em;
+            color: #666;
+            white-space: nowrap;
+        }
+
+        .stats-inline .stat-number {
+            font-weight: 700;
+            color: #000000;
+            font-size: 1.1em;
+        }
+
         .loading {
             text-align: center;
             padding: 30px;
@@ -346,40 +416,6 @@
             color: #666666;
         }
 
-        .stats {
-            display: inline-flex;
-            gap: 10px;
-            margin-bottom: 20px;
-            background: #fafafa;
-            padding: 8px 12px;
-            border: 1px solid #e0e0e0;
-        }
-
-        .stat-box {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            padding: 0 10px;
-            border-right: 1px solid #ddd;
-        }
-
-        .stat-box:last-child {
-            border-right: none;
-        }
-
-        .stat-number {
-            font-size: 1em;
-            font-weight: 700;
-            color: #000000;
-        }
-
-        .stat-label {
-            color: #888888;
-            text-transform: uppercase;
-            font-size: 0.7em;
-            letter-spacing: 0.5px;
-            font-weight: 600;
-        }
 
         footer {
             text-align: center;
@@ -418,6 +454,28 @@
                 flex-direction: column;
                 gap: 10px;
                 margin-bottom: 15px;
+            }
+
+            .search-container {
+                flex-direction: column;
+                gap: 10px;
+                margin-bottom: 15px;
+            }
+
+            .search-box {
+                width: 100%;
+                max-width: 100%;
+            }
+
+            .search-input {
+                min-width: 0;
+                font-size: 0.8em;
+            }
+
+            .stats-inline {
+                width: 100%;
+                justify-content: center;
+                font-size: 0.7em;
             }
 
             .feed-selector {
@@ -462,23 +520,6 @@
 
             .feed-content {
                 font-size: 0.8em;
-            }
-
-            .stats {
-                flex-wrap: wrap;
-                padding: 6px 10px;
-            }
-
-            .stat-box {
-                padding: 0 8px;
-            }
-
-            .stat-number {
-                font-size: 0.9em;
-            }
-
-            .stat-label {
-                font-size: 0.68em;
             }
 
             .pagination {
@@ -529,7 +570,22 @@
             <button class="update-button" id="updateButton" onclick="updateFeed()">↻ Update</button>
         </div>
 
-        <div class="stats" id="stats"></div>
+        <div class="search-container">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Search feeds..."
+                    oninput="handleSearch()"
+                />
+                <button class="clear-search" id="clearSearch" onclick="clearSearch()">✕</button>
+            </div>
+            <div class="stats-inline" id="stats">
+                <span class="stat-number">0</span>
+                <span>items</span>
+            </div>
+        </div>
 
         <div id="feedContent">
             <div class="loading">Loading feeds...</div>
@@ -545,6 +601,8 @@
         let currentPage = 1;
         let itemsPerPage = 15;
         let allCurrentItems = [];
+        let filteredItems = [];
+        let searchQuery = '';
 
         const feedNames = {
             'all': 'Combined Feed',
@@ -741,7 +799,8 @@
 
         // Render pagination controls
         function renderPagination() {
-            const totalPages = Math.ceil(allCurrentItems.length / itemsPerPage);
+            const itemsToDisplay = searchQuery ? filteredItems : allCurrentItems;
+            const totalPages = Math.ceil(itemsToDisplay.length / itemsPerPage);
             if (totalPages <= 1) return ''; // No pagination needed
             
             let html = '<div class="pagination">';
@@ -774,7 +833,8 @@
 
         // Change page
         function changePage(page) {
-            const totalPages = Math.ceil(allCurrentItems.length / itemsPerPage);
+            const itemsToDisplay = searchQuery ? filteredItems : allCurrentItems;
+            const totalPages = Math.ceil(itemsToDisplay.length / itemsPerPage);
             if (page < 1 || page > totalPages) return;
             
             currentPage = page;
@@ -787,9 +847,10 @@
         // Display current page of items
         function displayCurrentPage() {
             const feedContent = document.getElementById('feedContent');
+            const itemsToDisplay = searchQuery ? filteredItems : allCurrentItems;
             const startIndex = (currentPage - 1) * itemsPerPage;
             const endIndex = startIndex + itemsPerPage;
-            const pageItems = allCurrentItems.slice(startIndex, endIndex);
+            const pageItems = itemsToDisplay.slice(startIndex, endIndex);
             
             let html = '<div class="feed-items">';
             
@@ -892,7 +953,16 @@
         function displayFeedItems(itemsArray, isAtom) {
             // Store all items for pagination
             allCurrentItems = itemsArray;
+            filteredItems = [...itemsArray]; // Initialize filtered items
             currentPage = 1; // Reset to first page
+            
+            // Clear search when loading new feed
+            const searchInput = document.getElementById('searchInput');
+            if (searchInput && searchInput.value) {
+                searchInput.value = '';
+                searchQuery = '';
+                document.getElementById('clearSearch').classList.remove('visible');
+            }
             
             // Display first page
             displayCurrentPage();
@@ -993,26 +1063,52 @@
 
         function updateStats(itemCount) {
             const stats = document.getElementById('stats');
-            const totalPages = Math.ceil(itemCount / itemsPerPage);
-            const sources = feedNames[currentFeed] && currentFeed !== 'all' ? '1' : '6';
             stats.innerHTML = `
-                <div class="stat-box">
-                    <span class="stat-number">${itemCount}</span>
-                    <span class="stat-label">Items</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-number">${totalPages}</span>
-                    <span class="stat-label">Page${totalPages !== 1 ? 's' : ''}</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-number">${sources}</span>
-                    <span class="stat-label">Source${currentFeed === 'all' ? 's' : ''}</span>
-                </div>
-                <div class="stat-box">
-                    <span class="stat-number">2x</span>
-                    <span class="stat-label">Daily</span>
-                </div>
+                <span class="stat-number">${itemCount}</span>
+                <span>item${itemCount !== 1 ? 's' : ''}</span>
             `;
+        }
+
+        function handleSearch() {
+            const searchInput = document.getElementById('searchInput');
+            const clearBtn = document.getElementById('clearSearch');
+            searchQuery = searchInput.value.toLowerCase().trim();
+            
+            // Show/hide clear button
+            if (searchQuery) {
+                clearBtn.classList.add('visible');
+            } else {
+                clearBtn.classList.remove('visible');
+            }
+            
+            // Filter items
+            if (searchQuery) {
+                filteredItems = allCurrentItems.filter(item => {
+                    const titleEl = item.getElementsByTagName('title')[0];
+                    const title = titleEl?.textContent || '';
+                    const contentEl = item.getElementsByTagName('content')[0];
+                    const summaryEl = item.getElementsByTagName('summary')[0];
+                    const content = contentEl?.textContent || summaryEl?.textContent || '';
+                    
+                    return title.toLowerCase().includes(searchQuery) || 
+                           content.toLowerCase().includes(searchQuery);
+                });
+            } else {
+                filteredItems = [...allCurrentItems];
+            }
+            
+            // Reset to first page
+            currentPage = 1;
+            
+            // Update display
+            updateStats(filteredItems.length);
+            displayCurrentPage();
+        }
+
+        function clearSearch() {
+            const searchInput = document.getElementById('searchInput');
+            searchInput.value = '';
+            handleSearch();
         }
 
         function escapeHtml(text) {

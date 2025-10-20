@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://arbnorcyberlabs-eng.github.io/rss-feeds/all.xml</id>
     <title>Combined feed</title>
-    <updated>2025-10-20T14:38:06.850Z</updated>
+    <updated>2025-10-20T14:53:30.024Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <entry>
         <title type="html"><![CDATA[Mecodema howittii (Wikipedia — did you know?)]]></title>
@@ -132,6 +132,13 @@
         <content type="html"><![CDATA[DeepSeek OCR]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[BERT Is Just a Single Text Diffusion Step (Hacker News - Front Page)]]></title>
+        <id>https://nathan.rs/posts/roberta-diffusion/</id>
+        <link href="https://nathan.rs/posts/roberta-diffusion/"/>
+        <updated>2025-10-20T14:38:02.510Z</updated>
+        <content type="html"><![CDATA[BERT Is Just a Single Text Diffusion Step]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Space Elevator (Hacker News - Front Page)]]></title>
         <id>https://neal.fun/space-elevator/</id>
         <link href="https://neal.fun/space-elevator/"/>
@@ -160,13 +167,6 @@
         <content type="html"><![CDATA[Docker Systems Status: Full Service Disruption]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Modeling Others' Minds as Code (Hacker News - Front Page)]]></title>
-        <id>https://arxiv.org/abs/2510.01272</id>
-        <link href="https://arxiv.org/abs/2510.01272"/>
-        <updated>2025-10-20T14:28:53.350Z</updated>
-        <content type="html"><![CDATA[Modeling Others' Minds as Code]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Calculating legally compliant rent late fees across U.S. states (Hacker News - Front Page)]]></title>
         <id>https://www.rentlatefee.com/</id>
         <link href="https://www.rentlatefee.com/"/>
@@ -181,25 +181,25 @@
         <content type="html"><![CDATA[Show HN: Playwright Skill for Claude Code – Less context than playwright-MCP]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[BERT Is Just a Single Text Diffusion Step (Hacker News - Front Page)]]></title>
-        <id>https://nathan.rs/posts/roberta-diffusion/</id>
-        <link href="https://nathan.rs/posts/roberta-diffusion/"/>
-        <updated>2025-10-20T14:38:02.510Z</updated>
-        <content type="html"><![CDATA[BERT Is Just a Single Text Diffusion Step]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Rental Income Analyzer (Hacker News - Front Page)]]></title>
-        <id>https://www.rebux.app/</id>
-        <link href="https://www.rebux.app/"/>
-        <updated>2025-10-20T14:38:02.510Z</updated>
-        <content type="html"><![CDATA[Rental Income Analyzer]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Entire Linux Network stack diagram (2024) (Hacker News - Front Page)]]></title>
         <id>https://zenodo.org/records/14179366</id>
         <link href="https://zenodo.org/records/14179366"/>
         <updated>2025-10-20T11:15:50.810Z</updated>
         <content type="html"><![CDATA[Entire Linux Network stack diagram (2024)]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Modeling Others' Minds as Code (Hacker News - Front Page)]]></title>
+        <id>https://arxiv.org/abs/2510.01272</id>
+        <link href="https://arxiv.org/abs/2510.01272"/>
+        <updated>2025-10-20T14:28:53.350Z</updated>
+        <content type="html"><![CDATA[Modeling Others' Minds as Code]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to Enter a City Like a King (Hacker News - Front Page)]]></title>
+        <id>https://worldhistory.substack.com/p/how-to-enter-a-city-like-a-king</id>
+        <link href="https://worldhistory.substack.com/p/how-to-enter-a-city-like-a-king"/>
+        <updated>2025-10-20T13:48:33.639Z</updated>
+        <content type="html"><![CDATA[How to Enter a City Like a King]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[AWS Outage: A Single Cloud Region Shouldn't Take Down the World. But It Did (Hacker News - Front Page)]]></title>
@@ -223,13 +223,6 @@
         <content type="html"><![CDATA[AWS Multiple Services Down in us-east-1]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[How to Enter a City Like a King (Hacker News - Front Page)]]></title>
-        <id>https://worldhistory.substack.com/p/how-to-enter-a-city-like-a-king</id>
-        <link href="https://worldhistory.substack.com/p/how-to-enter-a-city-like-a-king"/>
-        <updated>2025-10-20T13:48:33.639Z</updated>
-        <content type="html"><![CDATA[How to Enter a City Like a King]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[The Peach meme: On CRTs, pixels and signal quality (again) (Hacker News - Front Page)]]></title>
         <id>https://www.datagubbe.se/crt2/</id>
         <link href="https://www.datagubbe.se/crt2/"/>
@@ -237,18 +230,18 @@
         <content type="html"><![CDATA[The Peach meme: On CRTs, pixels and signal quality (again)]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Forth: The programming language that writes itself (Hacker News - Front Page)]]></title>
-        <id>https://ratfactor.com/forth/the_programming_language_that_writes_itself.html</id>
-        <link href="https://ratfactor.com/forth/the_programming_language_that_writes_itself.html"/>
-        <updated>2025-10-20T11:15:50.810Z</updated>
-        <content type="html"><![CDATA[Forth: The programming language that writes itself]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[State-based vs Signal-based rendering (Hacker News - Front Page)]]></title>
         <id>https://jovidecroock.com/blog/state-vs-signals/</id>
         <link href="https://jovidecroock.com/blog/state-vs-signals/"/>
         <updated>2025-10-20T12:02:53.905Z</updated>
         <content type="html"><![CDATA[State-based vs Signal-based rendering]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Forth: The programming language that writes itself (Hacker News - Front Page)]]></title>
+        <id>https://ratfactor.com/forth/the_programming_language_that_writes_itself.html</id>
+        <link href="https://ratfactor.com/forth/the_programming_language_that_writes_itself.html"/>
+        <updated>2025-10-20T11:15:50.810Z</updated>
+        <content type="html"><![CDATA[Forth: The programming language that writes itself]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Alibaba Cloud claims to reduce Nvidia GPU use by 82% (Hacker News - Front Page)]]></title>
@@ -265,20 +258,6 @@
         <content type="html"><![CDATA[Doing well in your courses: Andrej's advice for success (2013)]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[AI-generated 'poverty porn' fake images being used by aid agencies (Hacker News - Front Page)]]></title>
-        <id>https://www.theguardian.com/global-development/2025/oct/20/ai-generated-poverty-porn-fake-images-being-used-by-aid-agencies</id>
-        <link href="https://www.theguardian.com/global-development/2025/oct/20/ai-generated-poverty-porn-fake-images-being-used-by-aid-agencies"/>
-        <updated>2025-10-20T12:47:32.978Z</updated>
-        <content type="html"><![CDATA[AI-generated 'poverty porn' fake images being used by aid agencies]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Optimizing writes to OLAP using buffers (ClickHouse, Redpanda, MooseStack) (Hacker News - Front Page)]]></title>
-        <id>https://www.fiveonefour.com/blog/optimizing-writes-to-olap-using-buffers</id>
-        <link href="https://www.fiveonefour.com/blog/optimizing-writes-to-olap-using-buffers"/>
-        <updated>2025-10-20T12:27:51.475Z</updated>
-        <content type="html"><![CDATA[Optimizing writes to OLAP using buffers (ClickHouse, Redpanda, MooseStack)]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Novo Nordisk's Canadian Mistake (Hacker News - Front Page)]]></title>
         <id>https://www.science.org/content/blog-post/novo-nordisk-s-canadian-mistake</id>
         <link href="https://www.science.org/content/blog-post/novo-nordisk-s-canadian-mistake"/>
@@ -293,11 +272,11 @@
         <content type="html"><![CDATA[Introduction to reverse-engineering vintage synth firmware]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Fractal Imaginary Cubes (Hacker News - Front Page)]]></title>
-        <id>https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html</id>
-        <link href="https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html"/>
-        <updated>2025-10-20T11:20:41.930Z</updated>
-        <content type="html"><![CDATA[Fractal Imaginary Cubes]]></content>
+        <title type="html"><![CDATA[Optimizing writes to OLAP using buffers (ClickHouse, Redpanda, MooseStack) (Hacker News - Front Page)]]></title>
+        <id>https://www.fiveonefour.com/blog/optimizing-writes-to-olap-using-buffers</id>
+        <link href="https://www.fiveonefour.com/blog/optimizing-writes-to-olap-using-buffers"/>
+        <updated>2025-10-20T12:27:51.475Z</updated>
+        <content type="html"><![CDATA[Optimizing writes to OLAP using buffers (ClickHouse, Redpanda, MooseStack)]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Major AWS Outage Happening (Hacker News - Front Page)]]></title>
@@ -307,11 +286,25 @@
         <content type="html"><![CDATA[Major AWS Outage Happening]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Fractal Imaginary Cubes (Hacker News - Front Page)]]></title>
+        <id>https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html</id>
+        <link href="https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html"/>
+        <updated>2025-10-20T11:20:41.930Z</updated>
+        <content type="html"><![CDATA[Fractal Imaginary Cubes]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Duke Nukem: Zero Hour N64 ROM Reverse-Engineering Project Hits 100% (Hacker News - Front Page)]]></title>
         <id>https://github.com/Gillou68310/DukeNukemZeroHour</id>
         <link href="https://github.com/Gillou68310/DukeNukemZeroHour"/>
         <updated>2025-10-20T11:15:50.827Z</updated>
         <content type="html"><![CDATA[Duke Nukem: Zero Hour N64 ROM Reverse-Engineering Project Hits 100%]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AI-generated 'poverty porn' fake images being used by aid agencies (Hacker News - Front Page)]]></title>
+        <id>https://www.theguardian.com/global-development/2025/oct/20/ai-generated-poverty-porn-fake-images-being-used-by-aid-agencies</id>
+        <link href="https://www.theguardian.com/global-development/2025/oct/20/ai-generated-poverty-porn-fake-images-being-used-by-aid-agencies"/>
+        <updated>2025-10-20T12:47:32.978Z</updated>
+        <content type="html"><![CDATA[AI-generated 'poverty porn' fake images being used by aid agencies]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Major AWS outage takes down Fortnite, Alexa, Snapchat, and more (Hacker News - Front Page)]]></title>
@@ -321,39 +314,11 @@
         <content type="html"><![CDATA[Major AWS outage takes down Fortnite, Alexa, Snapchat, and more]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Beaver-engineered dam in the Czech Republic (Hacker News - Front Page)]]></title>
-        <id>https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic</id>
-        <link href="https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic"/>
-        <updated>2025-10-20T11:39:20.153Z</updated>
-        <content type="html"><![CDATA[Beaver-engineered dam in the Czech Republic]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Airliner hit by possible space debris (Hacker News - Front Page)]]></title>
         <id>https://avbrief.com/united-max-hit-by-falling-object-at-36000-feet/</id>
         <link href="https://avbrief.com/united-max-hit-by-falling-object-at-36000-feet/"/>
         <updated>2025-10-20T11:15:50.832Z</updated>
         <content type="html"><![CDATA[Airliner hit by possible space debris]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Gleam OTP – Fault Tolerant Multicore Programs with Actors (Hacker News - Front Page)]]></title>
-        <id>https://github.com/gleam-lang/otp</id>
-        <link href="https://github.com/gleam-lang/otp"/>
-        <updated>2025-10-20T11:15:50.830Z</updated>
-        <content type="html"><![CDATA[Gleam OTP – Fault Tolerant Multicore Programs with Actors]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Don't Force Your LLM to Write Terse [Q/Kdb] Code: An Information Theory Argument (Hacker News - Front Page)]]></title>
-        <id>https://medium.com/@gabiteodoru/dont-force-your-llm-to-write-terse-code-an-argument-from-information-theory-for-q-kdb-developers-04077c5b7038</id>
-        <link href="https://medium.com/@gabiteodoru/dont-force-your-llm-to-write-terse-code-an-argument-from-information-theory-for-q-kdb-developers-04077c5b7038"/>
-        <updated>2025-10-20T11:15:50.827Z</updated>
-        <content type="html"><![CDATA[Don't Force Your LLM to Write Terse [Q/Kdb] Code: An Information Theory Argument]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Show HN: I got tired of managing dev environments, so I built ServBay (Hacker News - Front Page)]]></title>
-        <id>https://www.servbay.com/</id>
-        <link href="https://www.servbay.com/"/>
-        <updated>2025-10-20T14:38:03.139Z</updated>
-        <content type="html"><![CDATA[Show HN: I got tired of managing dev environments, so I built ServBay]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Give Your Metrics an Expiry Date (Hacker News - Front Page)]]></title>
@@ -363,6 +328,27 @@
         <content type="html"><![CDATA[Give Your Metrics an Expiry Date]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Gleam OTP – Fault Tolerant Multicore Programs with Actors (Hacker News - Front Page)]]></title>
+        <id>https://github.com/gleam-lang/otp</id>
+        <link href="https://github.com/gleam-lang/otp"/>
+        <updated>2025-10-20T11:15:50.830Z</updated>
+        <content type="html"><![CDATA[Gleam OTP – Fault Tolerant Multicore Programs with Actors]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Beaver-engineered dam in the Czech Republic (Hacker News - Front Page)]]></title>
+        <id>https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic</id>
+        <link href="https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic"/>
+        <updated>2025-10-20T11:39:20.153Z</updated>
+        <content type="html"><![CDATA[Beaver-engineered dam in the Czech Republic]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Don't Force Your LLM to Write Terse [Q/Kdb] Code: An Information Theory Argument (Hacker News - Front Page)]]></title>
+        <id>https://medium.com/@gabiteodoru/dont-force-your-llm-to-write-terse-code-an-argument-from-information-theory-for-q-kdb-developers-04077c5b7038</id>
+        <link href="https://medium.com/@gabiteodoru/dont-force-your-llm-to-write-terse-code-an-argument-from-information-theory-for-q-kdb-developers-04077c5b7038"/>
+        <updated>2025-10-20T11:15:50.827Z</updated>
+        <content type="html"><![CDATA[Don't Force Your LLM to Write Terse [Q/Kdb] Code: An Information Theory Argument]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[The FTC Is Disappearing Blog Posts About AI Published During Lina Khan's Tenure (Hacker News - Front Page)]]></title>
         <id>https://www.wired.com/story/ftc-removes-blog-posts-about-ai-authored-by-by-lina-khan/</id>
         <link href="https://www.wired.com/story/ftc-removes-blog-posts-about-ai-authored-by-by-lina-khan/"/>
@@ -370,11 +356,11 @@
         <content type="html"><![CDATA[The FTC Is Disappearing Blog Posts About AI Published During Lina Khan's Tenure]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Bat v0.26.0 (Hacker News - Front Page)]]></title>
-        <id>https://github.com/sharkdp/bat/releases/tag/v0.26.0</id>
-        <link href="https://github.com/sharkdp/bat/releases/tag/v0.26.0"/>
-        <updated>2025-10-20T11:15:50.828Z</updated>
-        <content type="html"><![CDATA[Bat v0.26.0]]></content>
+        <title type="html"><![CDATA[Show HN: I got tired of managing dev environments, so I built ServBay (Hacker News - Front Page)]]></title>
+        <id>https://www.servbay.com/</id>
+        <link href="https://www.servbay.com/"/>
+        <updated>2025-10-20T14:38:03.139Z</updated>
+        <content type="html"><![CDATA[Show HN: I got tired of managing dev environments, so I built ServBay]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Dosbian: Boot to DOSBox on Raspberry Pi (Hacker News - Front Page)]]></title>
@@ -384,11 +370,25 @@
         <content type="html"><![CDATA[Dosbian: Boot to DOSBox on Raspberry Pi]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Bat v0.26.0 (Hacker News - Front Page)]]></title>
+        <id>https://github.com/sharkdp/bat/releases/tag/v0.26.0</id>
+        <link href="https://github.com/sharkdp/bat/releases/tag/v0.26.0"/>
+        <updated>2025-10-20T11:15:50.828Z</updated>
+        <content type="html"><![CDATA[Bat v0.26.0]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Oma: An attempt at reworking APT's interface (Hacker News - Front Page)]]></title>
         <id>https://github.com/AOSC-Dev/oma</id>
         <link href="https://github.com/AOSC-Dev/oma"/>
         <updated>2025-10-20T11:15:50.829Z</updated>
         <content type="html"><![CDATA[Oma: An attempt at reworking APT's interface]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Qt Group Buys IAR Systems Group (Hacker News - Front Page)]]></title>
+        <id>https://www.qt.io/stock/qt-completes-the-recommended-public-cash-offer-to-the-shareholders-of-iar-systems-group-1760351460000-3668995</id>
+        <link href="https://www.qt.io/stock/qt-completes-the-recommended-public-cash-offer-to-the-shareholders-of-iar-systems-group-1760351460000-3668995"/>
+        <updated>2025-10-20T14:53:26.607Z</updated>
+        <content type="html"><![CDATA[Qt Group Buys IAR Systems Group]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Oskar Speck's 1932 Kayak Journey from Germany to Australia (Hacker News - Front Page)]]></title>
@@ -440,13 +440,6 @@
         <content type="html"><![CDATA[Comparing the power consumption of a 30 year old refrigerator to a new one]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Ask HN: What are some impressive vibe coding projects? (Hacker News - Front Page)]]></title>
-        <id>https://news.ycombinator.com/item?id=45642527</id>
-        <link href="https://news.ycombinator.com/item?id=45642527"/>
-        <updated>2025-10-20T12:47:32.975Z</updated>
-        <content type="html"><![CDATA[Ask HN: What are some impressive vibe coding projects?]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[The Spilhaus Projection: A world map according to fish (Hacker News - Front Page)]]></title>
         <id>https://southernwoodenboatsailing.com/news/the-spilhaus-projection-a-world-map-according-to-fish</id>
         <link href="https://southernwoodenboatsailing.com/news/the-spilhaus-projection-a-world-map-according-to-fish"/>
@@ -454,11 +447,18 @@
         <content type="html"><![CDATA[The Spilhaus Projection: A world map according to fish]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Unmasking the Snitch Puck: IoT surveillance tech in the school bathroom [video] (Hacker News - Front Page)]]></title>
-        <id>https://www.youtube.com/watch?v=WCnojaEpF2I</id>
-        <link href="https://www.youtube.com/watch?v=WCnojaEpF2I"/>
-        <updated>2025-10-20T14:17:39.444Z</updated>
-        <content type="html"><![CDATA[Unmasking the Snitch Puck: IoT surveillance tech in the school bathroom [video]]]></content>
+        <title type="html"><![CDATA[Ask HN: What are some impressive vibe coding projects? (Hacker News - Front Page)]]></title>
+        <id>https://news.ycombinator.com/item?id=45642527</id>
+        <link href="https://news.ycombinator.com/item?id=45642527"/>
+        <updated>2025-10-20T12:47:32.975Z</updated>
+        <content type="html"><![CDATA[Ask HN: What are some impressive vibe coding projects?]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GoFundMe created 1.4M donation pages for nonprofits; organizations had no clue (Hacker News - Front Page)]]></title>
+        <id>https://abc7news.com/post/gofundme-created-14-million-donation-pages-nonprofits-bay-area-organizations-had-no-clue/18013410/</id>
+        <link href="https://abc7news.com/post/gofundme-created-14-million-donation-pages-nonprofits-bay-area-organizations-had-no-clue/18013410/"/>
+        <updated>2025-10-20T13:58:07.625Z</updated>
+        <content type="html"><![CDATA[GoFundMe created 1.4M donation pages for nonprofits; organizations had no clue]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Berty – an encrypted and offline peer-to-peer messenger with no central server (Hacker News - Front Page)]]></title>
@@ -475,18 +475,18 @@
         <content type="html"><![CDATA[A Tiny Typo May Explain Centuries-Old Mystery Bout Chaucer's 'Canterbury Tales']]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Unmasking the Snitch Puck: IoT surveillance tech in the school bathroom [video] (Hacker News - Front Page)]]></title>
+        <id>https://www.youtube.com/watch?v=WCnojaEpF2I</id>
+        <link href="https://www.youtube.com/watch?v=WCnojaEpF2I"/>
+        <updated>2025-10-20T14:17:39.444Z</updated>
+        <content type="html"><![CDATA[Unmasking the Snitch Puck: IoT surveillance tech in the school bathroom [video]]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Servo v0.0.1 Released (Hacker News - Front Page)]]></title>
         <id>https://github.com/servo/servo/releases/tag/v0.0.1</id>
         <link href="https://github.com/servo/servo/releases/tag/v0.0.1"/>
         <updated>2025-10-20T12:47:32.982Z</updated>
         <content type="html"><![CDATA[Servo v0.0.1 Released]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GoFundMe created 1.4M donation pages for nonprofits; organizations had no clue (Hacker News - Front Page)]]></title>
-        <id>https://abc7news.com/post/gofundme-created-14-million-donation-pages-nonprofits-bay-area-organizations-had-no-clue/18013410/</id>
-        <link href="https://abc7news.com/post/gofundme-created-14-million-donation-pages-nonprofits-bay-area-organizations-had-no-clue/18013410/"/>
-        <updated>2025-10-20T13:58:07.625Z</updated>
-        <content type="html"><![CDATA[GoFundMe created 1.4M donation pages for nonprofits; organizations had no clue]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[QuickDrawViewer: A Mac OS X utility to visualise QuickDraw (PICT) files (Hacker News - Front Page)]]></title>
@@ -559,18 +559,18 @@
         <content type="html"><![CDATA[Deterministic multithreading is hard (2024)]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Nvidia has produced the first Blackwell wafer on US soil (Hacker News - Front Page)]]></title>
-        <id>https://www.xda-developers.com/nvidia-produced-first-blackwell-wafer-us-soil/</id>
-        <link href="https://www.xda-developers.com/nvidia-produced-first-blackwell-wafer-us-soil/"/>
-        <updated>2025-10-20T12:47:32.988Z</updated>
-        <content type="html"><![CDATA[Nvidia has produced the first Blackwell wafer on US soil]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[The Cancer Imaging Archive (TCIA) (Hacker News - Front Page)]]></title>
         <id>https://www.cancerimagingarchive.net/</id>
         <link href="https://www.cancerimagingarchive.net/"/>
         <updated>2025-10-20T12:47:32.991Z</updated>
         <content type="html"><![CDATA[The Cancer Imaging Archive (TCIA)]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Nvidia has produced the first Blackwell wafer on US soil (Hacker News - Front Page)]]></title>
+        <id>https://www.xda-developers.com/nvidia-produced-first-blackwell-wafer-us-soil/</id>
+        <link href="https://www.xda-developers.com/nvidia-produced-first-blackwell-wafer-us-soil/"/>
+        <updated>2025-10-20T12:47:32.988Z</updated>
+        <content type="html"><![CDATA[Nvidia has produced the first Blackwell wafer on US soil]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Discussion of the Benefits and Drawbacks of the Git Pre-Commit Hook (Hacker News - Front Page)]]></title>
@@ -622,13 +622,6 @@
         <content type="html"><![CDATA[Ntfsplus: NTFS Filesystem Remake]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Ibuprofen: An everyday drug might offer protection against cancer (Hacker News - Front Page)]]></title>
-        <id>https://medicalxpress.com/news/2025-10-ibuprofen-everyday-drug-cancer.html</id>
-        <link href="https://medicalxpress.com/news/2025-10-ibuprofen-everyday-drug-cancer.html"/>
-        <updated>2025-10-20T14:17:39.992Z</updated>
-        <content type="html"><![CDATA[Ibuprofen: An everyday drug might offer protection against cancer]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Improving PixelMelt's Kindle Web Deobfuscator (Hacker News - Front Page)]]></title>
         <id>https://shkspr.mobi/blog/2025/10/improving-pixelmelts-kindle-web-deobfuscator/</id>
         <link href="https://shkspr.mobi/blog/2025/10/improving-pixelmelts-kindle-web-deobfuscator/"/>
@@ -650,6 +643,20 @@
         <content type="html"><![CDATA[Ask HN: What are people doing to get off of VMware?]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Ibuprofen: An everyday drug might offer protection against cancer (Hacker News - Front Page)]]></title>
+        <id>https://medicalxpress.com/news/2025-10-ibuprofen-everyday-drug-cancer.html</id>
+        <link href="https://medicalxpress.com/news/2025-10-ibuprofen-everyday-drug-cancer.html"/>
+        <updated>2025-10-20T14:17:39.992Z</updated>
+        <content type="html"><![CDATA[Ibuprofen: An everyday drug might offer protection against cancer]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Could the XZ backdoor been detected with better Git/Deb packaging practices? (Hacker News - Front Page)]]></title>
+        <id>https://optimizedbyotto.com/post/xz-backdoor-debian-git-detection/</id>
+        <link href="https://optimizedbyotto.com/post/xz-backdoor-debian-git-detection/"/>
+        <updated>2025-10-20T12:47:33.012Z</updated>
+        <content type="html"><![CDATA[Could the XZ backdoor been detected with better Git/Deb packaging practices?]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Scheme Reports at Fifty (Hacker News - Front Page)]]></title>
         <id>https://crumbles.blog/posts/2025-10-18-scheme-reports-at-fifty.html</id>
         <link href="https://crumbles.blog/posts/2025-10-18-scheme-reports-at-fifty.html"/>
@@ -664,32 +671,11 @@
         <content type="html"><![CDATA[Replua.nvim – an Emacs-style scratch buffer for executing Lua]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Could the XZ backdoor been detected with better Git/Deb packaging practices? (Hacker News - Front Page)]]></title>
-        <id>https://optimizedbyotto.com/post/xz-backdoor-debian-git-detection/</id>
-        <link href="https://optimizedbyotto.com/post/xz-backdoor-debian-git-detection/"/>
-        <updated>2025-10-20T12:47:33.012Z</updated>
-        <content type="html"><![CDATA[Could the XZ backdoor been detected with better Git/Deb packaging practices?]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Why Aluminum in Vaccines Is Safe–and Often Essential (Hacker News - Front Page)]]></title>
-        <id>https://www.scientificamerican.com/article/why-aluminum-in-vaccines-is-safe-and-often-essential/</id>
-        <link href="https://www.scientificamerican.com/article/why-aluminum-in-vaccines-is-safe-and-often-essential/"/>
-        <updated>2025-10-20T14:17:39.997Z</updated>
-        <content type="html"><![CDATA[Why Aluminum in Vaccines Is Safe–and Often Essential]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[OpenAI researcher announced GPT-5 math breakthrough that never happened (Hacker News - Front Page)]]></title>
         <id>https://the-decoder.com/leading-openai-researcher-announced-a-gpt-5-math-breakthrough-that-never-happened/</id>
         <link href="https://the-decoder.com/leading-openai-researcher-announced-a-gpt-5-math-breakthrough-that-never-happened/"/>
         <updated>2025-10-20T12:47:33.531Z</updated>
         <content type="html"><![CDATA[OpenAI researcher announced GPT-5 math breakthrough that never happened]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Rethinking Async Loops in JavaScript (Hacker News - Front Page)]]></title>
-        <id>https://allthingssmitty.com/2025/10/20/rethinking-async-loops-in-javascript/</id>
-        <link href="https://allthingssmitty.com/2025/10/20/rethinking-async-loops-in-javascript/"/>
-        <updated>2025-10-20T13:48:34.190Z</updated>
-        <content type="html"><![CDATA[Rethinking Async Loops in JavaScript]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[The Accountability Problem (Hacker News - Front Page)]]></title>
@@ -706,25 +692,11 @@
         <content type="html"><![CDATA[Show HN: Open-Source Voice AI Badge Powered by ESP32+WebRTC]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Intel's 80386 turned 40 this week (Hacker News - Front Page)]]></title>
-        <id>https://www.tomshardware.com/tech-industry/semiconductors/intel-386-at-40</id>
-        <link href="https://www.tomshardware.com/tech-industry/semiconductors/intel-386-at-40"/>
-        <updated>2025-10-20T13:48:34.785Z</updated>
-        <content type="html"><![CDATA[Intel's 80386 turned 40 this week]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Xubuntu.org Might Be Compromised (Hacker News - Front Page)]]></title>
         <id>https://old.reddit.com/r/Ubuntu/comments/1oa4549/xubuntuorg_might_be_compromised/</id>
         <link href="https://old.reddit.com/r/Ubuntu/comments/1oa4549/xubuntuorg_might_be_compromised/"/>
         <updated>2025-10-20T12:47:33.539Z</updated>
         <content type="html"><![CDATA[Xubuntu.org Might Be Compromised]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Adding Breadcrumbs to a Rails Application (Hacker News - Front Page)]]></title>
-        <id>https://avohq.io/blog/breadcrumbs-rails</id>
-        <link href="https://avohq.io/blog/breadcrumbs-rails"/>
-        <updated>2025-10-20T12:47:33.008Z</updated>
-        <content type="html"><![CDATA[Adding Breadcrumbs to a Rails Application]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Original C64 Lode Runner Source Code (Hacker News - Front Page)]]></title>
@@ -734,11 +706,25 @@
         <content type="html"><![CDATA[Original C64 Lode Runner Source Code]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[The Trinary Dream Endures (Hacker News - Front Page)]]></title>
-        <id>https://www.robinsloan.com/lab/trinary-dream/</id>
-        <link href="https://www.robinsloan.com/lab/trinary-dream/"/>
-        <updated>2025-10-20T12:47:33.540Z</updated>
-        <content type="html"><![CDATA[The Trinary Dream Endures]]></content>
+        <title type="html"><![CDATA[Adding Breadcrumbs to a Rails Application (Hacker News - Front Page)]]></title>
+        <id>https://avohq.io/blog/breadcrumbs-rails</id>
+        <link href="https://avohq.io/blog/breadcrumbs-rails"/>
+        <updated>2025-10-20T12:47:33.008Z</updated>
+        <content type="html"><![CDATA[Adding Breadcrumbs to a Rails Application]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Why Aluminum in Vaccines Is Safe–and Often Essential (Hacker News - Front Page)]]></title>
+        <id>https://www.scientificamerican.com/article/why-aluminum-in-vaccines-is-safe-and-often-essential/</id>
+        <link href="https://www.scientificamerican.com/article/why-aluminum-in-vaccines-is-safe-and-often-essential/"/>
+        <updated>2025-10-20T14:17:39.997Z</updated>
+        <content type="html"><![CDATA[Why Aluminum in Vaccines Is Safe–and Often Essential]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Intel's 80386 turned 40 this week (Hacker News - Front Page)]]></title>
+        <id>https://www.tomshardware.com/tech-industry/semiconductors/intel-386-at-40</id>
+        <link href="https://www.tomshardware.com/tech-industry/semiconductors/intel-386-at-40"/>
+        <updated>2025-10-20T13:48:34.785Z</updated>
+        <content type="html"><![CDATA[Intel's 80386 turned 40 this week]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[IDEs we had 30 years ago and lost (2023) (Hacker News - Front Page)]]></title>
@@ -748,6 +734,13 @@
         <content type="html"><![CDATA[IDEs we had 30 years ago and lost (2023)]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[The Trinary Dream Endures (Hacker News - Front Page)]]></title>
+        <id>https://www.robinsloan.com/lab/trinary-dream/</id>
+        <link href="https://www.robinsloan.com/lab/trinary-dream/"/>
+        <updated>2025-10-20T12:47:33.540Z</updated>
+        <content type="html"><![CDATA[The Trinary Dream Endures]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Feed me up, Scotty – custom RSS feed generation using CSS selectors (Hacker News - Front Page)]]></title>
         <id>https://feed-me-up-scotty.vincenttunru.com/</id>
         <link href="https://feed-me-up-scotty.vincenttunru.com/"/>
@@ -755,10 +748,17 @@
         <content type="html"><![CDATA[Feed me up, Scotty – custom RSS feed generation using CSS selectors]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Andrej Karpathy – It will take a decade to work through the issues with agents (Hacker News - Front Page)]]></title>
+        <id>https://www.dwarkesh.com/p/andrej-karpathy</id>
+        <link href="https://www.dwarkesh.com/p/andrej-karpathy"/>
+        <updated>2025-10-20T14:53:27.212Z</updated>
+        <content type="html"><![CDATA[Andrej Karpathy –&nbsp;It will take a decade to work through the issues with agents]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[undefined (Medium - Matteo's Articles)]]></title>
         <id>https://arbnorcyberlabs-eng.github.io/rss-feeds/all.xml</id>
         <link href="https://arbnorcyberlabs-eng.github.io/rss-feeds/all.xml"/>
-        <updated>2025-10-20T14:38:06.171Z</updated>
+        <updated>2025-10-20T14:53:29.308Z</updated>
         <content type="html"><![CDATA[<div class="background">
             <div class="content">
         <h1>Medium will be back.</h1>       
