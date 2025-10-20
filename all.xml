@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://arbnorcyberlabs-eng.github.io/rss-feeds/all.xml</id>
     <title>Combined feed</title>
-    <updated>2025-10-20T11:20:42.670Z</updated>
+    <updated>2025-10-20T11:23:15.146Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <entry>
         <title type="html"><![CDATA[Mecodema howittii (Wikipedia — did you know?)]]></title>
@@ -202,13 +202,6 @@
         <content type="html"><![CDATA[Doing well in your courses: Andrej's advice for success (2013)]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Adding Breadcrumbs to a Rails Application (Hacker News - Front Page)]]></title>
-        <id>https://avohq.io/blog/breadcrumbs-rails</id>
-        <link href="https://avohq.io/blog/breadcrumbs-rails"/>
-        <updated>2025-10-20T11:15:50.827Z</updated>
-        <content type="html"><![CDATA[Adding Breadcrumbs to a Rails Application]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Give Your Metrics an Expiry Date (Hacker News - Front Page)]]></title>
         <id>https://adrianhoward.com/posts/give-your-metrics-an-expiry-date/</id>
         <link href="https://adrianhoward.com/posts/give-your-metrics-an-expiry-date/"/>
@@ -244,6 +237,13 @@
         <content type="html"><![CDATA[Bat v0.26.0 Released]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Gleam OTP – Fault Tolerant Multicore Programs with Actors (Hacker News - Front Page)]]></title>
+        <id>https://github.com/gleam-lang/otp</id>
+        <link href="https://github.com/gleam-lang/otp"/>
+        <updated>2025-10-20T11:15:50.830Z</updated>
+        <content type="html"><![CDATA[Gleam OTP – Fault Tolerant Multicore Programs with Actors]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Oma: An attempt at reworking APT's interface (Hacker News - Front Page)]]></title>
         <id>https://github.com/AOSC-Dev/oma</id>
         <link href="https://github.com/AOSC-Dev/oma"/>
@@ -256,13 +256,6 @@
         <link href="https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html"/>
         <updated>2025-10-20T11:20:41.930Z</updated>
         <content type="html"><![CDATA[Fractal Imaginary Cubes]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Gleam OTP – Fault Tolerant Multicore Programs with Actors (Hacker News - Front Page)]]></title>
-        <id>https://github.com/gleam-lang/otp</id>
-        <link href="https://github.com/gleam-lang/otp"/>
-        <updated>2025-10-20T11:15:50.830Z</updated>
-        <content type="html"><![CDATA[Gleam OTP – Fault Tolerant Multicore Programs with Actors]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Airliner hit by possible space debris (Hacker News - Front Page)]]></title>
@@ -300,18 +293,18 @@
         <content type="html"><![CDATA[Compare Single Board Computers]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[What's Behind the Mysterious Ancient Wall in the Gobi Desert? (Hacker News - Front Page)]]></title>
-        <id>https://news.artnet.com/art-world/the-hunt-gobi-wall-mongolia-2674588</id>
-        <link href="https://news.artnet.com/art-world/the-hunt-gobi-wall-mongolia-2674588"/>
-        <updated>2025-10-20T11:15:50.840Z</updated>
-        <content type="html"><![CDATA[What's Behind the Mysterious Ancient Wall in the Gobi Desert?]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[A Tiny Typo May Explain Centuries-Old Mystery Bout Chaucer's 'Canterbury Tales' (Hacker News - Front Page)]]></title>
         <id>https://www.smithsonianmag.com/smart-news/a-tiny-typo-may-explain-a-centuries-old-mystery-about-chaucers-canterbury-tales-and-troilus-and-criseyde-180986991/</id>
         <link href="https://www.smithsonianmag.com/smart-news/a-tiny-typo-may-explain-a-centuries-old-mystery-about-chaucers-canterbury-tales-and-troilus-and-criseyde-180986991/"/>
         <updated>2025-10-20T11:15:50.841Z</updated>
         <content type="html"><![CDATA[A Tiny Typo May Explain Centuries-Old Mystery Bout Chaucer's 'Canterbury Tales']]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What's Behind the Mysterious Ancient Wall in the Gobi Desert? (Hacker News - Front Page)]]></title>
+        <id>https://news.artnet.com/art-world/the-hunt-gobi-wall-mongolia-2674588</id>
+        <link href="https://news.artnet.com/art-world/the-hunt-gobi-wall-mongolia-2674588"/>
+        <updated>2025-10-20T11:15:50.840Z</updated>
+        <content type="html"><![CDATA[What's Behind the Mysterious Ancient Wall in the Gobi Desert?]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[GNU Octave Meets JupyterLite: Compute Anywhere, Anytime (Hacker News - Front Page)]]></title>
@@ -333,5 +326,12 @@
         <link href="https://southernwoodenboatsailing.com/news/the-spilhaus-projection-a-world-map-according-to-fish"/>
         <updated>2025-10-20T11:15:50.848Z</updated>
         <content type="html"><![CDATA[The Spilhaus Projection: A world map according to fish]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[From Hollywood to horticulture: Cate Blanchett on a mission to save seeds (Hacker News - Front Page)]]></title>
+        <id>https://www.bbc.com/news/articles/cwy7ekl4yl8o</id>
+        <link href="https://www.bbc.com/news/articles/cwy7ekl4yl8o"/>
+        <updated>2025-10-20T11:23:14.480Z</updated>
+        <content type="html"><![CDATA[From Hollywood to horticulture: Cate Blanchett on a mission to save seeds]]></content>
     </entry>
 </feed>
