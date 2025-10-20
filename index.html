@@ -513,12 +513,15 @@
                     return;
                 }
 
+                // Convert HTMLCollection to Array
+                const itemsArray = Array.from(items);
+
                 // Update stats
-                updateStats(items.length);
+                updateStats(itemsArray.length);
 
                 // Display items
                 let html = '<div class="feed-items">';
-                items.forEach(item => {
+                itemsArray.forEach(item => {
                     let title, link, content, pubDate;
                     
                     if (isAtom) {

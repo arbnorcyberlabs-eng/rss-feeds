@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://news.ycombinator.com/</id>
     <title>Hacker News - Front Page</title>
-    <updated>2025-10-20T11:39:20.764Z</updated>
+    <updated>2025-10-20T11:42:54.962Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://news.ycombinator.com/y18.svg</icon>
     <entry>
@@ -76,18 +76,18 @@
         <content type="html"><![CDATA[Doing well in your courses: Andrej's advice for success (2013)]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Give Your Metrics an Expiry Date]]></title>
-        <id>https://adrianhoward.com/posts/give-your-metrics-an-expiry-date/</id>
-        <link href="https://adrianhoward.com/posts/give-your-metrics-an-expiry-date/"/>
-        <updated>2025-10-20T11:15:50.817Z</updated>
-        <content type="html"><![CDATA[Give Your Metrics an Expiry Date]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Introduction to reverse-engineering vintage synth firmware]]></title>
         <id>https://ajxs.me/blog/Introduction_to_Reverse-Engineering_Vintage_Synth_Firmware.html</id>
         <link href="https://ajxs.me/blog/Introduction_to_Reverse-Engineering_Vintage_Synth_Firmware.html"/>
         <updated>2025-10-20T11:15:50.812Z</updated>
         <content type="html"><![CDATA[Introduction to reverse-engineering vintage synth firmware]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Give Your Metrics an Expiry Date]]></title>
+        <id>https://adrianhoward.com/posts/give-your-metrics-an-expiry-date/</id>
+        <link href="https://adrianhoward.com/posts/give-your-metrics-an-expiry-date/"/>
+        <updated>2025-10-20T11:15:50.817Z</updated>
+        <content type="html"><![CDATA[Give Your Metrics an Expiry Date]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Major AWS outage takes down Fortnite, Alexa, Snapchat, and more]]></title>
@@ -97,18 +97,18 @@
         <content type="html"><![CDATA[Major AWS outage takes down Fortnite, Alexa, Snapchat, and more]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Fractal Imaginary Cubes]]></title>
-        <id>https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html</id>
-        <link href="https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html"/>
-        <updated>2025-10-20T11:20:41.930Z</updated>
-        <content type="html"><![CDATA[Fractal Imaginary Cubes]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Duke Nukem: Zero Hour N64 ROM Reverse-Engineering Project Hits 100%]]></title>
         <id>https://github.com/Gillou68310/DukeNukemZeroHour</id>
         <link href="https://github.com/Gillou68310/DukeNukemZeroHour"/>
         <updated>2025-10-20T11:15:50.827Z</updated>
         <content type="html"><![CDATA[Duke Nukem: Zero Hour N64 ROM Reverse-Engineering Project Hits 100%]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fractal Imaginary Cubes]]></title>
+        <id>https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html</id>
+        <link href="https://www.i.h.kyoto-u.ac.jp/users/tsuiki/icube/fractal/index-e.html"/>
+        <updated>2025-10-20T11:20:41.930Z</updated>
+        <content type="html"><![CDATA[Fractal Imaginary Cubes]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Don't Force Your LLM to Write Terse [Q/Kdb] Code: An Information Theory Argument]]></title>
@@ -139,6 +139,13 @@
         <content type="html"><![CDATA[Oma: An attempt at reworking APT's interface]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[Beaver-engineered dam in the Czech Republic saves government $1.2M USD]]></title>
+        <id>https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic</id>
+        <link href="https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic"/>
+        <updated>2025-10-20T11:39:20.153Z</updated>
+        <content type="html"><![CDATA[Beaver-engineered dam in the Czech Republic saves government $1.2M USD]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Airliner hit by possible space debris]]></title>
         <id>https://avbrief.com/united-max-hit-by-falling-object-at-36000-feet/</id>
         <link href="https://avbrief.com/united-max-hit-by-falling-object-at-36000-feet/"/>
@@ -160,13 +167,6 @@
         <content type="html"><![CDATA[Dosbian: Boot to DOSBox on Raspberry Pi]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Beaver-engineered dam in the Czech Republic saves government $1.2M USD]]></title>
-        <id>https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic</id>
-        <link href="https://en.wikipedia.org/wiki/Beaver-engineered_dam_in_the_Czech_Republic"/>
-        <updated>2025-10-20T11:39:20.153Z</updated>
-        <content type="html"><![CDATA[Beaver-engineered dam in the Czech Republic saves government $1.2M USD]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Oskar Speck's 1932 Kayak Journey from Germany to Australia]]></title>
         <id>https://nswskc.wordpress.com/2002/10/24/incredible-journey-50/</id>
         <link href="https://nswskc.wordpress.com/2002/10/24/incredible-journey-50/"/>
@@ -179,6 +179,13 @@
         <link href="https://sbc.compare/"/>
         <updated>2025-10-20T11:15:50.839Z</updated>
         <content type="html"><![CDATA[Compare Single Board Computers]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ask HN: What are some impressive vibe coding projects?]]></title>
+        <id>https://news.ycombinator.com/item?id=45642527</id>
+        <link href="https://news.ycombinator.com/item?id=45642527"/>
+        <updated>2025-10-20T11:42:54.360Z</updated>
+        <content type="html"><![CDATA[Ask HN: What are some impressive vibe coding projects?]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[What's Behind the Mysterious Ancient Wall in the Gobi Desert?]]></title>
@@ -207,12 +214,5 @@
         <link href="https://ounapuu.ee/posts/2025/10/14/fridge-power-consumption/"/>
         <updated>2025-10-20T11:15:50.845Z</updated>
         <content type="html"><![CDATA[Comparing the power consumption of a 30 year old refrigerator to a new one]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Spilhaus Projection: A world map according to fish]]></title>
-        <id>https://southernwoodenboatsailing.com/news/the-spilhaus-projection-a-world-map-according-to-fish</id>
-        <link href="https://southernwoodenboatsailing.com/news/the-spilhaus-projection-a-world-map-according-to-fish"/>
-        <updated>2025-10-20T11:15:50.848Z</updated>
-        <content type="html"><![CDATA[The Spilhaus Projection: A world map according to fish]]></content>
     </entry>
 </feed>
