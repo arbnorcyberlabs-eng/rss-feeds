@@ -922,12 +922,51 @@
                 // Atom format
                 const titleEl = item.getElementsByTagName('title')[0];
                 title = titleEl?.textContent || 'No title';
-                const linkEl = item.getElementsByTagName('link')[0];
-                // Get href attribute, ensure it's not an XML file
-                link = linkEl?.getAttribute('href') || linkEl?.textContent || '#';
-                // Filter out any .xml links (safety check)
-                if (link && link.endsWith('.xml')) {
-                    link = '#';
+                
+                // Handle Atom link element - can be in different formats
+                const linkElements = item.getElementsByTagName('link');
+                link = '#';
+                
+                // Try to find the actual content link (not self or alternate that's XML)
+                for (let i = 0; i < linkElements.length; i++) {
+                    const linkEl = linkElements[i];
+                    const href = linkEl.getAttribute('href');
+                    const rel = linkEl.getAttribute('rel');
+                    const type = linkEl.getAttribute('type');
+                    
+                    // Skip self-referencing or XML links
+                    if (rel === 'self' || (type && type.includes('xml'))) {
+                        continue;
+                    }
+                    
+                    // Prefer alternate links or any link with href
+                    if (href && !href.endsWith('.xml')) {
+                        link = href;
+                        // If it's explicitly marked as alternate, use it immediately
+                        if (rel === 'alternate' || !rel) {
+                            break;
+                        }
+                    }
+                }
+                
+                // Fallback to textContent if no href found
+                if (link === '#' && linkElements.length > 0) {
+                    link = linkElements[0]?.textContent || '#';
+                }
+                
+                // Final fallback: try the id element (often contains the URL in Atom feeds)
+                if (link === '#' || !link || link.endsWith('.xml')) {
+                    const idEl = item.getElementsByTagName('id')[0];
+                    const idContent = idEl?.textContent || '';
+                    // Check if id looks like a URL
+                    if (idContent && (idContent.startsWith('http://') || idContent.startsWith('https://'))) {
+                        link = idContent;
+                    }
+                }
+                
+                // Debug logging for troubleshooting
+                if (link === '#' || !link || link.endsWith('.xml')) {
+                    console.warn('No valid link found for item:', title, 'Link elements:', linkElements.length);
                 }
                 const contentEl = item.getElementsByTagName('content')[0];
                 const summaryEl = item.getElementsByTagName('summary')[0];
