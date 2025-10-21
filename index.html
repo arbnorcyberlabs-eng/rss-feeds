@@ -964,6 +964,25 @@
                     }
                 }
                 
+                // Extra fallback: extract data-href from content HTML (for Medium articles)
+                if (link === '#' || !link || link.endsWith('.xml') || link.endsWith('/@matteo28') || link.endsWith('medium.com/@matteo28')) {
+                    const contentEl = item.getElementsByTagName('content')[0];
+                    const summaryEl = item.getElementsByTagName('summary')[0];
+                    const htmlContent = contentEl?.textContent || summaryEl?.textContent || '';
+                    
+                    // Try to extract data-href from HTML content
+                    const dataHrefMatch = htmlContent.match(/data-href=["'](https?:\/\/[^"']+)["']/);
+                    if (dataHrefMatch && dataHrefMatch[1]) {
+                        link = dataHrefMatch[1];
+                    } else {
+                        // Try to extract any Medium article URL pattern
+                        const mediumUrlMatch = htmlContent.match(/https?:\/\/medium\.com\/@[^\/]+\/[a-z0-9-]+/);
+                        if (mediumUrlMatch && mediumUrlMatch[0]) {
+                            link = mediumUrlMatch[0];
+                        }
+                    }
+                }
+                
                 // Debug logging for troubleshooting
                 if (link === '#' || !link || link.endsWith('.xml')) {
                     console.warn('No valid link found for item:', title, 'Link elements:', linkElements.length);
