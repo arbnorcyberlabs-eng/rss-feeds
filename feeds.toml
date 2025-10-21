@@ -38,8 +38,8 @@ title = "Medium - Matteo's Articles"
 url = "https://medium.com/@matteo28"
 entrySelector = "article"
 titleSelector = "h2, h3"
-linkSelector = "a[data-testid='post-preview-title']"
-linkAttribute = "href"
+linkSelector = "div[role='link'][data-href]"
+linkAttribute = "data-href"
 contentSelector = "h3 + div"
 
 # Economy Media YouTube Channel
