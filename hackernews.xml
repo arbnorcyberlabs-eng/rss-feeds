@@ -2,36 +2,120 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://news.ycombinator.com/</id>
     <title>Hacker News - Front Page</title>
-    <updated>2025-11-24T17:40:14.842Z</updated>
+    <updated>2025-11-25T05:40:55.760Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <icon>https://news.ycombinator.com/y18.svg</icon>
     <entry>
-        <title type="html"><![CDATA[SHA1-Hulud the Second Comming – Postman, Zapier, PostHog All Compromised via NPM]]></title>
-        <id>https://www.aikido.dev/blog/shai-hulud-strikes-again-hitting-zapier-ensdomains</id>
-        <link href="https://www.aikido.dev/blog/shai-hulud-strikes-again-hitting-zapier-ensdomains"/>
-        <updated>2025-11-24T17:40:08.300Z</updated>
-        <content type="html"><![CDATA[SHA1-Hulud the Second Comming – Postman, Zapier, PostHog All Compromised via NPM]]></content>
+        <title type="html"><![CDATA[Pebble Watch software is now 100% open source]]></title>
+        <id>https://ericmigi.com/blog/pebble-watch-software-is-now-100percent-open-source</id>
+        <link href="https://ericmigi.com/blog/pebble-watch-software-is-now-100percent-open-source"/>
+        <updated>2025-11-25T05:40:50.895Z</updated>
+        <content type="html"><![CDATA[Pebble Watch software is now 100% open source]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[France threatens GrapheneOS with arrests / server seizure for refusing backdoors]]></title>
-        <id>https://mamot.fr/@LaQuadrature/115581775965025042</id>
-        <link href="https://mamot.fr/@LaQuadrature/115581775965025042"/>
-        <updated>2025-11-24T17:40:08.300Z</updated>
-        <content type="html"><![CDATA[France threatens GrapheneOS with arrests / server seizure for refusing backdoors]]></content>
+        <title type="html"><![CDATA[Unpowered SSDs slowly lose data]]></title>
+        <id>https://www.xda-developers.com/your-unpowered-ssd-is-slowly-losing-your-data/</id>
+        <link href="https://www.xda-developers.com/your-unpowered-ssd-is-slowly-losing-your-data/"/>
+        <updated>2025-11-25T05:40:50.897Z</updated>
+        <content type="html"><![CDATA[Unpowered SSDs slowly lose data]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[NSA and IETF, part 3: Dodging the issues at hand]]></title>
-        <id>https://blog.cr.yp.to/20251123-dodging.html</id>
-        <link href="https://blog.cr.yp.to/20251123-dodging.html"/>
-        <updated>2025-11-24T17:40:08.302Z</updated>
-        <content type="html"><![CDATA[NSA and IETF, part 3: Dodging the issues at hand]]></content>
+        <title type="html"><![CDATA[Claude Advanced Tool Use]]></title>
+        <id>https://www.anthropic.com/engineering/advanced-tool-use</id>
+        <link href="https://www.anthropic.com/engineering/advanced-tool-use"/>
+        <updated>2025-11-25T05:40:50.897Z</updated>
+        <content type="html"><![CDATA[Claude Advanced Tool Use]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Inside Rust's std and parking_lot mutexes – who wins?]]></title>
-        <id>https://blog.cuongle.dev/p/inside-rusts-std-and-parking-lot-mutexes-who-win</id>
-        <link href="https://blog.cuongle.dev/p/inside-rusts-std-and-parking-lot-mutexes-who-win"/>
-        <updated>2025-11-24T17:40:08.302Z</updated>
-        <content type="html"><![CDATA[Inside Rust's std and parking_lot mutexes – who wins?]]></content>
+        <title type="html"><![CDATA[A million ways to die from a data race in Go]]></title>
+        <id>https://gaultier.github.io/blog/a_million_ways_to_data_race_in_go.html</id>
+        <link href="https://gaultier.github.io/blog/a_million_ways_to_data_race_in_go.html"/>
+        <updated>2025-11-25T05:40:50.897Z</updated>
+        <content type="html"><![CDATA[A million ways to die from a data race in Go]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cool-retro-term: terminal emulator which mimics look and feel of CRTs]]></title>
+        <id>https://github.com/Swordfish90/cool-retro-term</id>
+        <link href="https://github.com/Swordfish90/cool-retro-term"/>
+        <updated>2025-11-25T05:40:50.897Z</updated>
+        <content type="html"><![CDATA[Cool-retro-term: terminal emulator which mimics look and feel of CRTs]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Show HN: I built an interactive HN Simulator]]></title>
+        <id>https://news.ysimulator.run/news</id>
+        <link href="https://news.ysimulator.run/news"/>
+        <updated>2025-11-25T05:40:50.898Z</updated>
+        <content type="html"><![CDATA[Show HN: I built an interactive HN Simulator]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Show HN: OCR Arena – A playground for OCR models]]></title>
+        <id>https://www.ocrarena.ai/battle</id>
+        <link href="https://www.ocrarena.ai/battle"/>
+        <updated>2025-11-25T05:40:50.898Z</updated>
+        <content type="html"><![CDATA[Show HN: OCR Arena – A playground for OCR models]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Implications of AI to schools]]></title>
+        <id>https://twitter.com/karpathy/status/1993010584175141038</id>
+        <link href="https://twitter.com/karpathy/status/1993010584175141038"/>
+        <updated>2025-11-25T05:40:50.904Z</updated>
+        <content type="html"><![CDATA[Implications of AI to schools]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Three Years from GPT-3 to Gemini 3]]></title>
+        <id>https://www.oneusefulthing.org/p/three-years-from-gpt-3-to-gemini</id>
+        <link href="https://www.oneusefulthing.org/p/three-years-from-gpt-3-to-gemini"/>
+        <updated>2025-11-25T05:40:50.904Z</updated>
+        <content type="html"><![CDATA[Three Years from GPT-3 to Gemini 3]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build a Compiler in Five Projects]]></title>
+        <id>https://kmicinski.com/functional-programming/2025/11/23/build-a-language/</id>
+        <link href="https://kmicinski.com/functional-programming/2025/11/23/build-a-language/"/>
+        <updated>2025-11-25T05:40:50.907Z</updated>
+        <content type="html"><![CDATA[Build a Compiler in Five Projects]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Claude Opus 4.5]]></title>
+        <id>https://www.anthropic.com/news/claude-opus-4-5</id>
+        <link href="https://www.anthropic.com/news/claude-opus-4-5"/>
+        <updated>2025-11-25T05:40:50.909Z</updated>
+        <content type="html"><![CDATA[Claude Opus 4.5]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How did the Windows 95 user interface code get to the Windows NT code base?]]></title>
+        <id>https://devblogs.microsoft.com/oldnewthing/20251028-00/?p=111733</id>
+        <link href="https://devblogs.microsoft.com/oldnewthing/20251028-00/?p=111733"/>
+        <updated>2025-11-25T05:40:50.912Z</updated>
+        <content type="html"><![CDATA[How did the Windows 95 user interface code get to the Windows NT code base?]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[What OpenAI did when ChatGPT users lost touch with reality]]></title>
+        <id>https://www.nytimes.com/2025/11/23/technology/openai-chatgpt-users-risks.html</id>
+        <link href="https://www.nytimes.com/2025/11/23/technology/openai-chatgpt-users-risks.html"/>
+        <updated>2025-11-25T05:40:50.914Z</updated>
+        <content type="html"><![CDATA[What OpenAI did when ChatGPT users lost touch with reality]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Moving from OpenBSD to FreeBSD for firewalls]]></title>
+        <id>https://utcc.utoronto.ca/~cks/space/blog/sysadmin/OpenBSDToFreeBSDMove</id>
+        <link href="https://utcc.utoronto.ca/~cks/space/blog/sysadmin/OpenBSDToFreeBSDMove"/>
+        <updated>2025-11-25T05:40:50.915Z</updated>
+        <content type="html"><![CDATA[Moving from OpenBSD to FreeBSD for firewalls]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Bitter Lesson of LLM Extensions]]></title>
+        <id>https://www.sawyerhood.com/blog/llm-extension</id>
+        <link href="https://www.sawyerhood.com/blog/llm-extension"/>
+        <updated>2025-11-25T05:40:50.917Z</updated>
+        <content type="html"><![CDATA[The Bitter Lesson of LLM Extensions]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Random lasers from peanut kernel doped with birch leaf–derived carbon dots]]></title>
+        <id>https://www.degruyterbrill.com/document/doi/10.1515/nanoph-2025-0312/html</id>
+        <link href="https://www.degruyterbrill.com/document/doi/10.1515/nanoph-2025-0312/html"/>
+        <updated>2025-11-25T05:40:50.920Z</updated>
+        <content type="html"><![CDATA[Random lasers from peanut kernel doped with birch leaf–derived carbon dots]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Chrome Jpegxl Issue Reopened]]></title>
@@ -41,25 +125,18 @@
         <content type="html"><![CDATA[Chrome Jpegxl Issue Reopened]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Show HN: Cynthia – Reliably play MIDI music files – MIT / Portable / Windows]]></title>
-        <id>https://www.blaizenterprises.com/cynthia.html</id>
-        <link href="https://www.blaizenterprises.com/cynthia.html"/>
-        <updated>2025-11-24T17:40:08.303Z</updated>
-        <content type="html"><![CDATA[Show HN: Cynthia – Reliably play MIDI music files – MIT / Portable / Windows]]></content>
+        <title type="html"><![CDATA[Using Antigravity for Statistical Physics in JavaScript]]></title>
+        <id>https://christopherkrapu.com/blog/2025/antigravity-stat-mech/</id>
+        <link href="https://christopherkrapu.com/blog/2025/antigravity-stat-mech/"/>
+        <updated>2025-11-25T05:40:50.922Z</updated>
+        <content type="html"><![CDATA[Using Antigravity for Statistical Physics in JavaScript]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Corvus Robotics (YC S18): Hiring Head of Mfg/Ops, Next Door to YC Mountain View]]></title>
-        <id>https://news.ycombinator.com/item?id=46036222</id>
-        <link href="https://news.ycombinator.com/item?id=46036222"/>
-        <updated>2025-11-24T17:40:08.305Z</updated>
-        <content type="html"><![CDATA[Corvus Robotics (YC S18): Hiring Head of Mfg/Ops, Next Door to YC Mountain View]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Serflings is a remake of The Settlers 1]]></title>
-        <id>https://www.simpleguide.net/serflings.xhtml</id>
-        <link href="https://www.simpleguide.net/serflings.xhtml"/>
-        <updated>2025-11-24T17:40:08.309Z</updated>
-        <content type="html"><![CDATA[Serflings is a remake of The Settlers 1]]></content>
+        <title type="html"><![CDATA[Google's new 'Aluminium OS' project brings Android to PC]]></title>
+        <id>https://www.androidauthority.com/aluminium-os-android-for-pcs-3619092/</id>
+        <link href="https://www.androidauthority.com/aluminium-os-android-for-pcs-3619092/"/>
+        <updated>2025-11-25T05:40:50.924Z</updated>
+        <content type="html"><![CDATA[Google's new 'Aluminium OS' project brings Android to PC]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Shai-Hulud Returns: Over 300 NPM Packages Infected]]></title>
@@ -69,249 +146,11 @@
         <content type="html"><![CDATA[Shai-Hulud Returns: Over 300 NPM Packages Infected]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[We stopped roadmap work for a week and fixed bugs]]></title>
-        <id>https://lalitm.com/fixits-are-good-for-the-soul/</id>
-        <link href="https://lalitm.com/fixits-are-good-for-the-soul/"/>
-        <updated>2025-11-24T05:41:15.059Z</updated>
-        <content type="html"><![CDATA[We stopped roadmap work for a week and fixed bugs]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Slicing Is All You Need: Towards a Universal One-Sided Distributed MatMul]]></title>
-        <id>https://arxiv.org/abs/2510.08874</id>
-        <link href="https://arxiv.org/abs/2510.08874"/>
-        <updated>2025-11-24T17:40:08.318Z</updated>
-        <content type="html"><![CDATA[Slicing Is All You Need: Towards a Universal One-Sided Distributed MatMul]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RuBee]]></title>
-        <id>https://computer.rip/2025-11-22-RuBee.html</id>
-        <link href="https://computer.rip/2025-11-22-RuBee.html"/>
-        <updated>2025-11-24T05:41:15.047Z</updated>
-        <content type="html"><![CDATA[RuBee]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Disney Lost Roger Rabbit]]></title>
-        <id>https://pluralistic.net/2025/11/18/im-not-bad/</id>
-        <link href="https://pluralistic.net/2025/11/18/im-not-bad/"/>
-        <updated>2025-11-24T17:40:08.320Z</updated>
-        <content type="html"><![CDATA[Disney Lost Roger Rabbit]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Historically Accurate Airport Dioramas by AV Pro Designs]]></title>
-        <id>https://www.core77.com/posts/138995/Historically-Accurate-Airport-Dioramas-by-AV-Pro-Designs</id>
-        <link href="https://www.core77.com/posts/138995/Historically-Accurate-Airport-Dioramas-by-AV-Pro-Designs"/>
-        <updated>2025-11-24T17:40:08.321Z</updated>
-        <content type="html"><![CDATA[Historically Accurate Airport Dioramas by AV Pro Designs]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fast Lua runtime written in Rust]]></title>
-        <id>https://astra.arkforge.net/</id>
-        <link href="https://astra.arkforge.net/"/>
-        <updated>2025-11-24T17:40:08.323Z</updated>
-        <content type="html"><![CDATA[Fast Lua runtime written in Rust]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Japan's gamble to turn island of Hokkaido into global chip hub]]></title>
-        <id>https://www.bbc.com/news/articles/c8676qpxgnqo</id>
-        <link href="https://www.bbc.com/news/articles/c8676qpxgnqo"/>
-        <updated>2025-11-24T05:41:15.074Z</updated>
-        <content type="html"><![CDATA[Japan's gamble to turn island of Hokkaido into global chip hub]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[µcad: New open source programming language that can generate 2D sketches and 3D]]></title>
-        <id>https://microcad.xyz/</id>
-        <link href="https://microcad.xyz/"/>
-        <updated>2025-11-24T05:41:15.065Z</updated>
-        <content type="html"><![CDATA[µcad: New open source programming language that can generate 2D sketches and 3D]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ask HN: Hearing aid wearers, what's hot?]]></title>
-        <id>https://news.ycombinator.com/item?id=46029699</id>
-        <link href="https://news.ycombinator.com/item?id=46029699"/>
-        <updated>2025-11-24T05:41:15.052Z</updated>
-        <content type="html"><![CDATA[Ask HN: Hearing aid wearers, what's hot?]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Lambda Calculus – Animated Beta Reduction of Lambda Diagrams]]></title>
-        <id>https://cruzgodar.com/applets/lambda-calculus</id>
-        <link href="https://cruzgodar.com/applets/lambda-calculus"/>
-        <updated>2025-11-24T17:40:08.328Z</updated>
-        <content type="html"><![CDATA[Lambda Calculus – Animated Beta Reduction of Lambda Diagrams]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Rust Performance Book (2020)]]></title>
-        <id>https://nnethercote.github.io/perf-book/</id>
-        <link href="https://nnethercote.github.io/perf-book/"/>
-        <updated>2025-11-24T05:41:15.057Z</updated>
-        <content type="html"><![CDATA[The Rust Performance Book (2020)]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[I built a faster Notion in Rust]]></title>
-        <id>https://imedadel.com/outcrop/</id>
-        <link href="https://imedadel.com/outcrop/"/>
-        <updated>2025-11-24T17:40:08.331Z</updated>
-        <content type="html"><![CDATA[I built a faster Notion in Rust]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[New magnetic component discovered in the Faraday effect]]></title>
-        <id>https://phys.org/news/2025-11-magnetic-component-faraday-effect-centuries.html</id>
-        <link href="https://phys.org/news/2025-11-magnetic-component-faraday-effect-centuries.html"/>
-        <updated>2025-11-24T05:41:15.061Z</updated>
-        <content type="html"><![CDATA[New magnetic component discovered in the Faraday effect]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Show HN: Virtual SLURM HPC cluster in a Docker Compose]]></title>
-        <id>https://github.com/exactlab/vhpc</id>
-        <link href="https://github.com/exactlab/vhpc"/>
-        <updated>2025-11-24T17:40:08.334Z</updated>
-        <content type="html"><![CDATA[Show HN: Virtual SLURM HPC cluster in a Docker Compose]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Show HN: Stun LLMs with thousands of invisible Unicode characters]]></title>
-        <id>https://gibberifier.com/</id>
-        <link href="https://gibberifier.com/"/>
-        <updated>2025-11-24T05:41:15.068Z</updated>
-        <content type="html"><![CDATA[Show HN: Stun LLMs with thousands of invisible Unicode characters]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Fran Sans – font inspired by San Francisco light rail displays]]></title>
-        <id>https://emilysneddon.com/fran-sans-essay</id>
-        <link href="https://emilysneddon.com/fran-sans-essay"/>
-        <updated>2025-11-24T05:41:15.051Z</updated>
-        <content type="html"><![CDATA[Fran Sans – font inspired by San Francisco light rail displays]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[I put a real search engine into a Lambda, so you only pay when you search]]></title>
-        <id>https://nixiesearch.substack.com/p/i-put-a-real-search-engine-into-a</id>
-        <link href="https://nixiesearch.substack.com/p/i-put-a-real-search-engine-into-a"/>
-        <updated>2025-11-24T17:40:08.337Z</updated>
-        <content type="html"><![CDATA[I put a real search engine into a Lambda, so you only pay when you search]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ego, empathy, and humility at work]]></title>
-        <id>https://matthogg.fyi/a-unified-theory-of-ego-empathy-and-humility-at-work/</id>
-        <link href="https://matthogg.fyi/a-unified-theory-of-ego-empathy-and-humility-at-work/"/>
-        <updated>2025-11-24T05:41:15.082Z</updated>
-        <content type="html"><![CDATA[Ego, empathy, and humility at work]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Building the largest known Kubernetes cluster, with 130k nodes]]></title>
-        <id>https://cloud.google.com/blog/products/containers-kubernetes/how-we-built-a-130000-node-gke-cluster/</id>
-        <link href="https://cloud.google.com/blog/products/containers-kubernetes/how-we-built-a-130000-node-gke-cluster/"/>
-        <updated>2025-11-24T17:40:08.339Z</updated>
-        <content type="html"><![CDATA[Building the largest known Kubernetes cluster, with 130k nodes]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Set theory with types]]></title>
-        <id>https://lawrencecpaulson.github.io//2025/11/21/Typed_Set_Theory.html</id>
-        <link href="https://lawrencecpaulson.github.io//2025/11/21/Typed_Set_Theory.html"/>
-        <updated>2025-11-24T17:40:08.340Z</updated>
-        <content type="html"><![CDATA[Set theory with types]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The Cloudflare outage might be a good thing]]></title>
-        <id>https://gist.github.com/jbreckmckye/32587f2907e473dd06d68b0362fb0048</id>
-        <link href="https://gist.github.com/jbreckmckye/32587f2907e473dd06d68b0362fb0048"/>
-        <updated>2025-11-24T05:41:15.049Z</updated>
-        <content type="html"><![CDATA[The Cloudflare outage might be a good thing]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Show HN: I wrote a minimal memory allocator in C]]></title>
-        <id>https://github.com/t9nzin/memory</id>
-        <link href="https://github.com/t9nzin/memory"/>
-        <updated>2025-11-24T05:41:15.071Z</updated>
-        <content type="html"><![CDATA[Show HN: I wrote a minimal memory allocator in C]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Terence Tao: At the Erdos problem website, AI assistance now becoming routine]]></title>
-        <id>https://mathstodon.xyz/@tao/115591487350860999</id>
-        <link href="https://mathstodon.xyz/@tao/115591487350860999"/>
-        <updated>2025-11-23T05:39:04.307Z</updated>
-        <content type="html"><![CDATA[Terence Tao: At the Erdos problem website, AI assistance now becoming routine]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Bureau of Meteorology's new boss asked to examine $96M bill for website redesign]]></title>
-        <id>https://www.abc.net.au/news/2025-11-23/bureau-of-meteorology-new-website-cost-blowout-to-96-million/106042202</id>
-        <link href="https://www.abc.net.au/news/2025-11-23/bureau-of-meteorology-new-website-cost-blowout-to-96-million/106042202"/>
-        <updated>2025-11-24T17:40:08.788Z</updated>
-        <content type="html"><![CDATA[Bureau of Meteorology's new boss asked to examine $96M bill for website redesign]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Passing the Torch – My Last Root DNSSEC KSK Ceremony as Crypto Officer 4]]></title>
-        <id>https://technotes.seastrom.com/2025/11/23/passing-the-torch.html</id>
-        <link href="https://technotes.seastrom.com/2025/11/23/passing-the-torch.html"/>
-        <updated>2025-11-24T05:41:15.063Z</updated>
-        <content type="html"><![CDATA[Passing the Torch – My Last Root DNSSEC KSK Ceremony as Crypto Officer 4]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Show HN: Gitlogue – A terminal tool that replays your Git commits with animation]]></title>
-        <id>https://github.com/unhappychoice/gitlogue</id>
-        <link href="https://github.com/unhappychoice/gitlogue"/>
-        <updated>2025-11-24T05:41:15.085Z</updated>
-        <content type="html"><![CDATA[Show HN: Gitlogue – A terminal tool that replays your Git commits with animation]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Iowa City made its buses free. Traffic cleared, and so did the air]]></title>
-        <id>https://www.nytimes.com/2025/11/18/climate/iowa-city-free-buses.html</id>
-        <link href="https://www.nytimes.com/2025/11/18/climate/iowa-city-free-buses.html"/>
-        <updated>2025-11-24T05:41:15.084Z</updated>
-        <content type="html"><![CDATA[Iowa City made its buses free. Traffic cleared, and so did the air]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A desktop app for isolated, parallel agentic development]]></title>
-        <id>https://github.com/coder/mux</id>
-        <link href="https://github.com/coder/mux"/>
-        <updated>2025-11-24T05:41:15.076Z</updated>
-        <content type="html"><![CDATA[A desktop app for isolated, parallel agentic development]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Pixar: The Early Days]]></title>
-        <id>https://stevejobsarchive.com/stories/pixar-early-days</id>
-        <link href="https://stevejobsarchive.com/stories/pixar-early-days"/>
-        <updated>2025-11-24T17:40:08.797Z</updated>
-        <content type="html"><![CDATA[Pixar: The Early Days]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Having Fun with Complex Numbers]]></title>
-        <id>https://mathwonder.org/Having-Fun-with-Complex-Numbers/</id>
-        <link href="https://mathwonder.org/Having-Fun-with-Complex-Numbers/"/>
-        <updated>2025-11-24T05:41:15.056Z</updated>
-        <content type="html"><![CDATA[Having Fun with Complex Numbers]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Hyperoptic: IPv6 and Out-of-Order Packets]]></title>
-        <id>https://blog.zakkemble.net/hyperoptic-ipv6-and-out-of-order-packets/</id>
-        <link href="https://blog.zakkemble.net/hyperoptic-ipv6-and-out-of-order-packets/"/>
-        <updated>2025-11-24T17:40:08.800Z</updated>
-        <content type="html"><![CDATA[Hyperoptic: IPv6 and Out-of-Order Packets]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[France threatens GrapheneOS with arrests / server seizure for refusing backdoors]]></title>
-        <id>https://grapheneos.social/@watchfulcitizen@goingdark.social/115605398547420414</id>
-        <link href="https://grapheneos.social/@watchfulcitizen@goingdark.social/115605398547420414"/>
-        <updated>2025-11-24T17:40:08.802Z</updated>
-        <content type="html"><![CDATA[France threatens GrapheneOS with arrests / server seizure for refusing backdoors]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[An Economy of AI Agents]]></title>
-        <id>https://arxiv.org/abs/2509.01063</id>
-        <link href="https://arxiv.org/abs/2509.01063"/>
-        <updated>2025-11-24T05:41:15.636Z</updated>
-        <content type="html"><![CDATA[An Economy of AI Agents]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Native Secure Enclave backed SSH keys on macOS]]></title>
-        <id>https://gist.github.com/arianvp/5f59f1783e3eaf1a2d4cd8e952bb4acf</id>
-        <link href="https://gist.github.com/arianvp/5f59f1783e3eaf1a2d4cd8e952bb4acf"/>
-        <updated>2025-11-24T05:41:15.054Z</updated>
-        <content type="html"><![CDATA[Native Secure Enclave backed SSH keys on macOS]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Mount Proton Drive on Linux using rclone and systemd]]></title>
-        <id>https://github.com/dadtronics/protondrive-linux</id>
-        <link href="https://github.com/dadtronics/protondrive-linux"/>
-        <updated>2025-11-24T05:41:15.095Z</updated>
-        <content type="html"><![CDATA[Mount Proton Drive on Linux using rclone and systemd]]></content>
+        <title type="html"><![CDATA[PS5 now costs less than 64GB of DDR5 memory. RAM jumps to $600 due to shortage]]></title>
+        <id>https://www.tomshardware.com/pc-components/ddr5/64gb-of-ddr5-memory-now-costs-more-than-an-entire-ps5-even-after-a-discount-trident-z5-neo-kit-jumps-to-usd600-due-to-dram-shortage-and-its-expected-to-get-worse-into-2026</id>
+        <link href="https://www.tomshardware.com/pc-components/ddr5/64gb-of-ddr5-memory-now-costs-more-than-an-entire-ps5-even-after-a-discount-trident-z5-neo-kit-jumps-to-usd600-due-to-dram-shortage-and-its-expected-to-get-worse-into-2026"/>
+        <updated>2025-11-25T05:40:50.927Z</updated>
+        <content type="html"><![CDATA[PS5 now costs less than 64GB of DDR5 memory. RAM jumps to $600 due to shortage]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Fifty Shades of OOP]]></title>
@@ -321,284 +160,67 @@
         <content type="html"><![CDATA[Fifty Shades of OOP]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Build desktop applications using Go and Web Technologies]]></title>
-        <id>https://github.com/wailsapp/wails</id>
-        <link href="https://github.com/wailsapp/wails"/>
-        <updated>2025-11-24T17:40:08.811Z</updated>
-        <content type="html"><![CDATA[Build desktop applications using Go and Web Technologies]]></content>
+        <title type="html"><![CDATA[Building the largest known Kubernetes cluster]]></title>
+        <id>https://cloud.google.com/blog/products/containers-kubernetes/how-we-built-a-130000-node-gke-cluster/</id>
+        <link href="https://cloud.google.com/blog/products/containers-kubernetes/how-we-built-a-130000-node-gke-cluster/"/>
+        <updated>2025-11-24T17:40:08.339Z</updated>
+        <content type="html"><![CDATA[Building the largest known Kubernetes cluster]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Moss survived outside of the International Space Station for 9 months]]></title>
-        <id>https://www.livescience.com/space/scientists-put-moss-on-the-outside-of-the-international-space-station-for-9-months-then-kept-it-growing-back-on-earth</id>
-        <link href="https://www.livescience.com/space/scientists-put-moss-on-the-outside-of-the-international-space-station-for-9-months-then-kept-it-growing-back-on-earth"/>
-        <updated>2025-11-24T17:40:08.812Z</updated>
-        <content type="html"><![CDATA[Moss survived outside of the International Space Station for 9 months]]></content>
+        <title type="html"><![CDATA[Mind-reading devices can now predict preconscious thoughts]]></title>
+        <id>https://www.nature.com/articles/d41586-025-03714-0</id>
+        <link href="https://www.nature.com/articles/d41586-025-03714-0"/>
+        <updated>2025-11-25T05:40:50.932Z</updated>
+        <content type="html"><![CDATA[Mind-reading devices can now predict preconscious thoughts]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[McMaster Carr – The Smartest Website You Haven't Heard Of (2022)]]></title>
-        <id>https://www.bedelstein.com/post/mcmaster-carr</id>
-        <link href="https://www.bedelstein.com/post/mcmaster-carr"/>
-        <updated>2025-11-24T05:41:15.640Z</updated>
-        <content type="html"><![CDATA[McMaster Carr – The Smartest Website You Haven't Heard Of (2022)]]></content>
+        <title type="html"><![CDATA[Corvus Robotics (YC S18): Hiring Head of Mfg/Ops, Next Door to YC Mountain View]]></title>
+        <id>https://news.ycombinator.com/item?id=46036222</id>
+        <link href="https://news.ycombinator.com/item?id=46036222"/>
+        <updated>2025-11-24T17:40:08.305Z</updated>
+        <content type="html"><![CDATA[Corvus Robotics (YC S18): Hiring Head of Mfg/Ops, Next Door to YC Mountain View]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[AI Meets Aggressive Accounting at Meta's Gigantic New Data Center]]></title>
-        <id>https://www.wsj.com/tech/meta-ai-data-center-finances-d3a6b464</id>
-        <link href="https://www.wsj.com/tech/meta-ai-data-center-finances-d3a6b464"/>
-        <updated>2025-11-24T17:40:08.815Z</updated>
-        <content type="html"><![CDATA[AI Meets Aggressive Accounting at Meta's Gigantic New Data Center]]></content>
+        <title type="html"><![CDATA[Inside Rust's std and parking_lot mutexes – who wins?]]></title>
+        <id>https://blog.cuongle.dev/p/inside-rusts-std-and-parking-lot-mutexes-who-win</id>
+        <link href="https://blog.cuongle.dev/p/inside-rusts-std-and-parking-lot-mutexes-who-win"/>
+        <updated>2025-11-24T17:40:08.302Z</updated>
+        <content type="html"><![CDATA[Inside Rust's std and parking_lot mutexes – who wins?]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Particle Life]]></title>
-        <id>https://sandbox-science.com/particle-life</id>
-        <link href="https://sandbox-science.com/particle-life"/>
-        <updated>2025-11-24T05:41:15.090Z</updated>
-        <content type="html"><![CDATA[Particle Life]]></content>
+        <title type="html"><![CDATA[A fast EDN (Extensible Data Notation) reader written in C11 with SIMD boost]]></title>
+        <id>https://github.com/DotFox/edn.c</id>
+        <link href="https://github.com/DotFox/edn.c"/>
+        <updated>2025-11-25T05:40:50.936Z</updated>
+        <content type="html"><![CDATA[A fast EDN (Extensible Data Notation) reader written in C11 with SIMD boost]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[General principles for the use of AI at CERN]]></title>
-        <id>https://home.web.cern.ch/news/official-news/knowledge-sharing/general-principles-use-ai-cern</id>
-        <link href="https://home.web.cern.ch/news/official-news/knowledge-sharing/general-principles-use-ai-cern"/>
-        <updated>2025-11-24T17:40:08.817Z</updated>
-        <content type="html"><![CDATA[General principles for the use of AI at CERN]]></content>
+        <title type="html"><![CDATA[The history of Indian science fiction]]></title>
+        <id>https://altermag.com/articles/the-secret-history-of-indian-science-fiction</id>
+        <link href="https://altermag.com/articles/the-secret-history-of-indian-science-fiction"/>
+        <updated>2025-11-25T05:40:50.937Z</updated>
+        <content type="html"><![CDATA[The history of Indian science fiction]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Jimmy Cliff, Jamaican reggae singer, actor and cultural icon, dies aged 81]]></title>
-        <id>https://www.theguardian.com/music/2025/nov/24/jimmy-cliff-jamaican-reggae-singer-actor-and-cultural-icon-dies-aged-81</id>
-        <link href="https://www.theguardian.com/music/2025/nov/24/jimmy-cliff-jamaican-reggae-singer-actor-and-cultural-icon-dies-aged-81"/>
-        <updated>2025-11-24T17:40:08.818Z</updated>
-        <content type="html"><![CDATA[Jimmy Cliff, Jamaican reggae singer, actor and cultural icon, dies aged 81]]></content>
+        <title type="html"><![CDATA[Advice for crime analyst to break into data science]]></title>
+        <id>https://andrewpwheeler.com/2025/11/21/advice-for-crime-analyst-to-break-into-data-science/</id>
+        <link href="https://andrewpwheeler.com/2025/11/21/advice-for-crime-analyst-to-break-into-data-science/"/>
+        <updated>2025-11-25T05:40:50.939Z</updated>
+        <content type="html"><![CDATA[Advice for crime analyst to break into data science]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Editing Code in Emacs]]></title>
-        <id>https://redpenguin101.github.io/html/posts/2025_11_23_emacs_for_code_editing.html</id>
-        <link href="https://redpenguin101.github.io/html/posts/2025_11_23_emacs_for_code_editing.html"/>
-        <updated>2025-11-24T05:41:15.638Z</updated>
-        <content type="html"><![CDATA[Editing Code in Emacs]]></content>
+        <title type="html"><![CDATA[Migrating to Bazel symbolic macros]]></title>
+        <id>https://www.tweag.io/blog/2025-11-20-migrating-bazel-symbolic-macros/</id>
+        <link href="https://www.tweag.io/blog/2025-11-20-migrating-bazel-symbolic-macros/"/>
+        <updated>2025-11-25T05:40:50.940Z</updated>
+        <content type="html"><![CDATA[Migrating to Bazel symbolic macros]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[New Dan Carlin – Common Sense]]></title>
-        <id>https://www.dancarlin.com/product/common-sense-325-whos-the-boss/</id>
-        <link href="https://www.dancarlin.com/product/common-sense-325-whos-the-boss/"/>
-        <updated>2025-11-24T17:40:08.821Z</updated>
-        <content type="html"><![CDATA[New Dan Carlin – Common Sense]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[X Just Accidentally Exposed a Covert Influence Network Targeting Americans]]></title>
-        <id>https://weaponizedspaces.substack.com/p/x-just-accidentally-exposed-a-vast</id>
-        <link href="https://weaponizedspaces.substack.com/p/x-just-accidentally-exposed-a-vast"/>
-        <updated>2025-11-24T17:40:08.823Z</updated>
-        <content type="html"><![CDATA[X Just Accidentally Exposed a Covert Influence Network Targeting Americans]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A time-travelling door bug in Half Life 2]]></title>
-        <id>https://mastodon.gamedev.place/@TomF/115589875974658415</id>
-        <link href="https://mastodon.gamedev.place/@TomF/115589875974658415"/>
-        <updated>2025-11-22T05:37:50.175Z</updated>
-        <content type="html"><![CDATA[A time-travelling door bug in Half Life 2]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Britain is one of the richest countries. So why do children live in poverty?]]></title>
-        <id>https://www.cnn.com/2025/11/24/uk/britain-child-poverty-intl-scli</id>
-        <link href="https://www.cnn.com/2025/11/24/uk/britain-child-poverty-intl-scli"/>
-        <updated>2025-11-24T17:40:08.826Z</updated>
-        <content type="html"><![CDATA[Britain is one of the richest countries. So why do children live in poverty?]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Calculus for Mathematicians, Computer Scientists, and Physicists [pdf]]]></title>
-        <id>https://mathcs.holycross.edu/~ahwang/print/calc.pdf</id>
-        <link href="https://mathcs.holycross.edu/~ahwang/print/calc.pdf"/>
-        <updated>2025-11-23T17:35:00.555Z</updated>
-        <content type="html"><![CDATA[Calculus for Mathematicians, Computer Scientists, and Physicists [pdf]]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Band of Holes]]></title>
-        <id>https://en.wikipedia.org/wiki/Band_of_Holes</id>
-        <link href="https://en.wikipedia.org/wiki/Band_of_Holes"/>
-        <updated>2025-11-24T05:41:15.069Z</updated>
-        <content type="html"><![CDATA[Band of Holes]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Shaders: How to draw high fidelity graphics with just x and y coordinates]]></title>
-        <id>https://www.makingsoftware.com/chapters/shaders</id>
-        <link href="https://www.makingsoftware.com/chapters/shaders"/>
-        <updated>2025-11-23T17:35:00.559Z</updated>
-        <content type="html"><![CDATA[Shaders: How to draw high fidelity graphics with just x and y coordinates]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Sunsetting Supermaven]]></title>
-        <id>https://supermaven.com/blog/sunsetting-supermaven</id>
-        <link href="https://supermaven.com/blog/sunsetting-supermaven"/>
-        <updated>2025-11-24T05:41:15.094Z</updated>
-        <content type="html"><![CDATA[Sunsetting Supermaven]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Racket v9.0]]></title>
-        <id>https://blog.racket-lang.org/2025/11/racket-v9-0.html</id>
-        <link href="https://blog.racket-lang.org/2025/11/racket-v9-0.html"/>
-        <updated>2025-11-23T17:35:00.566Z</updated>
-        <content type="html"><![CDATA[Racket v9.0]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Court filings allege Meta downplayed risks to children and misled the public]]></title>
-        <id>https://time.com/7336204/meta-lawsuit-files-child-safety/</id>
-        <link href="https://time.com/7336204/meta-lawsuit-files-child-safety/"/>
-        <updated>2025-11-23T17:35:00.559Z</updated>
-        <content type="html"><![CDATA[Court filings allege Meta downplayed risks to children and misled the public]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Murphyjitsu (2018)]]></title>
-        <id>https://www.lesswrong.com/posts/N47M3JiHveHfwdbFg/hammertime-day-10-murphyjitsu</id>
-        <link href="https://www.lesswrong.com/posts/N47M3JiHveHfwdbFg/hammertime-day-10-murphyjitsu"/>
-        <updated>2025-11-24T17:40:09.255Z</updated>
-        <content type="html"><![CDATA[Murphyjitsu (2018)]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Posthog NPM packages are compromised]]></title>
-        <id>https://twitter.com/posthog/status/1992894777524674642</id>
-        <link href="https://twitter.com/posthog/status/1992894777524674642"/>
-        <updated>2025-11-24T17:40:09.256Z</updated>
-        <content type="html"><![CDATA[Posthog NPM packages are compromised]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Syd – An offline-first, AI-augmented workstation for blue teams]]></title>
-        <id>https://www.sydsec.co.uk/</id>
-        <link href="https://www.sydsec.co.uk/"/>
-        <updated>2025-11-24T17:40:09.258Z</updated>
-        <content type="html"><![CDATA[Syd – An offline-first, AI-augmented workstation for blue teams]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A ncurses-based command line torrent client for high performance]]></title>
-        <id>https://github.com/rakshasa/rtorrent</id>
-        <link href="https://github.com/rakshasa/rtorrent"/>
-        <updated>2025-11-24T05:41:15.637Z</updated>
-        <content type="html"><![CDATA[A ncurses-based command line torrent client for high performance]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[After my dad died, we found the love letters]]></title>
-        <id>https://www.jenn.site/after-my-dad-died-we-found-the-love-letters/</id>
-        <link href="https://www.jenn.site/after-my-dad-died-we-found-the-love-letters/"/>
-        <updated>2025-11-23T17:35:00.571Z</updated>
-        <content type="html"><![CDATA[After my dad died, we found the love letters]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ethiopian volcano erupts for first time in 12,000 years]]></title>
-        <id>https://www.theguardian.com/world/2025/nov/24/ethiopian-volcano-hayli-gubbi-erupts-first-time-12000-years</id>
-        <link href="https://www.theguardian.com/world/2025/nov/24/ethiopian-volcano-hayli-gubbi-erupts-first-time-12000-years"/>
-        <updated>2025-11-24T17:40:09.262Z</updated>
-        <content type="html"><![CDATA[Ethiopian volcano erupts for first time in 12,000 years]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Braided Arithmetic]]></title>
-        <id>https://mathcenter.oxford.emory.edu/site/math108/braid_arithmetic/</id>
-        <link href="https://mathcenter.oxford.emory.edu/site/math108/braid_arithmetic/"/>
-        <updated>2025-11-24T17:40:09.266Z</updated>
-        <content type="html"><![CDATA[Braided Arithmetic]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MCP Apps: Extending servers with interactive user interfaces]]></title>
-        <id>http://blog.modelcontextprotocol.io/posts/2025-11-21-mcp-apps/</id>
-        <link href="http://blog.modelcontextprotocol.io/posts/2025-11-21-mcp-apps/"/>
-        <updated>2025-11-23T17:35:01.152Z</updated>
-        <content type="html"><![CDATA[MCP Apps: Extending servers with interactive user interfaces]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Markdown is holding you back]]></title>
-        <id>https://newsletter.bphogan.com/archive/issue-45-markdown-is-holding-you-back/</id>
-        <link href="https://newsletter.bphogan.com/archive/issue-45-markdown-is-holding-you-back/"/>
-        <updated>2025-11-23T05:39:04.334Z</updated>
-        <content type="html"><![CDATA[Markdown is holding you back]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The privacy nightmare of browser fingerprinting]]></title>
-        <id>https://kevinboone.me/fingerprinting.html</id>
-        <link href="https://kevinboone.me/fingerprinting.html"/>
-        <updated>2025-11-22T17:34:21.438Z</updated>
-        <content type="html"><![CDATA[The privacy nightmare of browser fingerprinting]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Driverless freight trains on Southern California rails?]]></title>
-        <id>https://www.latimes.com/business/story/2025-11-02/los-angeles-based-autonomous-freight-train</id>
-        <link href="https://www.latimes.com/business/story/2025-11-02/los-angeles-based-autonomous-freight-train"/>
-        <updated>2025-11-24T17:40:09.271Z</updated>
-        <content type="html"><![CDATA[Driverless freight trains on Southern California rails?]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Boy with rare condition amazes doctors after world-first gene therapy]]></title>
-        <id>https://www.bbc.com/news/articles/c5y0y56x6veo</id>
-        <link href="https://www.bbc.com/news/articles/c5y0y56x6veo"/>
-        <updated>2025-11-24T17:40:09.274Z</updated>
-        <content type="html"><![CDATA[Boy with rare condition amazes doctors after world-first gene therapy]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[The only GM EV1 ever publicly sold, and where it's going next]]></title>
-        <id>https://www.theautopian.com/how-the-only-gm-ev1-ever-sold-didnt-get-crushed-and-where-its-going-now/</id>
-        <link href="https://www.theautopian.com/how-the-only-gm-ev1-ever-sold-didnt-get-crushed-and-where-its-going-now/"/>
-        <updated>2025-11-24T17:40:09.274Z</updated>
-        <content type="html"><![CDATA[The only GM EV1 ever publicly sold, and where it's going next]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA["Good engineering management" is a fad]]></title>
-        <id>https://lethain.com/good-eng-mgmt-is-a-fad/</id>
-        <link href="https://lethain.com/good-eng-mgmt-is-a-fad/"/>
-        <updated>2025-11-24T05:41:15.643Z</updated>
-        <content type="html"><![CDATA["Good engineering management" is a fad]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[We Induced Smells With Ultrasound]]></title>
-        <id>https://writetobrain.com/olfactory</id>
-        <link href="https://writetobrain.com/olfactory"/>
-        <updated>2025-11-23T05:39:03.736Z</updated>
-        <content type="html"><![CDATA[We Induced Smells With Ultrasound]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Intel Working on Linux Support for New Power Savings Feature with Xe3P_LPD]]></title>
-        <id>https://www.phoronix.com/news/Intel-Xe3P-LPD-System-Cache-FBC</id>
-        <link href="https://www.phoronix.com/news/Intel-Xe3P-LPD-System-Cache-FBC"/>
-        <updated>2025-11-24T17:40:09.278Z</updated>
-        <content type="html"><![CDATA[Intel Working on Linux Support for New Power Savings Feature with Xe3P_LPD]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Giving the Jakks Atari Paddle a Spin]]></title>
-        <id>https://nicole.express/2025/paddle-me-atari.html</id>
-        <link href="https://nicole.express/2025/paddle-me-atari.html"/>
-        <updated>2025-11-24T05:41:15.653Z</updated>
-        <content type="html"><![CDATA[Giving the Jakks Atari Paddle a Spin]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Host a website from an old phone using PostmarketOS]]></title>
-        <id>https://far.computer/how-to/</id>
-        <link href="https://far.computer/how-to/"/>
-        <updated>2025-11-24T05:41:15.678Z</updated>
-        <content type="html"><![CDATA[Host a website from an old phone using PostmarketOS]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ubuntu LTS releases to 15 years with Legacy add-on]]></title>
-        <id>https://canonical.com/blog/canonical-expands-total-coverage-for-ubuntu-lts-releases-to-15-years-with-legacy-add-on</id>
-        <link href="https://canonical.com/blog/canonical-expands-total-coverage-for-ubuntu-lts-releases-to-15-years-with-legacy-add-on"/>
-        <updated>2025-11-23T05:39:03.746Z</updated>
-        <content type="html"><![CDATA[Ubuntu LTS releases to 15 years with Legacy add-on]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Ruby Was Ready from the Start]]></title>
-        <id>https://obie.medium.com/ruby-was-ready-from-the-start-4b089b17babb</id>
-        <link href="https://obie.medium.com/ruby-was-ready-from-the-start-4b089b17babb"/>
-        <updated>2025-11-24T17:40:09.283Z</updated>
-        <content type="html"><![CDATA[Ruby Was Ready from the Start]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Show HN: Build the habit of writing meaningful commit messages]]></title>
-        <id>https://github.com/arpxspace/smartcommit</id>
-        <link href="https://github.com/arpxspace/smartcommit"/>
-        <updated>2025-11-23T05:39:04.323Z</updated>
-        <content type="html"><![CDATA[Show HN: Build the habit of writing meaningful commit messages]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[First kiss dates back 21M years]]></title>
-        <id>https://www.bbc.com/news/articles/cr43gq61g2qo</id>
-        <link href="https://www.bbc.com/news/articles/cr43gq61g2qo"/>
-        <updated>2025-11-23T17:35:00.591Z</updated>
-        <content type="html"><![CDATA[First kiss dates back 21M years]]></content>
+        <title type="html"><![CDATA[How sea turtles learn locations using Earth’s magnetic field: research]]></title>
+        <id>https://uncnews.unc.edu/2025/02/13/sea-turtles-secret-gps-researchers-uncover-how-sea-turtles-learn-locations-using-earths-magnetic-field/</id>
+        <link href="https://uncnews.unc.edu/2025/02/13/sea-turtles-secret-gps-researchers-uncover-how-sea-turtles-learn-locations-using-earths-magnetic-field/"/>
+        <updated>2025-11-25T05:40:51.487Z</updated>
+        <content type="html"><![CDATA[How sea turtles learn locations using Earth’s magnetic field: research]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[Bytes before FLOPS: your algorithm is (mostly) fine, your data isn't]]></title>
@@ -608,31 +230,409 @@
         <content type="html"><![CDATA[Bytes before FLOPS: your algorithm is (mostly) fine, your data isn't]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[The realities of being a pop star]]></title>
-        <id>https://itscharlibb.substack.com/p/the-realities-of-being-a-pop-star</id>
-        <link href="https://itscharlibb.substack.com/p/the-realities-of-being-a-pop-star"/>
-        <updated>2025-11-23T05:39:04.342Z</updated>
-        <content type="html"><![CDATA[The realities of being a pop star]]></content>
+        <title type="html"><![CDATA[You can see a working Quantum Computer in IBM's London office]]></title>
+        <id>https://www.ianvisits.co.uk/articles/you-can-see-a-working-quantum-computer-in-ibms-london-office-85464/</id>
+        <link href="https://www.ianvisits.co.uk/articles/you-can-see-a-working-quantum-computer-in-ibms-london-office-85464/"/>
+        <updated>2025-11-25T05:40:51.487Z</updated>
+        <content type="html"><![CDATA[You can see a working Quantum Computer in IBM's London office]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[1M Downloads of Zorin OS 18]]></title>
-        <id>https://blog.zorin.com/2025/11/18/test-the-upgrade-from-zorin-os-17-to-18-and-celebrating-1-million-downloads-of-zorin-os-18/</id>
-        <link href="https://blog.zorin.com/2025/11/18/test-the-upgrade-from-zorin-os-17-to-18-and-celebrating-1-million-downloads-of-zorin-os-18/"/>
-        <updated>2025-11-24T05:41:15.645Z</updated>
-        <content type="html"><![CDATA[1M Downloads of Zorin OS 18]]></content>
+        <title type="html"><![CDATA[TSMC Arizona outage saw fab halt, Apple wafers scrapped]]></title>
+        <id>https://www.culpium.com/p/tsmc-arizona-outage-saw-fab-halt</id>
+        <link href="https://www.culpium.com/p/tsmc-arizona-outage-saw-fab-halt"/>
+        <updated>2025-11-25T05:40:51.487Z</updated>
+        <content type="html"><![CDATA[TSMC Arizona outage saw fab halt, Apple wafers scrapped]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Git 3.0 will use main as the default branch]]></title>
-        <id>https://thoughtbot.com/blog/git-3-0-will-use-main-as-the-default-branch</id>
-        <link href="https://thoughtbot.com/blog/git-3-0-will-use-main-as-the-default-branch"/>
-        <updated>2025-11-24T17:40:09.290Z</updated>
-        <content type="html"><![CDATA[Git 3.0 will use main as the default branch]]></content>
+        <title type="html"><![CDATA[We stopped roadmap work for a week and fixed bugs]]></title>
+        <id>https://lalitm.com/fixits-are-good-for-the-soul/</id>
+        <link href="https://lalitm.com/fixits-are-good-for-the-soul/"/>
+        <updated>2025-11-24T05:41:15.059Z</updated>
+        <content type="html"><![CDATA[We stopped roadmap work for a week and fixed bugs]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Booking.com cancels $4K hotel reservation, offers same rooms again for $17K]]></title>
-        <id>https://www.cbc.ca/news/gopublic/go-public-booking-com-hotel-rates-9.6985480</id>
-        <link href="https://www.cbc.ca/news/gopublic/go-public-booking-com-hotel-rates-9.6985480"/>
-        <updated>2025-11-24T17:40:09.291Z</updated>
-        <content type="html"><![CDATA[Booking.com cancels $4K hotel reservation, offers same rooms again for $17K]]></content>
+        <title type="html"><![CDATA[Launch HN: Karumi (YC F25) – Personalized, agentic product demos]]></title>
+        <id>http://karumi.ai/</id>
+        <link href="http://karumi.ai/"/>
+        <updated>2025-11-25T05:40:51.488Z</updated>
+        <content type="html"><![CDATA[Launch HN: Karumi (YC F25) – Personalized, agentic product demos]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Show HN: Hypercamera – a browser-based 4D camera simulator]]></title>
+        <id>https://dugas.ch/4d_creatures/4d_camera.html</id>
+        <link href="https://dugas.ch/4d_creatures/4d_camera.html"/>
+        <updated>2025-11-25T05:40:51.488Z</updated>
+        <content type="html"><![CDATA[Show HN: Hypercamera – a browser-based 4D camera simulator]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AI has a deep understanding of how this code works]]></title>
+        <id>https://github.com/ocaml/ocaml/pull/14369</id>
+        <link href="https://github.com/ocaml/ocaml/pull/14369"/>
+        <updated>2025-11-25T05:40:51.490Z</updated>
+        <content type="html"><![CDATA[AI has a deep understanding of how this code works]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Serflings is a remake of The Settlers 1]]></title>
+        <id>https://www.simpleguide.net/serflings.xhtml</id>
+        <link href="https://www.simpleguide.net/serflings.xhtml"/>
+        <updated>2025-11-24T17:40:08.309Z</updated>
+        <content type="html"><![CDATA[Serflings is a remake of The Settlers 1]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The only GM EV1 ever publicly sold]]></title>
+        <id>https://www.theautopian.com/how-the-only-gm-ev1-ever-sold-didnt-get-crushed-and-where-its-going-now/</id>
+        <link href="https://www.theautopian.com/how-the-only-gm-ev1-ever-sold-didnt-get-crushed-and-where-its-going-now/"/>
+        <updated>2025-11-24T17:40:09.274Z</updated>
+        <content type="html"><![CDATA[The only GM EV1 ever publicly sold]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GrapheneOS migrates server infrastructure from France]]></title>
+        <id>https://www.privacyguides.org/news/2025/11/22/grapheneos-migrates-server-infrastructure-from-france-amid-police-intimidation-claims/</id>
+        <link href="https://www.privacyguides.org/news/2025/11/22/grapheneos-migrates-server-infrastructure-from-france-amid-police-intimidation-claims/"/>
+        <updated>2025-11-25T05:40:51.498Z</updated>
+        <content type="html"><![CDATA[GrapheneOS migrates server infrastructure from France]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Japan's gamble to turn island of Hokkaido into global chip hub]]></title>
+        <id>https://www.bbc.com/news/articles/c8676qpxgnqo</id>
+        <link href="https://www.bbc.com/news/articles/c8676qpxgnqo"/>
+        <updated>2025-11-24T05:41:15.074Z</updated>
+        <content type="html"><![CDATA[Japan's gamble to turn island of Hokkaido into global chip hub]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Everything you need to know about hard drive vibration (2016)]]></title>
+        <id>https://www.ept.ca/features/everything-need-know-hard-drive-vibration/</id>
+        <link href="https://www.ept.ca/features/everything-need-know-hard-drive-vibration/"/>
+        <updated>2025-11-25T05:40:51.500Z</updated>
+        <content type="html"><![CDATA[Everything you need to know about hard drive vibration (2016)]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I built a faster Notion in Rust]]></title>
+        <id>https://imedadel.com/outcrop/</id>
+        <link href="https://imedadel.com/outcrop/"/>
+        <updated>2025-11-24T17:40:08.331Z</updated>
+        <content type="html"><![CDATA[I built a faster Notion in Rust]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Microsoft doesn't understand the dislike for Windows' new direction]]></title>
+        <id>https://www.xda-developers.com/microsoft-doesnt-understand-dislike-windows-new-direction/</id>
+        <link href="https://www.xda-developers.com/microsoft-doesnt-understand-dislike-windows-new-direction/"/>
+        <updated>2025-11-25T05:40:51.503Z</updated>
+        <content type="html"><![CDATA[Microsoft doesn't understand the dislike for Windows' new direction]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Historically Accurate Airport Dioramas by AV Pro Designs]]></title>
+        <id>https://www.core77.com/posts/138995/Historically-Accurate-Airport-Dioramas-by-AV-Pro-Designs</id>
+        <link href="https://www.core77.com/posts/138995/Historically-Accurate-Airport-Dioramas-by-AV-Pro-Designs"/>
+        <updated>2025-11-24T17:40:08.321Z</updated>
+        <content type="html"><![CDATA[Historically Accurate Airport Dioramas by AV Pro Designs]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Show HN: Search London StreetView panoramas by text]]></title>
+        <id>https://london.publicinsights.uk/</id>
+        <link href="https://london.publicinsights.uk/"/>
+        <updated>2025-11-25T05:40:51.505Z</updated>
+        <content type="html"><![CDATA[Show HN: Search London StreetView panoramas by text]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Cloudflare outage might be a good thing]]></title>
+        <id>https://gist.github.com/jbreckmckye/32587f2907e473dd06d68b0362fb0048</id>
+        <link href="https://gist.github.com/jbreckmckye/32587f2907e473dd06d68b0362fb0048"/>
+        <updated>2025-11-24T05:41:15.049Z</updated>
+        <content type="html"><![CDATA[The Cloudflare outage might be a good thing]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Slicing Is All You Need: Towards a Universal One-Sided Distributed MatMul]]></title>
+        <id>https://arxiv.org/abs/2510.08874</id>
+        <link href="https://arxiv.org/abs/2510.08874"/>
+        <updated>2025-11-24T17:40:08.318Z</updated>
+        <content type="html"><![CDATA[Slicing Is All You Need: Towards a Universal One-Sided Distributed MatMul]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Show HN: Cynthia – Reliably play MIDI music files – MIT / Portable / Windows]]></title>
+        <id>https://www.blaizenterprises.com/cynthia.html</id>
+        <link href="https://www.blaizenterprises.com/cynthia.html"/>
+        <updated>2025-11-24T17:40:08.303Z</updated>
+        <content type="html"><![CDATA[Show HN: Cynthia – Reliably play MIDI music files – MIT / Portable / Windows]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[NSA and IETF, part 3: Dodging the issues at hand]]></title>
+        <id>https://blog.cr.yp.to/20251123-dodging.html</id>
+        <link href="https://blog.cr.yp.to/20251123-dodging.html"/>
+        <updated>2025-11-24T17:40:08.302Z</updated>
+        <content type="html"><![CDATA[NSA and IETF, part 3: Dodging the issues at hand]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PRC Elites Voice AI-Skepticism]]></title>
+        <id>https://jamestown.org/prc-elites-voice-ai-skepticism/</id>
+        <link href="https://jamestown.org/prc-elites-voice-ai-skepticism/"/>
+        <updated>2025-11-25T05:40:51.515Z</updated>
+        <content type="html"><![CDATA[PRC Elites Voice AI-Skepticism]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The Arithmetic of Braids (2022)]]></title>
+        <id>https://mathcenter.oxford.emory.edu/site/math108/braid_arithmetic/</id>
+        <link href="https://mathcenter.oxford.emory.edu/site/math108/braid_arithmetic/"/>
+        <updated>2025-11-24T17:40:09.266Z</updated>
+        <content type="html"><![CDATA[The Arithmetic of Braids (2022)]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Show HN: Supabase-Test – Fast Isolated Postgres DBs for Testing Supabase RLS]]></title>
+        <id>https://www.npmjs.com/package/supabase-test</id>
+        <link href="https://www.npmjs.com/package/supabase-test"/>
+        <updated>2025-11-25T05:40:51.518Z</updated>
+        <content type="html"><![CDATA[Show HN: Supabase-Test – Fast Isolated Postgres DBs for Testing Supabase RLS]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fran Sans – font inspired by San Francisco light rail displays]]></title>
+        <id>https://emilysneddon.com/fran-sans-essay</id>
+        <link href="https://emilysneddon.com/fran-sans-essay"/>
+        <updated>2025-11-24T05:41:15.051Z</updated>
+        <content type="html"><![CDATA[Fran Sans – font inspired by San Francisco light rail displays]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Terence Tao: At the Erdos problem website, AI assistance now becoming routine]]></title>
+        <id>https://mathstodon.xyz/@tao/115591487350860999</id>
+        <link href="https://mathstodon.xyz/@tao/115591487350860999"/>
+        <updated>2025-11-23T05:39:04.307Z</updated>
+        <content type="html"><![CDATA[Terence Tao: At the Erdos problem website, AI assistance now becoming routine]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Is your Android TV streaming box part of a botnet?]]></title>
+        <id>https://krebsonsecurity.com/2025/11/is-your-android-tv-streaming-box-part-of-a-botnet/</id>
+        <link href="https://krebsonsecurity.com/2025/11/is-your-android-tv-streaming-box-part-of-a-botnet/"/>
+        <updated>2025-11-25T05:40:51.522Z</updated>
+        <content type="html"><![CDATA[Is your Android TV streaming box part of a botnet?]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[General principles for the use of AI at CERN]]></title>
+        <id>https://home.web.cern.ch/news/official-news/knowledge-sharing/general-principles-use-ai-cern</id>
+        <link href="https://home.web.cern.ch/news/official-news/knowledge-sharing/general-principles-use-ai-cern"/>
+        <updated>2025-11-24T17:40:08.817Z</updated>
+        <content type="html"><![CDATA[General principles for the use of AI at CERN]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ego, empathy, and humility at work]]></title>
+        <id>https://matthogg.fyi/a-unified-theory-of-ego-empathy-and-humility-at-work/</id>
+        <link href="https://matthogg.fyi/a-unified-theory-of-ego-empathy-and-humility-at-work/"/>
+        <updated>2025-11-24T05:41:15.082Z</updated>
+        <content type="html"><![CDATA[Ego, empathy, and humility at work]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Set theory with types]]></title>
+        <id>https://lawrencecpaulson.github.io//2025/11/21/Typed_Set_Theory.html</id>
+        <link href="https://lawrencecpaulson.github.io//2025/11/21/Typed_Set_Theory.html"/>
+        <updated>2025-11-24T17:40:08.340Z</updated>
+        <content type="html"><![CDATA[Set theory with types]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Fifteen Years]]></title>
+        <id>https://xkcd.com/3172/</id>
+        <link href="https://xkcd.com/3172/"/>
+        <updated>2025-11-25T05:40:52.049Z</updated>
+        <content type="html"><![CDATA[Fifteen Years]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Lambda Calculus – Animated Beta Reduction of Lambda Diagrams]]></title>
+        <id>https://cruzgodar.com/applets/lambda-calculus</id>
+        <link href="https://cruzgodar.com/applets/lambda-calculus"/>
+        <updated>2025-11-24T17:40:08.328Z</updated>
+        <content type="html"><![CDATA[Lambda Calculus – Animated Beta Reduction of Lambda Diagrams]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[EPA just approved new 'forever chemical' pesticides for use on food]]></title>
+        <id>https://www.washingtonpost.com/climate-environment/2025/11/22/forever-chemicals-pesticides/</id>
+        <link href="https://www.washingtonpost.com/climate-environment/2025/11/22/forever-chemicals-pesticides/"/>
+        <updated>2025-11-25T05:40:52.051Z</updated>
+        <content type="html"><![CDATA[EPA just approved new 'forever chemical' pesticides for use on food]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[More Americans are getting their power shut off, as unpaid bills pile up]]></title>
+        <id>https://www.washingtonpost.com/business/2025/11/24/power-shutoffs-surge-electric-bills/</id>
+        <link href="https://www.washingtonpost.com/business/2025/11/24/power-shutoffs-surge-electric-bills/"/>
+        <updated>2025-11-25T05:40:52.052Z</updated>
+        <content type="html"><![CDATA[More Americans are getting their power shut off, as unpaid bills pile up]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cheese Consumption and Dementia in Older Japanese Adults: The Jages Cohort Study]]></title>
+        <id>https://www.mdpi.com/2072-6643/17/21/3363</id>
+        <link href="https://www.mdpi.com/2072-6643/17/21/3363"/>
+        <updated>2025-11-25T05:40:52.054Z</updated>
+        <content type="html"><![CDATA[Cheese Consumption and Dementia in Older Japanese Adults: The Jages Cohort Study]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A visual guide to Cloudflare Primitives]]></title>
+        <id>https://momito.co.uk/cloudflare-primitives/</id>
+        <link href="https://momito.co.uk/cloudflare-primitives/"/>
+        <updated>2025-11-25T05:40:52.056Z</updated>
+        <content type="html"><![CDATA[A visual guide to Cloudflare Primitives]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Show HN: Stun LLMs with thousands of invisible Unicode characters]]></title>
+        <id>https://gibberifier.com/</id>
+        <link href="https://gibberifier.com/"/>
+        <updated>2025-11-24T05:41:15.068Z</updated>
+        <content type="html"><![CDATA[Show HN: Stun LLMs with thousands of invisible Unicode characters]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Build desktop applications using Go and Web Technologies]]></title>
+        <id>https://github.com/wailsapp/wails</id>
+        <link href="https://github.com/wailsapp/wails"/>
+        <updated>2025-11-24T17:40:08.811Z</updated>
+        <content type="html"><![CDATA[Build desktop applications using Go and Web Technologies]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[RuBee]]></title>
+        <id>https://computer.rip/2025-11-22-RuBee.html</id>
+        <link href="https://computer.rip/2025-11-22-RuBee.html"/>
+        <updated>2025-11-24T05:41:15.047Z</updated>
+        <content type="html"><![CDATA[RuBee]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Shopping research in ChatGPT]]></title>
+        <id>https://openai.com/index/chatgpt-shopping-research/</id>
+        <link href="https://openai.com/index/chatgpt-shopping-research/"/>
+        <updated>2025-11-25T05:40:52.062Z</updated>
+        <content type="html"><![CDATA[Shopping research in ChatGPT]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Show HN: I wrote a minimal memory allocator in C]]></title>
+        <id>https://github.com/t9nzin/memory</id>
+        <link href="https://github.com/t9nzin/memory"/>
+        <updated>2025-11-24T05:41:15.071Z</updated>
+        <content type="html"><![CDATA[Show HN: I wrote a minimal memory allocator in C]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A tool for dealing with GPS time in Ns]]></title>
+        <id>https://andrew.diamonds/gpsnanos</id>
+        <link href="https://andrew.diamonds/gpsnanos"/>
+        <updated>2025-11-25T05:40:52.065Z</updated>
+        <content type="html"><![CDATA[A tool for dealing with GPS time in Ns]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ask HN: Scheduling stateful nodes when MMAP makes memory accounting a lie]]></title>
+        <id>https://news.ycombinator.com/item?id=46036614</id>
+        <link href="https://news.ycombinator.com/item?id=46036614"/>
+        <updated>2025-11-25T05:40:52.068Z</updated>
+        <content type="html"><![CDATA[Ask HN: Scheduling stateful nodes when MMAP makes memory accounting a lie]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[µcad: New open source programming language that can generate 2D sketches and 3D]]></title>
+        <id>https://microcad.xyz/</id>
+        <link href="https://microcad.xyz/"/>
+        <updated>2025-11-24T05:41:15.065Z</updated>
+        <content type="html"><![CDATA[µcad: New open source programming language that can generate 2D sketches and 3D]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Avian Influenza H5N5 Washington Death]]></title>
+        <id>https://www.idse.net/Influenza/Article/12-25/First-Person-Dies-From-H5N5-Bird-Flu/78941</id>
+        <link href="https://www.idse.net/Influenza/Article/12-25/First-Person-Dies-From-H5N5-Bird-Flu/78941"/>
+        <updated>2025-11-25T05:40:52.070Z</updated>
+        <content type="html"><![CDATA[Avian Influenza H5N5 Washington Death]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[An Economy of AI Agents]]></title>
+        <id>https://arxiv.org/abs/2509.01063</id>
+        <link href="https://arxiv.org/abs/2509.01063"/>
+        <updated>2025-11-24T05:41:15.636Z</updated>
+        <content type="html"><![CDATA[An Economy of AI Agents]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Ask HN: Hearing aid wearers, what's hot?]]></title>
+        <id>https://news.ycombinator.com/item?id=46029699</id>
+        <link href="https://news.ycombinator.com/item?id=46029699"/>
+        <updated>2025-11-24T05:41:15.052Z</updated>
+        <content type="html"><![CDATA[Ask HN: Hearing aid wearers, what's hot?]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I put a real search engine into a Lambda, so you only pay when you search]]></title>
+        <id>https://nixiesearch.substack.com/p/i-put-a-real-search-engine-into-a</id>
+        <link href="https://nixiesearch.substack.com/p/i-put-a-real-search-engine-into-a"/>
+        <updated>2025-11-24T17:40:08.337Z</updated>
+        <content type="html"><![CDATA[I put a real search engine into a Lambda, so you only pay when you search]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Show HN: I built an interactive map of jobs at top AI companies]]></title>
+        <id>https://map.stapply.ai/</id>
+        <link href="https://map.stapply.ai/"/>
+        <updated>2025-11-25T05:40:52.078Z</updated>
+        <content type="html"><![CDATA[Show HN: I built an interactive map of jobs at top AI companies]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[De Bruijn Graph]]></title>
+        <id>https://en.wikipedia.org/wiki/De_Bruijn_graph</id>
+        <link href="https://en.wikipedia.org/wiki/De_Bruijn_graph"/>
+        <updated>2025-11-25T05:40:52.080Z</updated>
+        <content type="html"><![CDATA[De Bruijn Graph]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mount Proton Drive on Linux using rclone and systemd]]></title>
+        <id>https://github.com/dadtronics/protondrive-linux</id>
+        <link href="https://github.com/dadtronics/protondrive-linux"/>
+        <updated>2025-11-24T05:41:15.095Z</updated>
+        <content type="html"><![CDATA[Mount Proton Drive on Linux using rclone and systemd]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Show HN: Virtual SLURM HPC cluster in a Docker Compose]]></title>
+        <id>https://github.com/exactlab/vhpc</id>
+        <link href="https://github.com/exactlab/vhpc"/>
+        <updated>2025-11-24T17:40:08.334Z</updated>
+        <content type="html"><![CDATA[Show HN: Virtual SLURM HPC cluster in a Docker Compose]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[McMaster Carr – The Smartest Website You Haven't Heard Of (2022)]]></title>
+        <id>https://www.bedelstein.com/post/mcmaster-carr</id>
+        <link href="https://www.bedelstein.com/post/mcmaster-carr"/>
+        <updated>2025-11-24T05:41:15.640Z</updated>
+        <content type="html"><![CDATA[McMaster Carr – The Smartest Website You Haven't Heard Of (2022)]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Native Secure Enclave backed SSH keys on macOS]]></title>
+        <id>https://gist.github.com/arianvp/5f59f1783e3eaf1a2d4cd8e952bb4acf</id>
+        <link href="https://gist.github.com/arianvp/5f59f1783e3eaf1a2d4cd8e952bb4acf"/>
+        <updated>2025-11-24T05:41:15.054Z</updated>
+        <content type="html"><![CDATA[Native Secure Enclave backed SSH keys on macOS]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Iowa City made its buses free. Traffic cleared, and so did the air]]></title>
+        <id>https://www.nytimes.com/2025/11/18/climate/iowa-city-free-buses.html</id>
+        <link href="https://www.nytimes.com/2025/11/18/climate/iowa-city-free-buses.html"/>
+        <updated>2025-11-24T05:41:15.084Z</updated>
+        <content type="html"><![CDATA[Iowa City made its buses free. Traffic cleared, and so did the air]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[New report calls for end to child marriage in the US]]></title>
+        <id>https://womensmediacenter.com/news-features/new-report-calls-for-end-to-child-marriage-in-us</id>
+        <link href="https://womensmediacenter.com/news-features/new-report-calls-for-end-to-child-marriage-in-us"/>
+        <updated>2025-11-25T05:40:52.088Z</updated>
+        <content type="html"><![CDATA[New report calls for end to child marriage in the US]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Passing the Torch – My Last Root DNSSEC KSK Ceremony as Crypto Officer 4]]></title>
+        <id>https://technotes.seastrom.com/2025/11/23/passing-the-torch.html</id>
+        <link href="https://technotes.seastrom.com/2025/11/23/passing-the-torch.html"/>
+        <updated>2025-11-24T05:41:15.063Z</updated>
+        <content type="html"><![CDATA[Passing the Torch – My Last Root DNSSEC KSK Ceremony as Crypto Officer 4]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pixar: The Early Days]]></title>
+        <id>https://stevejobsarchive.com/stories/pixar-early-days</id>
+        <link href="https://stevejobsarchive.com/stories/pixar-early-days"/>
+        <updated>2025-11-24T17:40:08.797Z</updated>
+        <content type="html"><![CDATA[Pixar: The Early Days]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A One-Minute ADHD Test]]></title>
+        <id>https://psychotechnology.substack.com/p/a-one-minute-adhd-test-2330</id>
+        <link href="https://psychotechnology.substack.com/p/a-one-minute-adhd-test-2330"/>
+        <updated>2025-11-25T05:40:52.092Z</updated>
+        <content type="html"><![CDATA[A One-Minute ADHD Test]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A time-travelling door bug in Half Life 2]]></title>
+        <id>https://mastodon.gamedev.place/@TomF/115589875974658415</id>
+        <link href="https://mastodon.gamedev.place/@TomF/115589875974658415"/>
+        <updated>2025-11-22T05:37:50.175Z</updated>
+        <content type="html"><![CDATA[A time-travelling door bug in Half Life 2]]></content>
     </entry>
 </feed>
